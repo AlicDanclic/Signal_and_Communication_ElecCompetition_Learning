@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Mind Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .mindmap-container {
+            background: white;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: auto;
+        }
+        
+        .mindmap-title {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            background: white;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .mindmap {
+            position: relative;
+            width: 100%;
+            height: calc(100% - 80px);
+            min-width: 100%;
+            min-height: 100%;
+            padding: 50px;
+        }
+        
+        .node {
+            position: absolute;
+            padding: 12px 20px;
+            border-radius: 8px;
+            background: #fff;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            max-width: 250px;
+            min-width: 120px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.4;
+            z-index: 10;
+            word-wrap: break-word;
+        }
+        
+        .node:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+        }
+        
+        .node-root {
+            background: #4CAF50;
+            color: white;
+            border-color: #388E3C;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .node-level-2 {
+            background: #2196F3;
+            color: white;
+            border-color: #1976D2;
+        }
+        
+        .node-level-3 {
+            background: #FFC107;
+            color: #333;
+            border-color: #FFA000;
+        }
+        
+        .node-level-4 {
+            background: #9C27B0;
+            color: white;
+            border-color: #7B1FA2;
+        }
+        
+        .node-level-5 {
+            background: #607D8B;
+            color: white;
+            border-color: #455A64;
+        }
+        
+        .node-content {
+            font-weight: bold;
+        }
+        
+        .node-progress {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        
+        .node-tooltip {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            min-width: 150px;
+        }
+        
+        .node-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: rgba(0, 0, 0, 0.9);
+        }
+        
+        .node-tooltip div {
+            margin: 4px 0;
+            line-height: 1.4;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .node-tooltip strong {
+            margin-right: 8px;
+            color: #FFD700;
+        }
+        
+        .node:hover .node-tooltip {
+            display: block;
+        }
+        
+        .connection {
+            position: absolute;
+            background: #999;
+            height: 2px;
+            transform-origin: 0 0;
+            z-index: 1;
+        }
+        
+        .connector-dot {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #999;
+            border-radius: 50%;
+            z-index: 5;
+        }
+        
+        /* 进度条样式 */
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="mindmap-container">
+        <h1 class="mindmap-title">Mind Map</h1>
+        <div class="mindmap" id="mindmap"></div>
+    </div>
+
+    <script>
+        // 思维导图数据
+        const mindMapData = {
+  "metadata": {
+    "title": "Mind Map",
+    "author": "Unknown",
+    "version": "1.0",
+    "theme": "modern",
+    "layout": "mindmap",
+    "backgroundColor": "#FFFFFF",
+    "width": 1600,
+    "height": 1200
+  },
+  "root": {
+    "name": "功能验证板",
+    "attributes": {},
+    "level": 1,
+    "children": [
+      {
+        "name": "MCU功能联合器",
+        "attributes": {
+          "text": "通过金手指连接"
+        },
+        "level": 2,
+        "children": [
+          {
+            "name": "STM32金手指",
+            "attributes": {},
+            "level": 3,
+            "children": [
+              {
+                "name": "UART",
+                "attributes": {},
+                "level": 4,
+                "children": []
+              },
+              {
+                "name": "GPIO",
+                "attributes": {},
+                "level": 4,
+                "children": []
+              },
+              {
+                "name": "并行接口",
+                "attributes": {},
+                "level": 4,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "显示类",
+        "attributes": {
+          "text": "各种显示功能验证"
+        },
+        "level": 2,
+        "children": [
+          {
+            "name": "LCD",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "OLED",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "TFT",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "HDMI",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "通信协议类",
+        "attributes": {},
+        "level": 2,
+        "children": [
+          {
+            "name": "UART",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "I2C",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "SPI",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "CAN",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "基础部分",
+        "attributes": {},
+        "level": 2,
+        "children": [
+          {
+            "name": "ADC",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "DAC",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "PWM",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "LED",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          },
+          {
+            "name": "多功能按键",
+            "attributes": {},
+            "level": 3,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+};
+        
+        // 计算节点的尺寸信息
+        function calculateNodeLayout(node, level = 0) {
+            if (!node.children || node.children.length === 0) {
+                return {
+                    width: 1,
+                    height: 1,
+                    totalLeaves: 1,
+                    node: node
+                };
+            }
+            
+            let totalWidth = 0;
+            let maxHeight = 0;
+            let totalLeaves = 0;
+            const childrenLayouts = [];
+            
+            for (const child of node.children) {
+                const childLayout = calculateNodeLayout(child, level + 1);
+                childrenLayouts.push(childLayout);
+                totalWidth += childLayout.width;
+                maxHeight = Math.max(maxHeight, childLayout.height);
+                totalLeaves += childLayout.totalLeaves;
+            }
+            
+            return {
+                width: Math.max(1, totalWidth),
+                height: maxHeight + 1,
+                totalLeaves: totalLeaves,
+                node: node,
+                children: childrenLayouts
+            };
+        }
+        
+        // 计算节点位置（水平布局，父节点位于子节点中间）
+        function calculateNodePositions(layout, startX, startY, level = 0) {
+            const node = layout.node;
+            const positions = [];
+            
+            // 当前节点的位置 - 确保父节点在子节点的中间
+            const nodeX = startX;
+            const nodeY = startY + (layout.totalLeaves * 60) / 2;
+            
+            const nodeInfo = {
+                id: node.name + '-' + level + '-' + Math.random().toString(36).substr(2, 5),
+                name: node.name,
+                attributes: node.attributes || {},
+                level: level,
+                x: Math.max(0, nodeX), // 确保x坐标非负
+                y: Math.max(0, nodeY), // 确保y坐标非负
+                children: []
+            };
+            
+            positions.push(nodeInfo);
+            
+            // 计算子节点位置
+            if (layout.children && layout.children.length > 0) {
+                let currentY = startY;
+                
+                for (const childLayout of layout.children) {
+                    const childPositions = calculateNodePositions(
+                        childLayout, 
+                        startX + 250, // 水平间距
+                        currentY,
+                        level + 1
+                    );
+                    
+                    // 添加连接关系
+                    nodeInfo.children.push(childPositions[0]);
+                    positions.push(...childPositions);
+                    
+                    // 更新Y坐标位置
+                    currentY += childLayout.totalLeaves * 60;
+                }
+            }
+            
+            return positions;
+        }
+        
+        // 格式化属性值显示
+        function formatAttributeValue(key, value) {
+            if (key === 'progress' && typeof value === 'number') {
+                return value + '%';
+            }
+            if (key === 'icon') {
+                return value;
+            }
+            if (typeof value === 'boolean') {
+                return value ? '是' : '否';
+            }
+            return value;
+        }
+        
+        // 生成属性提示框内容
+        function generateTooltipContent(attributes) {
+            if (Object.keys(attributes).length === 0) {
+                return '';
+            }
+            
+            let content = '';
+            for (const [key, value] of Object.entries(attributes)) {
+                if (value !== undefined && value !== null && value !== '') {
+                    content += `<div><strong>${key}:</strong> <span>${formatAttributeValue(key, value)}</span></div>`;
+                }
+            }
+            
+            return `<div class="node-tooltip">${content}</div>`;
+        }
+        
+        // 生成进度条
+        function generateProgressBar(progress) {
+            if (progress === undefined || progress === null) return '';
+            return `
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: ${progress}%"></div>
+                </div>
+            `;
+        }
+        
+        // 渲染思维导图
+        function renderMindMap() {
+            const container = document.getElementById('mindmap');
+            const containerWidth = container.offsetWidth;
+            const containerHeight = container.offsetHeight;
+            
+            // 计算布局
+            const rootLayout = calculateNodeLayout(mindMapData.root);
+            
+            // 计算根节点起始位置（垂直居中）
+            const startY = Math.max(0, (containerHeight - rootLayout.totalLeaves * 60) / 2);
+            const startX = 100;
+            
+            // 计算所有节点位置
+            const allNodes = calculateNodePositions(rootLayout, startX, startY);
+            
+            // 清空容器
+            container.innerHTML = '';
+            
+            // 收集所有连接线
+            const connections = [];
+            
+            allNodes.forEach(node => {
+                node.children.forEach(childNode => {
+                    const child = allNodes.find(n => n.id === childNode.id);
+                    if (child) {
+                        connections.push({
+                            from: { x: node.x, y: node.y },
+                            to: { x: child.x, y: child.y }
+                        });
+                    }
+                });
+            });
+            
+            // 渲染连接线
+            connections.forEach(conn => {
+                const dx = conn.to.x - conn.from.x;
+                const dy = conn.to.y - conn.from.y;
+                const length = Math.sqrt(dx * dx + dy * dy);
+                const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+                
+                const connection = document.createElement('div');
+                connection.className = 'connection';
+                connection.style.width = length + 'px';
+                connection.style.left = conn.from.x + 'px';
+                connection.style.top = conn.from.y + 'px';
+                connection.style.transform = `rotate(${angle}deg)`;
+                
+                container.appendChild(connection);
+                
+                // 添加连接点
+                const dot = document.createElement('div');
+                dot.className = 'connector-dot';
+                dot.style.left = (conn.from.x - 3) + 'px';
+                dot.style.top = (conn.from.y - 3) + 'px';
+                container.appendChild(dot);
+            });
+            
+            // 计算边界框，用于调整容器大小
+            let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+            
+            allNodes.forEach(node => {
+                minX = Math.min(minX, node.x);
+                minY = Math.min(minY, node.y);
+                maxX = Math.max(maxX, node.x);
+                maxY = Math.max(maxY, node.y);
+            });
+            
+            // 添加边界缓冲
+            minX = Math.max(0, minX - 100);
+            minY = Math.max(0, minY - 100);
+            maxX += 200;
+            maxY += 100;
+            
+            // 设置容器最小尺寸，确保所有内容可见
+            container.style.minWidth = Math.max(containerWidth, maxX) + 'px';
+            container.style.minHeight = Math.max(containerHeight, maxY) + 'px';
+            
+            // 渲染节点
+            allNodes.forEach(node => {
+                const nodeElement = document.createElement('div');
+                nodeElement.className = `node node-level-${Math.min(node.level, 5)}`;
+                if (node.level === 0) {
+                    nodeElement.classList.add('node-root');
+                }
+                
+                nodeElement.style.left = (node.x - 60) + 'px';
+                nodeElement.style.top = (node.y - 25) + 'px';
+                
+                // 生成节点内容
+                const progressBar = generateProgressBar(node.attributes.progress);
+                const tooltipContent = generateTooltipContent(node.attributes);
+                
+                nodeElement.innerHTML = `
+                    <div class="node-content">${node.name}</div>
+                    ${progressBar}
+                    ${tooltipContent}
+                `;
+                
+                container.appendChild(nodeElement);
+            });
+            
+            // 自动滚动到中心位置
+            setTimeout(() => {
+                container.scrollTo({
+                    left: (maxX - containerWidth) / 2,
+                    top: (maxY - containerHeight) / 2,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        }
+        
+        // 页面加载完成后渲染
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(renderMindMap, 100);
+        });
+        
+        // 窗口大小变化时重新渲染
+        window.addEventListener('resize', function() {
+            setTimeout(renderMindMap, 100);
+        });
+    </script>
+</body>
+</html>

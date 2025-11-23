@@ -1,0 +1,25 @@
+# 功能验证板
+## MCU功能联合器[text="通过金手指连接"]
+### STM32金手指
+- UART
+- GPIO
+- 并行接口
+
+## 显示类[text="各种显示功能验证"]
+- LCD
+- OLED
+- TFT
+- HDMI
+
+## 通信协议类
+- UART
+- I2C
+- SPI
+- CAN
+
+## 基础部分
+- ADC
+- DAC
+- PWM
+- LED
+- 多功能按键
