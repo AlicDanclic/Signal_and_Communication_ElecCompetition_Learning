@@ -5,6 +5,186 @@
 	(uuid "917fca12-fdaf-4dee-9442-a0ce1cb7b110")
 	(paper "A3")
 	(lib_symbols
+		(symbol "persional_library:C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1uF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "persional_library:C0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "CL10A105KB8NNNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "SAMSUNG(三星)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "C15849"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part Name" "1uF ±10% 50V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C0603_1_0"
+				(polyline
+					(pts
+						(xy -0.508 -2.032) (xy -0.508 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 2.032) (xy 0.508 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "persional_library:C0805"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -949,6 +1129,193 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "persional_library:Hole_M3-M"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "persional_library:m3 125x300"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "梅花螺丝孔"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Hole_M3-M_1_0"
+				(circle
+					(center -4.572 0)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.302 -3.302)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.302 3.302)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -4.572)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.0254 -0.1016)
+					(radius 6.223)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.254 4.318)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.302 -3.302)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.302 3.302)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.572 0)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+						(color 51 51 51 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at 0 -11.43 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3989,10 +4356,6 @@
 		(uuid "6893cbb3-58b3-4a9d-b9d6-d8f4f8833289")
 	)
 	(no_connect
-		(at 259.08 33.02)
-		(uuid "68bed241-635c-4f35-b8d4-efc36f69ea49")
-	)
-	(no_connect
 		(at 130.81 26.67)
 		(uuid "720c31a3-4c4f-4592-b924-3a71ea789694")
 	)
@@ -4003,6 +4366,10 @@
 	(no_connect
 		(at 27.94 102.87)
 		(uuid "83273c79-bb5b-4734-9ed9-f8ea3626d95e")
+	)
+	(no_connect
+		(at 248.92 33.02)
+		(uuid "9fc136aa-5324-4ed0-b13a-725d5b2181c4")
 	)
 	(no_connect
 		(at 45.72 87.63)
@@ -5764,16 +6131,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 35.56) (xy 248.92 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca60fb68-bac9-418c-a397-9c8c195e8ecd")
-	)
-	(wire
-		(pts
 			(xy 238.76 85.09) (xy 245.11 85.09)
 		)
 		(stroke
@@ -5851,6 +6208,16 @@
 			(type default)
 		)
 		(uuid "d59a5aa0-452c-4e31-b705-b28c541d613f")
+	)
+	(wire
+		(pts
+			(xy 259.08 35.56) (xy 259.08 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5c6efa3-4884-42b5-9cbb-4223233bf388")
 	)
 	(wire
 		(pts
@@ -6987,73 +7354,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 255.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0761f358-f2eb-4569-ac29-5b1415a2a9d4")
-		(property "Reference" "#PWR0142"
-			(at 129.54 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 132.08 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35a835dc-2fab-4847-b2da-d1d086852797")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0142")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 172.72 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7121,16 +7421,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 107.95 200.66 270)
+		(at 280.67 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0837590b-f869-473a-953b-fa870300b9ae")
-		(property "Reference" "#PWR0106"
-			(at 101.6 200.66 0)
+		(uuid "09ec4112-1b40-4738-bb76-beed6091dc8a")
+		(property "Reference" "#PWR0165"
+			(at 280.67 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7139,16 +7439,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 200.66 90)
+			(at 280.67 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 200.66 0)
+			(at 280.67 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7157,7 +7456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 200.66 0)
+			(at 280.67 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7166,7 +7465,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 200.66 0)
+			(at 280.67 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7175,12 +7474,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ffd9f7d5-1555-41a7-b0ce-e4aa074d8436")
+			(uuid "c3704182-728a-4965-9ee0-86d3ae1825b0")
 		)
 		(instances
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0106")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -7868,6 +8167,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 135.89 255.27 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10482a79-7eb0-425b-ade3-510e3bd9dddd")
+		(property "Reference" "#PWR0141"
+			(at 139.7 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 132.08 255.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 135.89 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "841c1e8a-2bb8-42b3-918a-05ff156b528c")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 109.22 39.37 90)
 		(unit 1)
@@ -8292,7 +8659,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 158.75 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8316,7 +8683,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 158.75 25.4 0)
 			(effects
 				(font
@@ -8325,7 +8692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 158.75 25.4 0)
 			(effects
 				(font
@@ -8334,7 +8701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 158.75 25.4 0)
 			(effects
 				(font
@@ -8343,7 +8710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 158.75 25.4 0)
 			(effects
 				(font
@@ -8361,7 +8728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 158.75 25.4 0)
 			(effects
 				(font
@@ -8379,7 +8746,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 158.75 25.4 0)
 			(effects
 				(font
@@ -8538,72 +8905,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 128.27 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "18e9919a-07f5-44fe-911c-eb37692fcb88")
-		(property "Reference" "#PWR065"
-			(at 128.27 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 128.27 84.328 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 128.27 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80a2d2e5-028c-4c67-ac74-ce0ed1712852")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 107.95 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8627,7 +8929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 107.95 86.36 0)
 			(effects
 				(font
@@ -8636,7 +8938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 107.95 86.36 0)
 			(effects
 				(font
@@ -8645,7 +8947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 107.95 86.36 0)
 			(effects
 				(font
@@ -8654,7 +8956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 107.95 86.36 0)
 			(effects
 				(font
@@ -8672,7 +8974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 107.95 86.36 0)
 			(effects
 				(font
@@ -8690,7 +8992,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 107.95 86.36 0)
 			(effects
 				(font
@@ -8894,7 +9196,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 20.32 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8918,7 +9220,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 20.32 25.4 0)
 			(effects
 				(font
@@ -8927,7 +9229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 20.32 25.4 0)
 			(effects
 				(font
@@ -8936,7 +9238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 20.32 25.4 0)
 			(effects
 				(font
@@ -8945,7 +9247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 20.32 25.4 0)
 			(effects
 				(font
@@ -8963,7 +9265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 20.32 25.4 0)
 			(effects
 				(font
@@ -8981,7 +9283,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 20.32 25.4 0)
 			(effects
 				(font
@@ -9206,73 +9508,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+1V8")
-		(at 107.95 252.73 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ebaa767-d1a5-4776-89cb-2169d668ceef")
-		(property "Reference" "#PWR0137"
-			(at 111.76 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+1V8"
-			(at 104.14 252.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 107.95 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a6dc1e7-d191-4cf4-bb81-a92eb2c7f461")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0137")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 59.69 233.68 0)
 		(unit 1)
@@ -9333,6 +9568,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 52.07 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2196e5c6-3e4a-40da-878b-f2fda30feabc")
+		(property "Reference" "#PWR089"
+			(at 55.88 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 48.26 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 52.07 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a97ee310-f793-4ea4-b2d1-5103144da803")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -9510,73 +9812,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 52.07 255.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24d4408f-41c2-479d-ba4d-a7adec3ee7e0")
-		(property "Reference" "#PWR0130"
-			(at 45.72 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0bf3c5e2-ab27-47fb-94b7-6d22922e1d70")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0130")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDC")
 		(at 213.36 24.13 0)
 		(unit 1)
@@ -9642,7 +9877,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 71.12 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9666,7 +9901,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -9675,7 +9910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -9684,7 +9919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -9693,7 +9928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -9711,7 +9946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -9729,7 +9964,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 71.12 86.36 0)
 			(effects
 				(font
@@ -9748,73 +9983,6 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 107.95 255.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25cb1308-feb3-457d-b23f-f6446ddd21ad")
-		(property "Reference" "#PWR0138"
-			(at 101.6 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 104.14 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "232e6b9a-12f8-4d8f-9c20-4c919834766f")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -10287,73 +10455,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 52.07 171.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dd55531-ab4a-41d7-8675-9d3fe46a3c6c")
-		(property "Reference" "#PWR089"
-			(at 55.88 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 48.26 171.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 52.07 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c565c0e-5076-4334-be37-5bf251f9ccfb")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR089")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "persional_library:Connect_GH1.25_2P_Horizontal")
 		(at 85.09 172.72 0)
 		(unit 1)
@@ -10475,7 +10576,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 168.91 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10499,7 +10600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -10508,7 +10609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -10517,7 +10618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -10526,7 +10627,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -10544,7 +10645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -10562,7 +10663,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -10715,71 +10816,6 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 40.64 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2fc324ee-332c-411b-87a3-a66c84f1553e")
-		(property "Reference" "#PWR045"
-			(at 40.64 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 40.64 84.328 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 40.64 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03969d8d-4ac9-46d2-9865-3a686fd162e0")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -11315,7 +11351,74 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:Hole_M3-M")
+		(at 261.62 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37aebcbd-361e-430d-8298-ad1ed09a5528")
+		(property "Reference" "hole3"
+			(at 269.24 143.6243 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 261.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "persional_library:m3 125x300"
+			(at 261.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "梅花螺丝孔"
+			(at 261.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdfeb341-828a-4f5d-b67e-f892560ee3de")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "hole3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:C0603")
 		(at 113.03 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11339,7 +11442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -11348,7 +11451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -11357,7 +11460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -11366,7 +11469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -11384,7 +11487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -11402,7 +11505,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -11651,7 +11754,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 153.67 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11675,7 +11778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 153.67 25.4 0)
 			(effects
 				(font
@@ -11684,7 +11787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 153.67 25.4 0)
 			(effects
 				(font
@@ -11693,7 +11796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 153.67 25.4 0)
 			(effects
 				(font
@@ -11702,7 +11805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 153.67 25.4 0)
 			(effects
 				(font
@@ -11720,7 +11823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 153.67 25.4 0)
 			(effects
 				(font
@@ -11738,7 +11841,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 153.67 25.4 0)
 			(effects
 				(font
@@ -12183,72 +12286,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 128.27 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3e710ef1-059b-48b6-895e-c1714c82bfbd")
-		(property "Reference" "#PWR025"
-			(at 128.27 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 128.27 23.368 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 128.27 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f0a598e3-fb2c-4560-85e2-5c67cbb5a659")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 254 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12272,7 +12310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 254 90.17 0)
 			(effects
 				(font
@@ -12281,7 +12319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 254 90.17 0)
 			(effects
 				(font
@@ -12290,7 +12328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 254 90.17 0)
 			(effects
 				(font
@@ -12299,7 +12337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 254 90.17 0)
 			(effects
 				(font
@@ -12317,7 +12355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 254 90.17 0)
 			(effects
 				(font
@@ -12335,7 +12373,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 254 90.17 0)
 			(effects
 				(font
@@ -12716,7 +12754,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 86.36 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12740,7 +12778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -12749,7 +12787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -12758,7 +12796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -12767,7 +12805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -12785,7 +12823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -12803,7 +12841,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -13027,7 +13065,140 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "power:GND")
+		(at 242.57 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43826959-ea0a-4dfd-aa6c-37a61d78987e")
+		(property "Reference" "#PWR0163"
+			(at 242.57 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 242.57 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 242.57 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da162229-57f1-4c34-8d16-5953b2046342")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 252.73 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44d01979-d88e-4eb7-b871-947170f0b6ca")
+		(property "Reference" "#PWR0130"
+			(at 45.72 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 252.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d321bdb4-10ea-40ba-a9b9-2c869a32a2b2")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:C0603")
 		(at 153.67 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13051,7 +13222,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 153.67 86.36 0)
 			(effects
 				(font
@@ -13060,7 +13231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 153.67 86.36 0)
 			(effects
 				(font
@@ -13069,7 +13240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 153.67 86.36 0)
 			(effects
 				(font
@@ -13078,7 +13249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 153.67 86.36 0)
 			(effects
 				(font
@@ -13096,7 +13267,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 153.67 86.36 0)
 			(effects
 				(font
@@ -13114,7 +13285,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 153.67 86.36 0)
 			(effects
 				(font
@@ -13222,7 +13393,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 254 41.91 90)
+			(at 254 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13269,7 +13440,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 173.99 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13293,7 +13464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 173.99 86.36 0)
 			(effects
 				(font
@@ -13302,7 +13473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 173.99 86.36 0)
 			(effects
 				(font
@@ -13311,7 +13482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 173.99 86.36 0)
 			(effects
 				(font
@@ -13320,7 +13491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 173.99 86.36 0)
 			(effects
 				(font
@@ -13338,7 +13509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 173.99 86.36 0)
 			(effects
 				(font
@@ -13356,7 +13527,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 173.99 86.36 0)
 			(effects
 				(font
@@ -13642,6 +13813,74 @@
 			(project ""
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 107.95 255.27 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49545b0c-7442-41aa-893b-735ac34a860d")
+		(property "Reference" "#PWR0137"
+			(at 111.76 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 104.14 255.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 107.95 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f87dde9b-fcf9-46a9-a067-0a713d96c435")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -13961,6 +14200,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 52.07 171.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d75ac79-e490-483f-bb5b-9b7b659b12ac")
+		(property "Reference" "#PWR090"
+			(at 45.72 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e5cb288-86ec-4980-ab72-d99fd3d9dcdc")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 52.07 255.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4de53375-4709-4d70-a967-41cfbfc93a4d")
+		(property "Reference" "#PWR0129"
+			(at 55.88 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 48.26 255.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 52.07 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b29bd69-cfe5-4057-ab86-b6fda1c1a48e")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "persional_library:R0603")
 		(at 167.64 54.61 0)
 		(unit 1)
@@ -14134,6 +14507,72 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 128.27 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5152b37a-6632-4100-9089-1bea29983318")
+		(property "Reference" "#PWR025"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 128.27 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 128.27 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e3a2f6f-4d6f-43e2-93e5-569f0a1a6c9f")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -14579,26 +15018,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 52.07 252.73 90)
+		(lib_id "persional_library:Hole_M3-M")
+		(at 280.67 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5501aae6-9a59-45c6-83c0-d040fd97f39d")
-		(property "Reference" "#PWR0129"
-			(at 55.88 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 48.26 252.73 90)
+		(uuid "56a155eb-7566-473c-bc9d-48260349ab09")
+		(property "Reference" "hole4"
+			(at 288.29 143.6243 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14606,8 +15036,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 52.07 252.73 0)
+		(property "Value" "~"
+			(at 280.67 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "persional_library:m3 125x300"
+			(at 280.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14616,7 +15055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 252.73 0)
+			(at 280.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14624,8 +15063,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 52.07 252.73 0)
+		(property "Description" "梅花螺丝孔"
+			(at 280.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14634,12 +15073,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff451820-a45c-42a9-af5d-2555260baf3a")
+			(uuid "fb15dd33-5b4e-4a7b-8849-4e3f23be3795")
 		)
 		(instances
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0129")
+					(reference "hole4")
 					(unit 1)
 				)
 			)
@@ -14824,7 +15263,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 20.32 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14848,7 +15287,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -14857,7 +15296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -14866,7 +15305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -14875,7 +15314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -14893,7 +15332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -14911,7 +15350,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -15302,7 +15741,75 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "power:GND")
+		(at 107.95 252.73 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b5f31f8-8ecf-42f5-8383-11d425235bae")
+		(property "Reference" "#PWR0138"
+			(at 101.6 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 252.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "176355fd-47b2-442b-a81f-f4a59bafce7a")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:C0603")
 		(at 66.04 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15326,7 +15833,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 66.04 86.36 0)
 			(effects
 				(font
@@ -15335,7 +15842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 66.04 86.36 0)
 			(effects
 				(font
@@ -15344,7 +15851,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 66.04 86.36 0)
 			(effects
 				(font
@@ -15353,7 +15860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 66.04 86.36 0)
 			(effects
 				(font
@@ -15371,7 +15878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 66.04 86.36 0)
 			(effects
 				(font
@@ -15389,7 +15896,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 66.04 86.36 0)
 			(effects
 				(font
@@ -15546,7 +16053,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 80.01 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15570,7 +16077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 80.01 102.87 0)
 			(effects
 				(font
@@ -15579,7 +16086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 80.01 102.87 0)
 			(effects
 				(font
@@ -15588,7 +16095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 80.01 102.87 0)
 			(effects
 				(font
@@ -15597,7 +16104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 80.01 102.87 0)
 			(effects
 				(font
@@ -15615,7 +16122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 80.01 102.87 0)
 			(effects
 				(font
@@ -15633,7 +16140,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 80.01 102.87 0)
 			(effects
 				(font
@@ -15652,6 +16159,72 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 128.27 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e125a6f-1929-4b51-b58b-120beb033995")
+		(property "Reference" "#PWR065"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 128.27 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 128.27 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2c00ae7-624d-4288-a276-cc779e495e23")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -17095,17 +17668,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 80.01 171.45 90)
+		(lib_id "power:GND")
+		(at 135.89 252.73 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "70a2f318-76f6-4cfd-83fc-6b9cf680eb5c")
-		(property "Reference" "#PWR093"
-			(at 83.82 171.45 0)
+		(uuid "73754904-b674-4195-98b6-febb283c66d9")
+		(property "Reference" "#PWR0142"
+			(at 129.54 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17113,17 +17687,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 76.2 171.45 90)
+		(property "Value" "GND"
+			(at 132.08 252.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 171.45 0)
+			(at 135.89 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17132,7 +17706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 171.45 0)
+			(at 135.89 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17140,8 +17714,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 80.01 171.45 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17150,12 +17724,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c6e495ce-f6c9-4acb-98ac-7d68a5add6ed")
+			(uuid "ff992901-6712-4ba8-8847-4835fd853fdd")
 		)
 		(instances
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR093")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -17340,7 +17914,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 163.83 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17364,7 +17938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17373,7 +17947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17382,7 +17956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17391,7 +17965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17409,7 +17983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17427,7 +18001,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17452,7 +18026,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 76.2 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17476,7 +18050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -17485,7 +18059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -17494,7 +18068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -17503,7 +18077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -17521,7 +18095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -17539,7 +18113,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -17564,7 +18138,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 25.4 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17588,7 +18162,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 25.4 86.36 0)
 			(effects
 				(font
@@ -17597,7 +18171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 25.4 86.36 0)
 			(effects
 				(font
@@ -17606,7 +18180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 25.4 86.36 0)
 			(effects
 				(font
@@ -17615,7 +18189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 25.4 86.36 0)
 			(effects
 				(font
@@ -17633,7 +18207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 25.4 86.36 0)
 			(effects
 				(font
@@ -17651,7 +18225,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 25.4 86.36 0)
 			(effects
 				(font
@@ -17676,7 +18250,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 81.28 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17700,7 +18274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -17709,7 +18283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -17718,7 +18292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -17727,7 +18301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -17745,7 +18319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -17763,7 +18337,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -17782,73 +18356,6 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 80.01 228.6 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79264ecf-9974-44c4-8a94-aaaf7d2a136e")
-		(property "Reference" "#PWR0118"
-			(at 73.66 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.2 228.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7c3ab61b-156a-4467-9f5f-a1eb03919edc")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -17970,6 +18477,142 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "CN16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 107.95 198.12 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c8aba8d-8285-4f9b-850c-5652ba31683f")
+		(property "Reference" "#PWR0106"
+			(at 101.6 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3271a2a-510b-432c-9ff9-bbd6afbf9c55")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 80.01 228.6 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cffcfce-9b16-4264-954e-4a2186133ea1")
+		(property "Reference" "#PWR0117"
+			(at 83.82 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 76.2 228.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 80.01 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1767f866-09d0-4637-a42c-a6b671ce624b")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -18222,7 +18865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 76.2 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18246,7 +18889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 76.2 25.4 0)
 			(effects
 				(font
@@ -18255,7 +18898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 76.2 25.4 0)
 			(effects
 				(font
@@ -18264,7 +18907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 76.2 25.4 0)
 			(effects
 				(font
@@ -18273,7 +18916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 76.2 25.4 0)
 			(effects
 				(font
@@ -18291,7 +18934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 76.2 25.4 0)
 			(effects
 				(font
@@ -18309,7 +18952,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 76.2 25.4 0)
 			(effects
 				(font
@@ -18598,7 +19241,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 158.75 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18622,7 +19265,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 158.75 86.36 0)
 			(effects
 				(font
@@ -18631,7 +19274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 158.75 86.36 0)
 			(effects
 				(font
@@ -18640,7 +19283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 158.75 86.36 0)
 			(effects
 				(font
@@ -18649,7 +19292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 158.75 86.36 0)
 			(effects
 				(font
@@ -18667,7 +19310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 158.75 86.36 0)
 			(effects
 				(font
@@ -18685,7 +19328,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 158.75 86.36 0)
 			(effects
 				(font
@@ -19152,7 +19795,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 167.64 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19176,7 +19819,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 167.64 102.87 0)
 			(effects
 				(font
@@ -19185,7 +19828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 167.64 102.87 0)
 			(effects
 				(font
@@ -19194,7 +19837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 167.64 102.87 0)
 			(effects
 				(font
@@ -19203,7 +19846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 167.64 102.87 0)
 			(effects
 				(font
@@ -19221,7 +19864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 167.64 102.87 0)
 			(effects
 				(font
@@ -19239,7 +19882,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 167.64 102.87 0)
 			(effects
 				(font
@@ -19324,6 +19967,71 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDC")
+		(at 259.08 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ba4e7c2-144a-4655-812f-9b03163a029c")
+		(property "Reference" "#PWR0159"
+			(at 259.08 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VIN"
+			(at 259.08 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 259.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "000ec52f-d8eb-4d0b-8229-ad735c435e69")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0159")
 					(unit 1)
 				)
 			)
@@ -19694,73 +20402,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 135.89 252.73 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90f51147-d0db-41bb-be9f-466cf1e03e31")
-		(property "Reference" "#PWR0141"
-			(at 139.7 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 132.08 252.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 135.89 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c645efb-6b3c-4667-84ec-4ff195860e5f")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0141")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "persional_library:Connect_GH1.25_2P_Horizontal")
 		(at 140.97 172.72 0)
 		(unit 1)
@@ -19882,7 +20523,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 107.95 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19906,7 +20547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 107.95 25.4 0)
 			(effects
 				(font
@@ -19915,7 +20556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 107.95 25.4 0)
 			(effects
 				(font
@@ -19924,7 +20565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 107.95 25.4 0)
 			(effects
 				(font
@@ -19933,7 +20574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 107.95 25.4 0)
 			(effects
 				(font
@@ -19951,7 +20592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 107.95 25.4 0)
 			(effects
 				(font
@@ -19969,7 +20610,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 107.95 25.4 0)
 			(effects
 				(font
@@ -19988,6 +20629,74 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 107.95 200.66 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "929b49a2-776f-4108-9da4-0653407ed907")
+		(property "Reference" "#PWR0105"
+			(at 111.76 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 104.14 200.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 107.95 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cc0a2fd-a447-4166-b387-014ede661dcc")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -20370,7 +21079,73 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "power:+1V8")
+		(at 40.64 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "951f99d1-54ea-4303-bc1f-6a4041fc915b")
+		(property "Reference" "#PWR045"
+			(at 40.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 40.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 40.64 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e212d5a5-821e-40bf-8080-5986ee1dd371")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:C0603")
 		(at 173.99 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20394,7 +21169,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 173.99 25.4 0)
 			(effects
 				(font
@@ -20403,7 +21178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 173.99 25.4 0)
 			(effects
 				(font
@@ -20412,7 +21187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 173.99 25.4 0)
 			(effects
 				(font
@@ -20421,7 +21196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 173.99 25.4 0)
 			(effects
 				(font
@@ -20439,7 +21214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 173.99 25.4 0)
 			(effects
 				(font
@@ -20457,7 +21232,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 173.99 25.4 0)
 			(effects
 				(font
@@ -21096,74 +21871,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 52.07 173.99 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b1fb643-b5ab-4a31-adc9-40b29d3ddda2")
-		(property "Reference" "#PWR090"
-			(at 45.72 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 173.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3100c548-9f69-4462-b074-5534f0a6c65f")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 25.4 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21187,7 +21895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -21196,7 +21904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -21205,7 +21913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -21214,7 +21922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -21232,7 +21940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -21250,7 +21958,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -21269,6 +21977,72 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bcc4e20-0edf-4199-af43-ef8b1e8c47a3")
+		(property "Reference" "#PWR0162"
+			(at 222.25 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c025524-453d-402b-95d1-ce268986cad5")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0162")
 					(unit 1)
 				)
 			)
@@ -21855,7 +22629,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 81.28 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21879,7 +22653,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 81.28 86.36 0)
 			(effects
 				(font
@@ -21888,7 +22662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 81.28 86.36 0)
 			(effects
 				(font
@@ -21897,7 +22671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 81.28 86.36 0)
 			(effects
 				(font
@@ -21906,7 +22680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 81.28 86.36 0)
 			(effects
 				(font
@@ -21924,7 +22698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 81.28 86.36 0)
 			(effects
 				(font
@@ -21942,7 +22716,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 81.28 86.36 0)
 			(effects
 				(font
@@ -22629,73 +23403,6 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+1V8")
-		(at 107.95 198.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b31527f9-795d-40c8-9acc-2ff85ba8b04b")
-		(property "Reference" "#PWR0105"
-			(at 111.76 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+1V8"
-			(at 104.14 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 107.95 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6259bddb-7e90-449e-81db-1ab952bead24")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -23653,6 +24360,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 135.89 200.66 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c424e5b4-17b3-40d3-b095-7c0497f2af82")
+		(property "Reference" "#PWR0109"
+			(at 139.7 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 132.08 200.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 135.89 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "beea6b77-0818-4043-b641-fbeb4df18b0f")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "persional_library:R0603")
 		(at 80.01 110.49 0)
 		(unit 1)
@@ -23765,7 +24540,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 168.91 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23789,7 +24564,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -23798,7 +24573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -23807,7 +24582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -23816,7 +24591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -23834,7 +24609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -23852,7 +24627,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 168.91 86.36 0)
 			(effects
 				(font
@@ -23871,6 +24646,74 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 226.06 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7eec04f-cabc-4842-988d-2d7041c519a0")
+		(property "Reference" "#PWR0118"
+			(at 73.66 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 226.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1080fc31-d9e5-434d-8c58-87a70054ab79")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -24122,6 +24965,73 @@
 		)
 	)
 	(symbol
+		(lib_id "persional_library:Hole_M3-M")
+		(at 222.25 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbf55a4c-cc26-4049-bed4-d5141b7eb05d")
+		(property "Reference" "hole1"
+			(at 229.87 143.6243 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "persional_library:m3 125x300"
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "梅花螺丝孔"
+			(at 222.25 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da4fcc06-3a8b-42bf-99a8-cf64611cfb5e")
+		)
+		(instances
+			(project ""
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "hole1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "persional_library:R0603")
 		(at 80.01 125.73 0)
 		(unit 1)
@@ -24234,7 +25144,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 167.64 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24258,7 +25168,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 167.64 41.91 0)
 			(effects
 				(font
@@ -24267,7 +25177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 167.64 41.91 0)
 			(effects
 				(font
@@ -24276,7 +25186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 167.64 41.91 0)
 			(effects
 				(font
@@ -24285,7 +25195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 167.64 41.91 0)
 			(effects
 				(font
@@ -24303,7 +25213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 167.64 41.91 0)
 			(effects
 				(font
@@ -24321,7 +25231,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 167.64 41.91 0)
 			(effects
 				(font
@@ -24346,7 +25256,74 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:Hole_M3-M")
+		(at 242.57 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf713129-355c-45ca-958e-4eae7b6fcc46")
+		(property "Reference" "hole2"
+			(at 250.19 143.6243 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 242.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "persional_library:m3 125x300"
+			(at 242.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "梅花螺丝孔"
+			(at 242.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89be925b-6251-4df2-854f-836e53a358aa")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "hole2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:C0603")
 		(at 86.36 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24370,7 +25347,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 86.36 25.4 0)
 			(effects
 				(font
@@ -24379,7 +25356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 86.36 25.4 0)
 			(effects
 				(font
@@ -24388,7 +25365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 86.36 25.4 0)
 			(effects
 				(font
@@ -24397,7 +25374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 86.36 25.4 0)
 			(effects
 				(font
@@ -24415,7 +25392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 86.36 25.4 0)
 			(effects
 				(font
@@ -24433,7 +25410,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 86.36 25.4 0)
 			(effects
 				(font
@@ -24458,7 +25435,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 163.83 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24482,7 +25459,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -24491,7 +25468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -24500,7 +25477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -24509,7 +25486,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -24527,7 +25504,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -24545,7 +25522,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -24676,6 +25653,74 @@
 			(project ""
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 171.45 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d250865b-b359-4295-b858-6a35d996979c")
+		(property "Reference" "#PWR094"
+			(at 73.66 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a4d43aa-7d18-49f7-a45a-9300c6fe8e43")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -25068,17 +26113,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 80.01 226.06 90)
+		(lib_id "power:GND")
+		(at 135.89 198.12 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dd2d56ed-bcd8-4353-b4d5-036ba9a27411")
-		(property "Reference" "#PWR0117"
-			(at 83.82 226.06 0)
+		(uuid "dd06bc71-3303-4fd6-bf15-2be76bcad67d")
+		(property "Reference" "#PWR0110"
+			(at 129.54 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25086,17 +26132,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 76.2 226.06 90)
+		(property "Value" "GND"
+			(at 132.08 198.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 226.06 0)
+			(at 135.89 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25105,7 +26151,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 226.06 0)
+			(at 135.89 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25113,8 +26159,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 80.01 226.06 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25123,12 +26169,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a4d1f496-cb11-4f4e-9fe9-de520838c82d")
+			(uuid "734658d6-fff1-49bf-9c11-0a6379c816c6")
 		)
 		(instances
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0117")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -25534,16 +26580,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 173.99 270)
+		(at 261.62 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e8207d4b-b3dd-47af-99e5-bee6a5a5d77c")
-		(property "Reference" "#PWR094"
-			(at 73.66 173.99 0)
+		(uuid "e959f110-4cec-45d2-8834-06cfdf22a3d4")
+		(property "Reference" "#PWR0164"
+			(at 261.62 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25552,16 +26598,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 173.99 90)
+			(at 261.62 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 173.99 0)
+			(at 261.62 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25570,7 +26615,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 173.99 0)
+			(at 261.62 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25579,7 +26624,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 173.99 0)
+			(at 261.62 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25588,12 +26633,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "57376c6c-9a64-4bcf-9ce9-7454c258910f")
+			(uuid "10d84f9a-6b34-4f87-a8e5-af30485abb0e")
 		)
 		(instances
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR094")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -26098,7 +27143,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 80.01 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26122,7 +27167,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 80.01 41.91 0)
 			(effects
 				(font
@@ -26131,7 +27176,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 80.01 41.91 0)
 			(effects
 				(font
@@ -26140,7 +27185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 80.01 41.91 0)
 			(effects
 				(font
@@ -26149,7 +27194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 80.01 41.91 0)
 			(effects
 				(font
@@ -26167,7 +27212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 80.01 41.91 0)
 			(effects
 				(font
@@ -26185,7 +27230,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 80.01 41.91 0)
 			(effects
 				(font
@@ -26276,7 +27321,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 113.03 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26300,7 +27345,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 113.03 25.4 0)
 			(effects
 				(font
@@ -26309,7 +27354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 113.03 25.4 0)
 			(effects
 				(font
@@ -26318,7 +27363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 113.03 25.4 0)
 			(effects
 				(font
@@ -26327,7 +27372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 113.03 25.4 0)
 			(effects
 				(font
@@ -26345,7 +27390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 113.03 25.4 0)
 			(effects
 				(font
@@ -26363,7 +27408,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 113.03 25.4 0)
 			(effects
 				(font
@@ -26455,71 +27500,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
-		(at 248.92 35.56 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "efb86de2-2fbb-47c5-8efa-242f5cefb72c")
-		(property "Reference" "#PWR0159"
-			(at 248.92 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VIN"
-			(at 247.396 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 248.92 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "542ed6cb-197c-4265-9c2f-5f449deeb3fa")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0159")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 85.09 118.11 90)
 		(unit 1)
@@ -26587,7 +27567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 71.12 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26611,7 +27591,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 71.12 25.4 0)
 			(effects
 				(font
@@ -26620,7 +27600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 71.12 25.4 0)
 			(effects
 				(font
@@ -26629,7 +27609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 71.12 25.4 0)
 			(effects
 				(font
@@ -26638,7 +27618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 71.12 25.4 0)
 			(effects
 				(font
@@ -26656,7 +27636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 71.12 25.4 0)
 			(effects
 				(font
@@ -26674,7 +27654,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 71.12 25.4 0)
 			(effects
 				(font
@@ -26805,73 +27785,6 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 135.89 198.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f607259f-4dbf-42a6-ad01-7638e6662989")
-		(property "Reference" "#PWR0109"
-			(at 139.7 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 132.08 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1cbe65c6-8e13-40bb-94e2-e37f223799e6")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -27314,7 +28227,7 @@
 		)
 	)
 	(symbol
-		(lib_id "persional_library:C0805")
+		(lib_id "persional_library:C0603")
 		(at 66.04 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27338,7 +28251,7 @@
 				)
 			)
 		)
-		(property "Footprint" "persional_library:C0805"
+		(property "Footprint" "persional_library:C0603"
 			(at 66.04 25.4 0)
 			(effects
 				(font
@@ -27347,7 +28260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL21A226MAQNNNE/46786.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
 			(at 66.04 25.4 0)
 			(effects
 				(font
@@ -27356,7 +28269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;"
+		(property "Description" "容值:1uF;精度:±10%;额定电压:50V;温度系数:X5R;"
 			(at 66.04 25.4 0)
 			(effects
 				(font
@@ -27365,7 +28278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "CL21A226MAQNNNE"
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
 			(at 66.04 25.4 0)
 			(effects
 				(font
@@ -27383,7 +28296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C45783"
+		(property "Supplier Part" "C15849"
 			(at 66.04 25.4 0)
 			(effects
 				(font
@@ -27401,7 +28314,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Name" "22uF ±20% 25V"
+		(property "LCSC Part Name" "1uF ±10% 50V"
 			(at 66.04 25.4 0)
 			(effects
 				(font
@@ -27420,73 +28333,6 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 135.89 200.66 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f90f375e-ee3f-4210-beed-3a0747d33a29")
-		(property "Reference" "#PWR0110"
-			(at 129.54 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 132.08 200.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0567b9b-18c0-452c-939c-04d8ec8cfdba")
-		)
-		(instances
-			(project "QuietLDO"
-				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
-					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -27903,6 +28749,74 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 80.01 173.99 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fed120af-af23-4b96-8152-3c9cf458b666")
+		(property "Reference" "#PWR093"
+			(at 83.82 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 76.2 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 80.01 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab0829f7-f602-4db8-b1c3-8f729df802a8")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
