@@ -8,9 +8,68 @@
 
 <img src="../Bitmap/TPS7A47%E6%A8%A1%E5%9D%97.png" alt="TPS7A47模块" style="zoom:50%;" />
 
-<div align="center">TPS7A47模块</div>
+<div align="center">图1 TPS7A47模块</div>
 
-这一个基本的TPS7A47模块,在实际使用时,需要考虑右侧八个电阻的有无.查找附录,我们可以发现
+这一个基本的TPS7A47模块,在实际使用时,需要考虑右侧八个电阻的有无.在其配置中他有1.4V到20.5V的输出,步长为0.1V,计算公式如下:V_
+$$
+V_{out} = 1.4V + a_0V_{0.1} + a_1 V_{0.2}+ a_2 V_{0.4}+ a_3 V_{0.8}+ a_4 V_{1.6}+ a_5 V_{3.2}+ a_6 V_{6.4}+ a_7 V_{6.4}
+$$
+但实际上我们在实际需求时只需要6V以下的电压,过大的电压在实际中并不适合LDO,超过7V的输入在实际使用中会使得该电路发热多大,于是我们采用MP2236作为前级DCDC降压.
+
+<img src="../Bitmap/MP2236%E6%A8%A1%E5%9D%97.png" alt="MP2236模块" style="zoom: 33%;" />
+
+<div align="center">图2 MP2236模块</div>
+
+在PCB设计主要注意MP2236的大电流布局和TPS7A47的电源布局.通过PCB ToolKit,我们可以计算出以下几个数据:
+
+| 导线宽度(mils) | 最大电流(A) |
+| :------------: | :---------: |
+|       10       |   1.2927    |
+|       40       |   3.2097    |
+|       60       |   4.1041    |
+|      120       |   6.1992    |
+
+可以发现在实际中我们过6A的上限电流是实现不了的,当我们可以使用40mils+铺铜的布线方式增大电流的上限.
+
+<div style="display: flex; justify-content: space-between; margin: 20px 0;">
+  <img src="../Bitmap/QuietLDO_PCB顶层.png" alt="QuietLDO_PCB顶层" style="width: 48%; border: 1px solid #ddd; border-radius: 5px;">
+  <img src="../Bitmap/QuietLDO_PCB底层.png" alt="QuietLDO_PCBd底层" style="width: 48%; border: 1px solid #ddd; border-radius: 5px;">
+</div>
+
+<div align="center">图3 QuietPCB设计</div>
+
+<div style="background-color: #f8f9fa; padding: 30px; text-align: center; margin-top: 20px; border-radius: 8px;">
+    <div style="color: #666; margin-bottom: 15px;">PCB尺寸示意图</div>
+    <div style="display: inline-block; background-color: #e8f0fe; padding: 40px 60px; border: 2px solid #2c5aa0; border-radius: 4px;">
+      <div style="color: #2c5aa0; font-weight: bold; font-size: 24px;">100 × 50 mm</div>
+    </div>
+    <div style="color: #666; margin-top: 15px;">长×宽 (单位: mm)</div>
+  </div>
+
+
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="color: #666; margin-bottom: 5px;">安装孔直径</div>
+      <div style="font-size: 18px; font-weight: bold; color: #333;">3.2 mm</div>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <div style="color: #666; margin-bottom: 5px;">安装孔数量</div>
+      <div style="font-size: 18px; font-weight: bold; color: #333;">4个</div>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <div style="color: #666; margin-bottom: 5px;">板厚</div>
+      <div style="font-size: 18px; font-weight: bold; color: #333;">1.6 mm</div>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <div style="color: #666; margin-bottom: 5px;">安装孔位置</div>
+      <div style="font-size: 18px; font-weight: bold; color: #333;">四角对称</div>
+    </div>
+  </div>
+### 使用注意
+
+- 在焊接过程中需注意5V,3V3和1V8的电阻焊接问题,可以阅读原理图,对于NC的电阻不进行焊接,也可以参考PCB,标有圆圈的电阻需要焊接
+- 在使用前请尽可能先估计电压大小和电流电小,输出端建议每路(4个GH1.25)不超过1A,输出总电流不超过4A,输入电压尽可能控制在7.4V-12V
+- 用户需采用4个M3的铜柱踮起,尽可能避免该PCB处于射频信号的附近或不必要接触
 
 ### 附录:可调端所有可能输出
 
