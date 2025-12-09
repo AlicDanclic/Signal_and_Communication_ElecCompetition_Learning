@@ -1997,6 +1997,209 @@
 				)
 			)
 		)
+		(symbol "persional_library:LED0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "persional_library:LED0603-RD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/LTST-C190KSKT/136371.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "发光颜色:黄色;正向压降(Vf):2.1V;功率:75mW;正向电流:20mA;波长:584.5nm~597nm;二极管配置:-;透镜颜色:无色透明透镜;色温:-;发光强度:104mcd;发光角度:130°;载带方式:-;工作温度:-30°C~+85°C;"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "LTST-C190KSKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "LITEON(光宝)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "C125095"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part Name" "黄灯"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED0603_1_0"
+				(polyline
+					(pts
+						(xy -2.032 1.524) (xy -3.81 3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.54) (xy -2.794 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 3.302) (xy -2.794 2.794) (xy -2.794 2.794) (xy -3.302 2.286) (xy -3.302 2.286) (xy -3.81 3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 4.318) (xy -1.778 3.81) (xy -1.778 3.81) (xy -2.286 3.302) (xy -2.286 3.302) (xy -2.794 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.524) (xy -1.27 0) (xy -1.27 0) (xy 1.27 1.778) (xy 1.27 1.778) (xy 1.27 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "-"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "+"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "persional_library:R0603"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -9812,6 +10015,119 @@
 		)
 	)
 	(symbol
+		(lib_id "persional_library:R0603")
+		(at 302.26 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24f6c2df-1bd0-4d72-bb0a-3aaf27725e68")
+		(property "Reference" "R28"
+			(at 302.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:R0603"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/0603WAF1002T5E/26547.html"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "电阻类型:厚膜电阻;阻值:10kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/°C;"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C25804"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "厚膜电阻 10kΩ ±1% 100mW"
+			(at 302.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "34693893-ede0-498d-9d6f-706ba9d628b3")
+		)
+		(pin "1"
+			(uuid "2da251b9-4a1d-4645-9b63-32f36bf7837f")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDC")
 		(at 213.36 24.13 0)
 		(unit 1)
@@ -10191,7 +10507,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 245.11 107.95 0)
+		(at 245.11 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10200,7 +10516,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b479567-10d7-4295-81dd-440e732e34db")
 		(property "Reference" "#PWR0154"
-			(at 245.11 114.3 0)
+			(at 251.46 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10209,11 +10525,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 245.11 113.03 0)
+			(at 248.92 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -10449,6 +10766,119 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:R0603")
+		(at 302.26 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e18b600-8394-44e2-8c9d-c62e4908a438")
+		(property "Reference" "R26"
+			(at 302.26 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:R0603"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/0603WAF1002T5E/26547.html"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "电阻类型:厚膜电阻;阻值:10kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/°C;"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C25804"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "厚膜电阻 10kΩ ±1% 100mW"
+			(at 302.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "51e7f71f-de52-4df4-98d8-11b779359703")
+		)
+		(pin "1"
+			(uuid "2a9d5fac-f6b5-4213-871f-baafd44381c3")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -10882,6 +11312,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 317.5 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30412229-c3ca-40c0-97da-2147179f6cac")
+		(property "Reference" "#PWR0166"
+			(at 323.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 321.31 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94d6bf78-432d-46db-a7d7-2b72a904c9f7")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
@@ -11981,6 +12478,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "CN9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 317.5 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b24a4f6-1fb9-4535-9f63-18cc5e6c2bfb")
+		(property "Reference" "#PWR0167"
+			(at 323.85 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 321.31 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54ef067f-2358-4716-8c9a-9f6ebe84c485")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0167")
 					(unit 1)
 				)
 			)
@@ -13125,6 +13689,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR0163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 297.18 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43eedb3d-216b-4f7a-8f8d-9d7b212f8557")
+		(property "Reference" "#PWR0172"
+			(at 300.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 293.37 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 297.18 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba85f6bf-b56d-49c9-86c6-5362ff4a3dce")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -14573,6 +15204,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 317.5 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5185df29-46c0-4dc8-b3aa-2641b28b417c")
+		(property "Reference" "#PWR0168"
+			(at 323.85 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 321.31 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6ad7d42-2806-42c1-b1d0-d49934087af5")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -17107,6 +17805,119 @@
 		)
 	)
 	(symbol
+		(lib_id "persional_library:R0603")
+		(at 302.26 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67ae6c7a-1d9c-4d42-9e1b-0be91017c935")
+		(property "Reference" "R25"
+			(at 302.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:R0603"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/0603WAF1002T5E/26547.html"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "电阻类型:厚膜电阻;阻值:10kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/°C;"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C25804"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "厚膜电阻 10kΩ ±1% 100mW"
+			(at 302.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5b692c7d-0b2c-40bb-bfae-07ae582361ac")
+		)
+		(pin "1"
+			(uuid "cd35bacf-5570-4285-ae5c-1981fca0045e")
+		)
+		(instances
+			(project ""
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "persional_library:Connect_GH1.25_2P_Horizontal")
 		(at 85.09 254 0)
 		(unit 1)
@@ -18686,6 +19497,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 297.18 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e7df2da-aebc-4b41-b3f7-c6ab717594d3")
+		(property "Reference" "#PWR0170"
+			(at 300.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 293.37 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 297.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c2ddc50-45b0-4e3e-9055-cf2d997d5729")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0170")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "persional_library:C0805")
 		(at 238.76 90.17 270)
 		(unit 1)
@@ -18859,6 +19737,119 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:LED0603")
+		(at 312.42 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81408db9-74d1-4ead-a27d-ab71034114c8")
+		(property "Reference" "LED2"
+			(at 313.69 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 313.69 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:LED0603-RD"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/LTST-C190KSKT/136371.html"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "发光颜色:黄色;正向压降(Vf):2.1V;功率:75mW;正向电流:20mA;波长:584.5nm~597nm;二极管配置:-;透镜颜色:无色透明透镜;色温:-;发光强度:104mcd;发光角度:130°;载带方式:-;工作温度:-30°C~+85°C;"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "LTST-C190KSKT"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "LITEON(光宝)"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C125095"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "黄灯"
+			(at 312.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13654f12-9384-408d-b59b-ea0f6ee2314b")
+		)
+		(pin "2"
+			(uuid "e8ac751d-2eff-4c64-b8de-b22cf58e9e91")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "LED2")
 					(unit 1)
 				)
 			)
@@ -20032,6 +21023,119 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR0159")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:LED0603")
+		(at 312.42 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d6d9bbf-17fc-4d7d-b084-4cd1a9381884")
+		(property "Reference" "LED3"
+			(at 313.69 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 313.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:LED0603-RD"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/LTST-C190KSKT/136371.html"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "发光颜色:黄色;正向压降(Vf):2.1V;功率:75mW;正向电流:20mA;波长:584.5nm~597nm;二极管配置:-;透镜颜色:无色透明透镜;色温:-;发光强度:104mcd;发光角度:130°;载带方式:-;工作温度:-30°C~+85°C;"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "LTST-C190KSKT"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "LITEON(光宝)"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C125095"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "黄灯"
+			(at 312.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95589cdb-3b1d-461a-a4e2-70318b175623")
+		)
+		(pin "2"
+			(uuid "7d3537f2-918a-4696-bac5-54926dfdeec5")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "LED3")
 					(unit 1)
 				)
 			)
@@ -22049,6 +23153,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 297.18 93.98 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bcd538f-42d6-4021-a387-57cf64ea5fe0")
+		(property "Reference" "#PWR0171"
+			(at 300.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 293.37 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 297.18 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fd4c109-ea30-494c-b179-449e783d3094")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0171")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 63.5 39.37 270)
 		(unit 1)
@@ -23409,6 +24581,232 @@
 		)
 	)
 	(symbol
+		(lib_id "persional_library:LED0603")
+		(at 312.42 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2a4f3b2-d56a-492a-9182-3f5a98d6e079")
+		(property "Reference" "LED4"
+			(at 313.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 313.69 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:LED0603-RD"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/LTST-C190KSKT/136371.html"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "发光颜色:黄色;正向压降(Vf):2.1V;功率:75mW;正向电流:20mA;波长:584.5nm~597nm;二极管配置:-;透镜颜色:无色透明透镜;色温:-;发光强度:104mcd;发光角度:130°;载带方式:-;工作温度:-30°C~+85°C;"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "LTST-C190KSKT"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "LITEON(光宝)"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C125095"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "黄灯"
+			(at 312.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd2ea228-6050-4164-a046-c79202abdffb")
+		)
+		(pin "2"
+			(uuid "e21f4d77-a02f-4447-995f-91e22c755d48")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:R0603")
+		(at 302.26 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b49e20cb-5a53-445a-8d19-e4ed3b52a02a")
+		(property "Reference" "R27"
+			(at 302.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:R0603"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/0603WAF1002T5E/26547.html"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "电阻类型:厚膜电阻;阻值:10kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/°C;"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C25804"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "厚膜电阻 10kΩ ±1% 100mW"
+			(at 302.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b1e59d20-631e-455e-99cf-e96f4d671f06")
+		)
+		(pin "1"
+			(uuid "94e3124d-f46a-4fd4-9570-9d01d3dac635")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 163.83 81.28 0)
 		(unit 1)
@@ -23602,6 +25000,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 297.18 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb659573-2b34-43c2-984a-710cc2272379")
+		(property "Reference" "#PWR0173"
+			(at 300.99 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 293.37 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 297.18 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0014ce1-b58a-4f31-8907-8ceadd6d3124")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -25981,6 +27446,119 @@
 		)
 	)
 	(symbol
+		(lib_id "persional_library:LED0603")
+		(at 312.42 73.66 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbc14228-e61b-4c6e-b672-457ec5c98bef")
+		(property "Reference" "LED1"
+			(at 313.69 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 313.69 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:LED0603-RD"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/LTST-C190KSKT/136371.html"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "发光颜色:黄色;正向压降(Vf):2.1V;功率:75mW;正向电流:20mA;波长:584.5nm~597nm;二极管配置:-;透镜颜色:无色透明透镜;色温:-;发光强度:104mcd;发光角度:130°;载带方式:-;工作温度:-30°C~+85°C;"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "LTST-C190KSKT"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "LITEON(光宝)"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C125095"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "黄灯"
+			(at 312.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "494e57bd-c236-4b29-b398-0db313097033")
+		)
+		(pin "2"
+			(uuid "100fa236-e7c8-4e0a-a5b9-288fd197c651")
+		)
+		(instances
+			(project ""
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 59.69 179.07 0)
 		(unit 1)
@@ -26573,6 +28151,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 546.1 16.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e82aa782-a77b-4b72-8c2e-09e1eb1a33aa")
+		(property "Reference" "#PWR0174"
+			(at 552.45 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 549.91 16.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 546.1 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 546.1 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 546.1 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01e68f72-fe52-4ee6-8637-4526c936952a")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -28333,6 +29978,73 @@
 			(project "QuietLDO"
 				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 317.5 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9d2f599-5107-4c48-a1e2-5bacbee97908")
+		(property "Reference" "#PWR0169"
+			(at 323.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 321.31 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "775f7412-3d4b-4850-9428-3255e72d4c12")
+		)
+		(instances
+			(project "QuietLDO"
+				(path "/917fca12-fdaf-4dee-9442-a0ce1cb7b110"
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)

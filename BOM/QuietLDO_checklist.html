@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM物料清单检查工具</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .header .file-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .stat-card h3 {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .stat-value {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card.total {
+            border-top: 5px solid #3498db;
+        }
+        
+        .stat-card.checked {
+            border-top: 5px solid #2ecc71;
+        }
+        
+        .stat-card.progress {
+            border-top: 5px solid #f39c12;
+        }
+        
+        .stat-card.missing {
+            border-top: 5px solid #e74c3c;
+        }
+        
+        .stat-card.ordered {
+            border-top: 5px solid #9b59b6;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+        
+        .table-container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #e9ecef;
+            position: sticky;
+            top: 0;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            color: #495057;
+            vertical-align: top;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .status-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .status-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s;
+            min-width: 70px;
+            text-align: center;
+        }
+        
+        .status-btn.unchecked {
+            background: #ecf0f1;
+            color: #7f8c8d;
+        }
+        
+        .status-btn.unchecked:hover, .status-btn.unchecked.active {
+            background: #bdc3c7;
+            color: white;
+        }
+        
+        .status-btn.checked {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+        
+        .status-btn.checked:hover, .status-btn.checked.active {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .status-btn.missing {
+            background: #fdedec;
+            color: #e74c3c;
+        }
+        
+        .status-btn.missing:hover, .status-btn.missing.active {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .status-btn.ordered {
+            background: #f4ecf7;
+            color: #9b59b6;
+        }
+        
+        .status-btn.ordered:hover, .status-btn.ordered.active {
+            background: #9b59b6;
+            color: white;
+        }
+        
+        .qty-badge {
+            background: #3498db;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        
+        .reference-cell {
+            font-size: 0.9em;
+            line-height: 1.4;
+            max-width: 200px;
+            word-break: break-word;
+        }
+        
+        .value-cell {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .manufacturer-tooltip {
+            position: relative;
+            cursor: help;
+        }
+        
+        .manufacturer-tooltip:hover::after {
+            content: attr(data-full);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c3e50;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            white-space: nowrap;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .control-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2980b9 0%, #1c6ea4 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #27ae60 0%, #219653 100%);
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: linear-gradient(135deg, #219653 0%, #1e8449 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 150, 83, 0.4);
+        }
+        
+        .btn-warning {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+        }
+        
+        .btn-warning:hover {
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+        }
+        
+        .btn-danger {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(192, 57, 43, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        
+        .search-box {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .search-box input:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .control-panel {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .control-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .legend {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+                font-size: 0.9em;
+            }
+            
+            .status-btn {
+                min-width: 60px;
+                font-size: 12px;
+                padding: 6px 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .table-container {
+                padding: 15px;
+                overflow-x: auto;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 BOM物料清单检查工具</h1>
+            <p>按分组检查物料，单击按钮标记状态</p>
+            <div class="file-info">
+                <p><strong>数据源:</strong> QuietLDO.csv | <strong>生成时间:</strong> 2025-12-09 20:54:19</p>
+                <p><strong>分组数量:</strong> 22 | <strong>总需求量:</strong> 107</p>
+            </div>
+        </div>
+        
+        <div class="control-panel">
+            <div>
+                <h3>状态标记控制</h3>
+                <p style="color: #7f8c8d; font-size: 0.9em;">批量标记状态或保存进度</p>
+            </div>
+            <div class="control-buttons">
+                <button class="btn btn-success" onclick="markAll('checked')">
+                    <span>✅ 全部已检查</span>
+                </button>
+                <button class="btn btn-warning" onclick="markAll('unchecked')">
+                    <span>🔄 全部未检查</span>
+                </button>
+                <button class="btn btn-danger" onclick="markAll('missing')">
+                    <span>❌ 全部缺货</span>
+                </button>
+                <button class="btn btn-primary" onclick="markAll('ordered')">
+                    <span>📦 全部已订购</span>
+                </button>
+                <button class="btn btn-primary" onclick="saveProgress()">
+                    <span>💾 保存进度</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-card total">
+                <h3>分组数量</h3>
+                <div class="stat-value">22</div>
+                <p>个分组</p>
+            </div>
+            
+            <div class="stat-card checked">
+                <h3>已检查</h3>
+                <div class="stat-value">0</div>
+                <p>0% 完成</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="stat-card missing">
+                <h3>缺货</h3>
+                <div class="stat-value">0</div>
+                <p>需要采购</p>
+            </div>
+            
+            <div class="stat-card ordered">
+                <h3>已订购</h3>
+                <div class="stat-value">0</div>
+                <p>已下单</p>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #bdc3c7;"></div>
+                <span>未检查</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #27ae60;"></div>
+                <span>已检查</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>缺货</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #9b59b6;"></div>
+                <span>已订购</span>
+            </div>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="搜索元件编号、值/型号、封装或制造商型号..." onkeyup="searchItems()">
+        </div>
+        
+        <div class="table-container">
+            <table id="bomTable">
+                <thead>
+                    <tr>
+                        <th style="width: 200px;">Reference (元件编号)</th>
+                        <th style="width: 120px;">值/型号</th>
+                        <th style="width: 150px;">封装</th>
+                        <th style="width: 120px;">制造商型号</th>
+                        <th style="width: 100px;">需求数量</th>
+                        <th style="width: 150px;">状态</th>
+                    </tr>
+                </thead>
+                <tbody id="bomBody">
+                    <!-- 动态填充 -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 BOM物料清单检查工具 | 版本 4.0 | 简化版 - 按分组标记状态</p>
+            <p style="font-size: 0.8em; margin-top: 5px;">注意：进度数据保存在浏览器本地存储中，国产型号已自动截断显示</p>
+        </div>
+    </div>
+    
+    <script>
+        // 数据定义
+        const bomData = [{"id": "group_1", "reference": "hole1,hole2,hole3,hole4", "value": "~", "footprint": "persional_library:m3 125x300", "manufacturer_part": "", "truncated_manufacturer": "", "qty": 4, "status": "unchecked", "row_num": 1}, {"id": "group_2", "reference": "CN1,CN2,CN3,CN4,CN5,CN6,CN7,CN8,CN9,CN10,CN11,CN12,CN13,CN14,CN15,CN16", "value": "~", "footprint": "persional_library:CONN-TH_2P-P1.25_XUNPU_WAFER-GH1.25-2PWB", "manufacturer_part": "WAFER-GH1.25-2PWB", "truncated_manufacturer": "WAFER-GH1.25-2P...", "qty": 16, "status": "unchecked", "row_num": 2}, {"id": "group_3", "reference": "R1,R2,R4,R5,R7,R8,R11,R12,R14,R15,R16,R17,R18,R20,R21,R22,R23,R24", "value": "NC", "footprint": "persional_library:R0603", "manufacturer_part": "0603WAF1002T5E", "truncated_manufacturer": "0603WAF1002T5E", "qty": 18, "status": "unchecked", "row_num": 3}, {"id": "group_4", "reference": "R3,R6,R9,R10,R13,R19", "value": "0Ω", "footprint": "persional_library:R0603", "manufacturer_part": "0603WAF1002T5E", "truncated_manufacturer": "0603WAF1002T5E", "qty": 6, "status": "unchecked", "row_num": 4}, {"id": "group_5", "reference": "R25,R26,R27,R28,R33", "value": "10kΩ", "footprint": "persional_library:R0603", "manufacturer_part": "0603WAF1002T5E", "truncated_manufacturer": "0603WAF1002T5E", "qty": 5, "status": "unchecked", "row_num": 5}, {"id": "group_6", "reference": "R34", "value": "10Ω", "footprint": "persional_library:R0603", "manufacturer_part": "0603WAF1002T5E", "truncated_manufacturer": "0603WAF1002T5E", "qty": 1, "status": "unchecked", "row_num": 6}, {"id": "group_7", "reference": "R35", "value": "100kΩ", "footprint": "persional_library:R0603", "manufacturer_part": "0603WAF1002T5E", "truncated_manufacturer": "0603WAF1002T5E", "qty": 1, "status": "unchecked", "row_num": 7}, {"id": "group_8", "reference": "R36", "value": "13.7kΩ", "footprint": "persional_library:R0603", "manufacturer_part": "0603WAF1002T5E", "truncated_manufacturer": "0603WAF1002T5E", "qty": 1, "status": "unchecked", "row_num": 8}, {"id": "group_9", "reference": "C1,C2,C9,C14,C17,C22,C25,C30", "value": "1uF", "footprint": "persional_library:C0603", "manufacturer_part": "CL10A105KB8NNNC", "truncated_manufacturer": "CL10A105KB8NNNC", "qty": 8, "status": "unchecked", "row_num": 9}, {"id": "group_10", "reference": "C3,C4,C5,C6,C7,C8,C10,C11,C12,C13,C15,C16,C18,C19,C20,C21,C23,C24,C26,C27,C28,C29,C31,C32", "value": "10uF", "footprint": "persional_library:C0603", "manufacturer_part": "CL10A105KB8NNNC", "truncated_manufacturer": "CL10A105KB8NNNC", "qty": 24, "status": "unchecked", "row_num": 10}, {"id": "group_11", "reference": "C37", "value": "220pF", "footprint": "persional_library:C0603", "manufacturer_part": "CL10A105KB8NNNC", "truncated_manufacturer": "CL10A105KB8NNNC", "qty": 1, "status": "unchecked", "row_num": 11}, {"id": "group_12", "reference": "C33,C41", "value": "1uF", "footprint": "persional_library:C0805", "manufacturer_part": "CL21A226MAQNNNE", "truncated_manufacturer": "CL21A226MAQNNNE", "qty": 2, "status": "unchecked", "row_num": 12}, {"id": "group_13", "reference": "C34,C35,C36,C39,C40", "value": "22uF", "footprint": "persional_library:C0805", "manufacturer_part": "CL21A226MAQNNNE", "truncated_manufacturer": "CL21A226MAQNNNE", "qty": 5, "status": "unchecked", "row_num": 13}, {"id": "group_14", "reference": "C38", "value": "100nF", "footprint": "persional_library:C0805", "manufacturer_part": "CL21A226MAQNNNE", "truncated_manufacturer": "CL21A226MAQNNNE", "qty": 1, "status": "unchecked", "row_num": 14}, {"id": "group_15", "reference": "SW2", "value": "~", "footprint": "persional_library:SW-SMD_16P-L11.7-W5.4-P1.27-LS8.5", "manufacturer_part": "DSHP08TSGER", "truncated_manufacturer": "DSHP08TSGER", "qty": 1, "status": "unchecked", "row_num": 15}, {"id": "group_16", "reference": "L1", "value": "3.3uH", "footprint": "persional_library:IND-SMD_L7.0-W6.6", "manufacturer_part": "FXL0630-2R2-M", "truncated_manufacturer": "FXL0630-2R2-M", "qty": 1, "status": "unchecked", "row_num": 16}, {"id": "group_17", "reference": "LED1,LED2,LED3,LED4", "value": "~", "footprint": "persional_library:LED0603-RD", "manufacturer_part": "LTST-C190KSKT", "truncated_manufacturer": "LTST-C190KSKT", "qty": 4, "status": "unchecked", "row_num": 17}, {"id": "group_18", "reference": "U5", "value": "~", "footprint": "persional_library:SOT-23-8_L2.9-W1.6-P0.65-LS2.8-BR", "manufacturer_part": "MP2236GJ-Z", "truncated_manufacturer": "MP2236GJ-Z", "qty": 1, "status": "unchecked", "row_num": 18}, {"id": "group_19", "reference": "SW1", "value": "~", "footprint": "persional_library:SW-TH_SK12D07VG4", "manufacturer_part": "SK12D07VG4", "truncated_manufacturer": "SK12D07VG4", "qty": 1, "status": "unchecked", "row_num": 19}, {"id": "group_20", "reference": "CN17", "value": "~", "footprint": "persional_library:CONN-TH_XT30PW-M", "manufacturer_part": "XT30PW-M30.G.Y", "truncated_manufacturer": "XT30PW-M30.G.Y", "qty": 1, "status": "unchecked", "row_num": 20}, {"id": "group_21", "reference": "CN18", "value": "~", "footprint": "persional_library:CONN-TH_2P-P2.50_HX25003-2A", "manufacturer_part": "ZX-XH2.54-2PZZ", "truncated_manufacturer": "ZX-XH2.54-2PZZ", "qty": 1, "status": "unchecked", "row_num": 21}, {"id": "group_22", "reference": "U1,U2,U3,U4", "value": "~", "footprint": "persional_library:VQFN-20_L5.0-W5.0-P0.65-TL-EP", "manufacturer_part": "TPS7A4701RGWR", "truncated_manufacturer": "TPS7A4701RGWR", "qty": 4, "status": "unchecked", "row_num": 22}];
+        
+        // 从localStorage加载进度数据
+        function loadProgress() {
+            try {
+                const savedProgress = localStorage.getItem('bom_group_progress');
+                if (savedProgress) {
+                    const progressData = JSON.parse(savedProgress);
+                    
+                    // 更新bomData中的状态
+                    bomData.forEach(item => {
+                        if (progressData[item.id]) {
+                            item.status = progressData[item.id];
+                        }
+                    });
+                    
+                    // 更新统计信息
+                    updateStats();
+                    
+                    // 重新渲染表格
+                    renderBomTable();
+                    
+                    console.log('进度数据已加载');
+                }
+            } catch (e) {
+                console.error('加载进度数据失败:', e);
+            }
+        }
+        
+        // 保存进度数据到localStorage
+        function saveProgressToLocalStorage() {
+            try {
+                // 创建进度数据对象
+                const progressData = {};
+                bomData.forEach(item => {
+                    progressData[item.id] = item.status;
+                });
+                
+                localStorage.setItem('bom_group_progress', JSON.stringify(progressData));
+                return true;
+            } catch (e) {
+                console.error('保存进度数据失败:', e);
+                return false;
+            }
+        }
+        
+        // 渲染BOM表格
+        function renderBomTable() {
+            const tbody = document.getElementById('bomBody');
+            tbody.innerHTML = '';
+            
+            if (bomData.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" style="text-align: center; padding: 40px; color: #7f8c8d;">
+                            暂无数据
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            // 按原始行号排序
+            const sortedData = [...bomData].sort((a, b) => a.row_num - b.row_num);
+            
+            sortedData.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="reference-cell"><strong>${item.reference}</strong></td>
+                    <td class="value-cell">${item.value}</td>
+                    <td>${item.footprint}</td>
+                    <td>
+                        ${item.truncated_manufacturer ? 
+                            `<span class="manufacturer-tooltip" data-full="${item.manufacturer_part}">
+                                ${item.truncated_manufacturer}
+                            </span>` : 
+                            item.manufacturer_part}
+                    </td>
+                    <td><span class="qty-badge">${item.qty}个</span></td>
+                    <td>
+                        <div class="status-selector">
+                            <button class="status-btn unchecked ${item.status === 'unchecked' ? 'active' : ''}" 
+                                    onclick="updateStatus('${item.id}', 'unchecked')">
+                                🔄 未检查
+                            </button>
+                            <button class="status-btn checked ${item.status === 'checked' ? 'active' : ''}" 
+                                    onclick="updateStatus('${item.id}', 'checked')">
+                                ✅ 已检查
+                            </button>
+                            <button class="status-btn missing ${item.status === 'missing' ? 'active' : ''}" 
+                                    onclick="updateStatus('${item.id}', 'missing')">
+                                ❌ 缺货
+                            </button>
+                            <button class="status-btn ordered ${item.status === 'ordered' ? 'active' : ''}" 
+                                    onclick="updateStatus('${item.id}', 'ordered')">
+                                📦 已订购
+                            </button>
+                        </div>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+        
+        // 搜索功能
+        function searchItems() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const rows = document.getElementById('bomBody').getElementsByTagName('tr');
+            
+            for (let i = 0; i < rows.length; i++) {
+                const row = rows[i];
+                const reference = row.cells[0].textContent || row.cells[0].innerText;
+                const value = row.cells[1].textContent || row.cells[1].innerText;
+                const footprint = row.cells[2].textContent || row.cells[2].innerText;
+                const manufacturer = row.cells[3].textContent || row.cells[3].innerText;
+                
+                if (reference.toLowerCase().indexOf(filter) > -1 ||
+                    value.toLowerCase().indexOf(filter) > -1 ||
+                    footprint.toLowerCase().indexOf(filter) > -1 ||
+                    manufacturer.toLowerCase().indexOf(filter) > -1) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+        }
+        
+        // 更新分组状态
+        function updateStatus(id, status) {
+            // 找到并更新分组状态
+            const item = bomData.find(item => item.id === id);
+            if (item) {
+                item.status = status;
+                
+                // 更新统计信息
+                updateStats();
+                
+                // 重新渲染当前行
+                const rows = document.getElementById('bomBody').getElementsByTagName('tr');
+                for (let i = 0; i < rows.length; i++) {
+                    const row = rows[i];
+                    const referenceCell = row.cells[0].textContent || row.cells[0].innerText;
+                    
+                    // 查找对应的行
+                    if (referenceCell.includes(item.reference.split(',')[0])) {
+                        // 更新按钮状态
+                        const buttons = row.cells[5].getElementsByClassName('status-btn');
+                        for (let btn of buttons) {
+                            btn.classList.remove('active');
+                            if (btn.classList.contains(status)) {
+                                btn.classList.add('active');
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        
+        // 标记所有分组的状态
+        function markAll(status) {
+            if (confirm(`确定要将所有分组标记为"${getStatusText(status)}"吗？`)) {
+                bomData.forEach(item => {
+                    item.status = status;
+                });
+                
+                // 更新统计信息
+                updateStats();
+                
+                // 重新渲染表格
+                renderBomTable();
+            }
+        }
+        
+        // 更新统计信息
+        function updateStats() {
+            const totalGroups = bomData.length;
+            
+            const checkedCount = bomData.filter(item => item.status === 'checked').length;
+            const missingCount = bomData.filter(item => item.status === 'missing').length;
+            const orderedCount = bomData.filter(item => item.status === 'ordered').length;
+            
+            const checkedPercent = totalGroups > 0 ? Math.round((checkedCount / totalGroups) * 100) : 0;
+            
+            // 更新统计卡片
+            document.querySelector('.stat-card.total .stat-value').textContent = totalGroups;
+            document.querySelector('.stat-card.checked .stat-value').textContent = checkedCount;
+            document.querySelector('.stat-card.checked p:nth-child(3)').textContent = checkedPercent + '% 完成';
+            document.querySelector('.stat-card.missing .stat-value').textContent = missingCount;
+            document.querySelector('.stat-card.ordered .stat-value').textContent = orderedCount;
+            
+            // 更新进度条
+            document.getElementById('progressFill').style.width = checkedPercent + '%';
+        }
+        
+        // 获取状态文本
+        function getStatusText(status) {
+            const statusMap = {
+                'unchecked': '未检查',
+                'checked': '已检查',
+                'missing': '缺货',
+                'ordered': '已订购'
+            };
+            return statusMap[status] || status;
+        }
+        
+        // 保存进度
+        function saveProgress() {
+            if (saveProgressToLocalStorage()) {
+                alert('✅ 进度已保存！');
+            } else {
+                alert('❌ 保存失败，请检查浏览器设置');
+            }
+        }
+        
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            renderBomTable();
+        });
+    </script>
+</body>
+</html>
