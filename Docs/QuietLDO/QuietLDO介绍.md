@@ -6,7 +6,7 @@
 
 ### 硬件设计
 
-<img src="../Bitmap/TPS7A47%E6%A8%A1%E5%9D%97.png" alt="TPS7A47模块" style="zoom:50%;" />
+<img src="../../Bitmap/TPS7A47%E6%A8%A1%E5%9D%97.png" alt="TPS7A47模块" style="zoom:50%;" />
 
 <div align="center">图1 TPS7A47模块</div>
 
@@ -16,7 +16,7 @@ V_{out} = 1.4V + a_0V_{0.1} + a_1 V_{0.2}+ a_2 V_{0.4}+ a_3 V_{0.8}+ a_4 V_{1.6}
 $$
 但实际上我们在实际需求时只需要6V以下的电压,过大的电压在实际中并不适合LDO,超过7V的输入在实际使用中会使得该电路发热多大,于是我们采用MP2236作为前级DCDC降压.
 
-<img src="../Bitmap/MP2236%E6%A8%A1%E5%9D%97.png" alt="MP2236模块" style="zoom: 33%;" />
+<img src="../../Bitmap/MP2236%E6%A8%A1%E5%9D%97.png" alt="MP2236模块" style="zoom: 33%;" />
 
 <div align="center">图2 MP2236模块</div>
 
@@ -32,9 +32,10 @@ $$
 可以发现在实际中我们过6A的上限电流是实现不了的,当我们可以使用40mils+铺铜的布线方式增大电流的上限.
 
 <div style="display: flex; justify-content: space-between; margin: 20px 0;">
-  <img src="../Bitmap/QuietLDO_PCB顶层.png" alt="QuietLDO_PCB顶层" style="width: 48%; border: 1px solid #ddd; border-radius: 5px;">
-  <img src="../Bitmap/QuietLDO_PCB底层.png" alt="QuietLDO_PCBd底层" style="width: 48%; border: 1px solid #ddd; border-radius: 5px;">
+  <img src="../../Bitmap/QuietLDO_PCB顶层.png" alt="QuietLDO_PCB顶层" style="width: 48%; border: 1px solid #ddd; border-radius: 5px;">
+  <img src="../../Bitmap/QuietLDO_PCB底层.png" alt="QuietLDO_PCBd底层" style="width: 48%; border: 1px solid #ddd; border-radius: 5px;">
 </div>
+
 
 <div align="center">图3 QuietPCB设计</div>
 
