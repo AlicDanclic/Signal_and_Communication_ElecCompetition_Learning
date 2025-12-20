@@ -1,137 +1,150 @@
-# ============================================
-# KiCad 项目忽略规则
-# ============================================
+# =============================================
+# HardWare下忽略内容
 
-# KiCad 本地设置和缓存
-*.kicad_prl
-fp-info-cache
-*.bak
-*-save.pro
-*-save.kicad_pcb
-*-save.kicad_sch
-thief.log
-*.net
-*.dsn
-*.xml
+# =============================================
 
-# 自动备份目录
-*-backups/
-autosave/
+Hardware/*/*.zip
+Hardware/*/*.csv
+Hardware/*/fp-info-cache
+Hardware/*/*.kicad_prl
+Hardware/*/*-backups
+Hardware/*/*_Stencil
+Hardware/*/*_PCB
 
-# ============================================
-# PCB 制造输出文件
-# ============================================
+# # ============================================
+# # KiCad 项目忽略规则
+# # ============================================
 
-# Gerber 文件
-*.gbr
-*.gbl
-*.gbs
-*.gbo
-*.gtl
-*.gts
-*.gto
-*.gm1
-*.gpt
-*.gpb
+# # KiCad 本地设置和缓存
+# *.kicad_prl
+# fp-info-cache
+# *.bak
+# *-save.pro
+# *-save.kicad_pcb
+# *-save.kicad_sch
+# thief.log
+# *.net
+# *.dsn
+# *.xml
 
-# 钻孔文件
-*.drl
-*.drr
-*.txt
-*.xln
+# # 自动备份目录
+# *-backups/
+# autosave/
 
-# 其他制造文件
-*.gbrjob
-*.zip
-*.rar
-JLC_*.PDF
-gerbers/
+# # ============================================
+# # PCB 制造输出文件
+# # ============================================
 
-# ============================================
-# 编译/构建文件
-# ============================================
+# # Gerber 文件
+# *.gbr
+# *.gbl
+# *.gbs
+# *.gbo
+# *.gtl
+# *.gts
+# *.gto
+# *.gm1
+# *.gpt
+# *.gpb
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# # 钻孔文件
+# *.drl
+# *.drr
+# *.txt
+# *.xln
 
-# ============================================
-# 操作系统文件
-# ============================================
+# # 其他制造文件
+# *.gbrjob
+# *.zip
+# *.rar
+# JLC_*.PDF
+# gerbers/
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
+# # ============================================
+# # 编译/构建文件
+# # ============================================
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-.Spotlight-V100
-.Trashes
-._*
+# # Python
+# __pycache__/
+# *.py[cod]
+# *$py.class
+# *.so
+# .Python
+# build/
+# develop-eggs/
+# dist/
+# downloads/
+# eggs/
+# .eggs/
+# lib/
+# lib64/
+# parts/
+# sdist/
+# var/
+# wheels/
+# *.egg-info/
+# .installed.cfg
+# *.egg
 
-# Linux
-*~
+# # ============================================
+# # 操作系统文件
+# # ============================================
 
-# ============================================
-# 编辑器/IDE 文件
-# ============================================
+# # Windows
+# Thumbs.db
+# ehthumbs.db
+# Desktop.ini
+# $RECYCLE.BIN/
 
-# VS Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+# # macOS
+# .DS_Store
+# .AppleDouble
+# .LSOverride
+# .Spotlight-V100
+# .Trashes
+# ._*
 
-# IntelliJ IDEA
-.idea/
-*.iml
-*.iws
-*.ipr
+# # Linux
+# *~
 
-# Vim
-*.swp
-*.swo
-*.swn
+# # ============================================
+# # 编辑器/IDE 文件
+# # ============================================
 
-# ============================================
-# 项目特定忽略
-# ============================================
+# # VS Code
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# *.code-workspace
 
-# 流程图文件
-*.flowmaid
+# # IntelliJ IDEA
+# .idea/
+# *.iml
+# *.iws
+# *.ipr
 
-# 检查清单文件
-*_checklist.html
+# # Vim
+# *.swp
+# *.swo
+# *.swn
 
-# 临时图片文件
-/temp/
-/test/
+# # ============================================
+# # 项目特定忽略
+# # ============================================
 
-# 个人笔记文件
-TODO.md
-notes.txt
-scratchpad.*
+# # 流程图文件
+# *.flowmaid
+
+# # 检查清单文件
+# *_checklist.html
+
+# # 临时图片文件
+# /temp/
+# /test/
+
+# # 个人笔记文件
+# TODO.md
+# notes.txt
+# scratchpad.*

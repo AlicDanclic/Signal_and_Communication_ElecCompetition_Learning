@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Dual-OutputLDO DataSheet</title>
+    <style>
+        @media print {
+            @page {
+                margin: 8mm;
+                size: A4 portrait;
+            }
+            body {
+                font-size: 9pt;
+                line-height: 1.1;
+                margin: 0;
+                padding: 0;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5mm;
+            color: #333;
+        }
+        
+        .datasheet-container {
+            width: 100%;
+        }
+        
+        .header-section {
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 4px;
+        }
+        
+        .main-title {
+            color: #2c5aa0;
+            font-size: 20pt;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .version-info {
+            text-align: right;
+            font-size: 8pt;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .description {
+            font-size: 9pt;
+            margin: 4px 0;
+            text-align: center;
+        }
+        
+        /* 两栏布局 */
+        .two-column {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .section-box {
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            color: #2c5aa0;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+        
+        /* 表格样式 */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .spec-table th {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .spec-table td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+        }
+        
+        /* 注意事项样式 */
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 3px;
+            padding: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .warning-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 3px;
+        }
+        
+        .warning-list {
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        .warning-list li {
+            margin-bottom: 2px;
+        }
+        
+        /* 公式样式 */
+        .formula {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 3px;
+            padding: 6px;
+            margin: 6px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+            text-align: center;
+        }
+        
+        /* 关键参数网格 */
+        .param-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .param-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            padding: 4px;
+            background-color: white;
+        }
+        
+        .param-label {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 2px;
+        }
+        
+        /* 芯片信息样式 */
+        .chip-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 6px;
+            margin-bottom: 8px;
+        }
+        
+        .chip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+        }
+        
+        .chip-name {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 10pt;
+        }
+        
+        .chip-manufacturer {
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .chip-specs {
+            font-size: 8pt;
+            line-height: 1.2;
+        }
+        
+        /* 底部信息 */
+        .footer {
+            text-align: center;
+            font-size: 7pt;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 4px;
+            border-top: 1px solid #eee;
+        }
+        
+        /* 应用场景 */
+        .applications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        
+        .app-tag {
+            background-color: #e8f0fe;
+            border: 1px solid #d0d0d0;
+            border-radius: 2px;
+            padding: 2px 6px;
+            font-size: 7pt;
+            color: #2c5aa0;
+        }
+        
+        /* 图片样式 */
+        .image-container {
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .image-caption {
+            font-size: 8pt;
+            color: #666;
+            margin-top: 4px;
+        }
+        
+        .pcb-image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .pcb-image {
+            width: 48%;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        
+        /* 电阻配置表格 */
+        .resistor-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .resistor-table th, .resistor-table td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: center;
+        }
+        
+        .resistor-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="datasheet-container">
+        <div class="header-section">
+            <div class="title-line">
+                <h1 class="main-title">Dual-OutputLDO 正负电源泵</h1>
+                <div class="version-info">
+                    DataSheet v1.0<br>
+                    发布日期: 2025-12
+                </div>
+            </div>
+            <div class="description">
+                两级电源架构，前级MP2236 DCDC高效降压，后级LM27762低噪声正负双输出电荷泵LDO，为音频、运放等需要低噪声正负电源的应用提供洁净双路电源。
+            </div>
+        </div>
+
+        <div class="two-column">
+            <!-- 左栏 -->
+            <div class="column">
+                <!-- 关键特性 -->
+                <div class="section-box no-break">
+                    <div class="section-title">关键特性</div>
+                    <div class="param-grid">
+                        <div class="param-item">
+                            <div class="param-label">输入电压范围</div>
+                            <div>3-18V (MP2236输入)<br>2.7-5.5V (LM27762输入)</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">输出电压范围</div>
+                            <div>正输出: 1.5-5V<br>负输出: -1.5~-5V</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">输出电流</div>
+                            <div>±250mA (每路LDO)<br>6A (前级DCDC)</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">输出噪声</div>
+                            <div>22µVrms (典型值)</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">静态电流</div>
+                            <div>390µA (典型值)</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">开关频率</div>
+                            <div>2MHz (电荷泵)<br>600kHz (DCDC)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 核心芯片 -->
+                <div class="section-box no-break">
+                    <div class="section-title">核心芯片</div>
+                    
+                    <div class="chip-box">
+                        <div class="chip-header">
+                            <div class="chip-name">MP2236</div>
+                            <div class="chip-manufacturer">MPS</div>
+                        </div>
+                        <div class="chip-specs">
+                            • 高效率同步降压转换器<br>
+                            • 输入: 3-18V | 输出: 最高6A<br>
+                            • 开关频率: 600kHz<br>
+                            • 控制模式: COT (恒定导通时间)<br>
+                            • 内部MOSFET: 25mΩ/12mΩ
+                        </div>
+                    </div>
+                    
+                    <div class="chip-box">
+                        <div class="chip-header">
+                            <div class="chip-name">LM27762</div>
+                            <div class="chip-manufacturer">Texas Instruments</div>
+                        </div>
+                        <div class="chip-specs">
+                            • 低噪声正负输出电荷泵+LDO<br>
+                            • 输入: 2.7-5.5V<br>
+                            • 输出: ±250mA (正负各一路)<br>
+                            • 输出噪声: 22µVrms (典型值)<br>
+                            • 静态电流: 390µA (典型值)<br>
+                            • 独立使能控制和PGOOD指示
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PCB规格 -->
+                <div class="section-box no-break">
+                    <div class="section-title">PCB规格</div>
+                    <table class="spec-table">
+                        <tr>
+                            <th>PCB尺寸</th>
+                            <td>25 × 45 mm</td>
+                        </tr>
+                        <tr>
+                            <th>板厚</th>
+                            <td>1.6 mm (FR-4)</td>
+                        </tr>
+                        <tr>
+                            <th>安装孔</th>
+                            <td>4 × Ø4mm (M3兼容)</td>
+                        </tr>
+                        <tr>
+                            <th>安装孔位置</th>
+                            <td>四角对称</td>
+                        </tr>
+                        <tr>
+                            <th>边角特征</th>
+                            <td>四角2mm半径内凹缺角</td>
+                        </tr>
+                        <tr>
+                            <th>层数</th>
+                            <td>2层 (顶层/底层)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 右栏 -->
+            <div class="column">
+                <!-- 输出电压配置 -->
+                <div class="section-box no-break">
+                    <div class="section-title">输出电压配置公式</div>
+                    
+                    <div class="formula">
+                        MP2236: V<sub>CC</sub> = 0.6V × (1 + R1/R2)
+                    </div>
+                    
+                    <div class="formula">
+                        LM27762正输出: V<sub>OUT+</sub> = 1.2V × (R1 + R2)/R2
+                    </div>
+                    
+                    <div class="formula">
+                        LM27762负输出: V<sub>OUT-</sub> = -1.22V × (R3 + R4)/R4
+                    </div>
+                    
+                    <div style="font-size: 8pt; margin: 6px 0;">
+                        <strong>配置要点:</strong><br>
+                        1. MP2236输出的VCC作为LM27762的输入电压<br>
+                        2. VCC应高于LM27762正输出电压至少0.5V<br>
+                        3. LM27762反馈电阻R2、R4需≥50kΩ以保证稳定性<br>
+                        4. 支持不对称正负输出配置(如+5V/-3V)
+                    </div>
+                </div>
+
+                <!-- 典型应用 -->
+                <div class="section-box no-break">
+                    <div class="section-title">典型应用</div>
+                    <div class="applications">
+                        <span class="app-tag">音频放大器</span>
+                        <span class="app-tag">运算放大器偏置</span>
+                        <span class="app-tag">数据转换器(ADC/DAC)</span>
+                        <span class="app-tag">传感器供电</span>
+                    </div>
+                </div>
+
+                <!-- 使用注意事项 -->
+                <div class="section-box no-break">
+                    <div class="section-title">重要注意事项</div>
+                    <div class="warning-box">
+                        <div class="warning-title">焊接与配置:</div>
+                        <ul class="warning-list">
+                            <li>仔细选择反馈电阻，原理图上标注的电阻为反馈电阻</li>
+                            <li>焊接前确认电阻值与目标输出电压匹配</li>
+                            <li>检查所有连接点的焊接质量</li>
+                        </ul>
+                        
+                        <div class="warning-title">电气安全:</div>
+                        <ul class="warning-list">
+                            <li>每路LDO输出电流不超过±250mA</li>
+                            <li>前级DCDC输出电流不超过6A</li>
+                            <li>使用前估算电压电流需求，本板不适合大电流应用</li>
+                            <li>确保VCC比LM27762正输出电压高至少0.5V</li>
+                        </ul>
+                        
+                        <div class="warning-title">安装与散热:</div>
+                        <ul class="warning-list">
+                            <li>使用4个M3铜柱+螺母将PCB固定</li>
+                            <li>由于同时输出正负电压，注意散热管理</li>
+                            <li>避免在高温环境下满载运行</li>
+                            <li>确保良好的通风环境</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 模块示意图 -->
+                <div class="section-box no-break">
+                    <div class="section-title">模块架构</div>
+                    <div style="font-size: 8pt; line-height: 1.2; margin: 6px 0;">
+                        <strong>两级电源架构:</strong><br>
+                        1. <strong>前级降压</strong>: MP2236将输入电压(3-18V)降至VCC中间电压<br>
+                        2. <strong>后级双输出</strong>: LM27762将VCC转换为正负双路低噪声输出<br>
+                        3. <strong>独立控制</strong>: 每路输出均有独立反馈环路，可不对称配置
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 电气特性表格 -->
+        <div class="section-box no-break">
+            <div class="section-title">电气特性 (T<sub>A</sub> = 25°C, 除非另有说明)</div>
+            <table class="spec-table">
+                <tr>
+                    <th>参数</th>
+                    <th>条件</th>
+                    <th>最小值</th>
+                    <th>典型值</th>
+                    <th>最大值</th>
+                    <th>单位</th>
+                </tr>
+                <tr>
+                    <td>MP2236输入电压</td>
+                    <td>-</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>18</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>LM27762输入电压</td>
+                    <td>-</td>
+                    <td>2.7</td>
+                    <td>-</td>
+                    <td>5.5</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>正输出电压范围</td>
+                    <td>LM27762输出</td>
+                    <td>1.5</td>
+                    <td>-</td>
+                    <td>5</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>负输出电压范围</td>
+                    <td>LM27762输出</td>
+                    <td>-5</td>
+                    <td>-</td>
+                    <td>-1.5</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>正输出电流</td>
+                    <td>每路LDO</td>
+                    <td>-</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>mA</td>
+                </tr>
+                <tr>
+                    <td>负输出电流</td>
+                    <td>每路LDO</td>
+                    <td>-</td>
+                    <td>250</td>
+                    <td>250</td>
+                    <td>mA</td>
+                </tr>
+                <tr>
+                    <td>MP2236输出电流</td>
+                    <td>连续</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>6</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>输出噪声电压</td>
+                    <td>10Hz-100kHz</td>
+                    <td>-</td>
+                    <td>22</td>
+                    <td>-</td>
+                    <td>µVrms</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
