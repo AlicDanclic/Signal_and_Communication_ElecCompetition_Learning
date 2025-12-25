@@ -1,6 +1,5 @@
 # =============================================
 # HardWare下忽略内容
-
 # =============================================
 
 Hardware/*/*.zip
@@ -10,6 +9,21 @@ Hardware/*/*.kicad_prl
 Hardware/*/*-backups
 Hardware/*/*_Stencil
 Hardware/*/*_PCB
+
+
+# =============================================
+# Reference
+# =============================================
+
+Reference/正点原子/
+
+*.log
+*.aux
+*.gz
+
+核心板.md
+TODO.md
+
 
 # # ============================================
 # # KiCad 项目忽略规则
@@ -86,65 +100,65 @@ Hardware/*/*_PCB
 # .installed.cfg
 # *.egg
 
-# # ============================================
-# # 操作系统文件
-# # ============================================
+# ============================================
+# 操作系统文件
+# ============================================
 
-# # Windows
-# Thumbs.db
-# ehthumbs.db
-# Desktop.ini
-# $RECYCLE.BIN/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# # macOS
-# .DS_Store
-# .AppleDouble
-# .LSOverride
-# .Spotlight-V100
-# .Trashes
-# ._*
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
 
-# # Linux
-# *~
+# Linux
+*~
 
-# # ============================================
-# # 编辑器/IDE 文件
-# # ============================================
+# ============================================
+# 编辑器/IDE 文件
+# ============================================
 
-# # VS Code
-# .vscode/*
-# !.vscode/settings.json
-# !.vscode/tasks.json
-# !.vscode/launch.json
-# !.vscode/extensions.json
-# *.code-workspace
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
-# # IntelliJ IDEA
-# .idea/
-# *.iml
-# *.iws
-# *.ipr
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
 
-# # Vim
-# *.swp
-# *.swo
-# *.swn
+# Vim
+*.swp
+*.swo
+*.swn
 
-# # ============================================
-# # 项目特定忽略
-# # ============================================
+# ============================================
+# 项目特定忽略
+# ============================================
 
-# # 流程图文件
-# *.flowmaid
+# 流程图文件
+*.flowmaid
 
-# # 检查清单文件
-# *_checklist.html
+# 检查清单文件
+*_checklist.html
 
-# # 临时图片文件
-# /temp/
-# /test/
+# 临时图片文件
+/temp/
+/test/
 
-# # 个人笔记文件
-# TODO.md
-# notes.txt
-# scratchpad.*
+# 个人笔记文件
+TODO.md
+notes.txt
+scratchpad.*

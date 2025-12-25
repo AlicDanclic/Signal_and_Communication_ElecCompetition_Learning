@@ -1,0 +1,133 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="第 1 页" id="SPKA9Z8cER922Mm3Bc9V">
+    <mxGraphModel dx="3269" dy="2069" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ihk7TIOajYamiykW8Dov-27" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-240" width="960" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-28" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="100" width="960" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-2" target="Ihk7TIOajYamiykW8Dov-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;FPGA&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;核心开发板&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Artix XC7A50T&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-3" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;用户按键&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;8位拨码开关&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;4位轻触开关&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-4" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;视觉显示&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;2x4位晶体数码管&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;4个LED&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-5" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;核心功能按键&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;一个FPGA Reset&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: initial;&quot;&gt;一个MCU Reset&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;一个全局Reset&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: initial;&quot;&gt;一个Prog&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry y="120" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-7" target="Ihk7TIOajYamiykW8Dov-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-7" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;电源输入&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;12V输入&lt;/span&gt;&lt;span style=&quot;font-size: 16px; background-color: initial;&quot;&gt;DCDC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: initial;&quot;&gt;5V USB&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-8" target="Ihk7TIOajYamiykW8Dov-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-8" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;DCDC降压&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;12V DCDC输出5V&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="-200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ihk7TIOajYamiykW8Dov-9" target="Ihk7TIOajYamiykW8Dov-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-9" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;3V3输出&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;DCDC3V3输出&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;输出&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="-40" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-10" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;存储芯片&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;EEPROM 24C64&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;TF SD卡&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-11" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;40Pin引出&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;2路IO输出&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="160" y="440" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-12" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;蜂鸣器&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;无源贴片蜂鸣器&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-13" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;下载端口&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;JTAG FPGA下载&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;MCU下载端口&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="640" y="440" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-14" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;其他&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;一路千兆网络&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;一路HDMI&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="640" y="600" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-31" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;电源电路&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-230" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-32" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;核心板设计&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="720" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-33" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="880" y="-240" width="340" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-34" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;兼容MSP和STM32&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;扩展版接口标准&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="915" y="-180" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-35" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;MCU核心板设计&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-230" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-38" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;通信交流设计&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;SD卡+日志信息处理&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;蓝牙通信&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;USB串口&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="915" y="60" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-39" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;FPGA通信交流&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;串口&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="915" y="300" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Ihk7TIOajYamiykW8Dov-40" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;基本外设引出&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;天空星扩展版V2&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="915" y="540" width="270" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

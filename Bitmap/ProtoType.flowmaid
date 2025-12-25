@@ -1,25 +1,47 @@
-# 功能验证板
-## MCU功能联合器[text="通过金手指连接"]
-### STM32金手指
-- UART
-- GPIO
-- 并行接口
+# FPGA与STM32联合开发板 [color=#2E86AB, shape=rectangle, fontSize=32, priority=high, icon=🔌, progress=0]
 
-## 显示类[text="各种显示功能验证"]
-- LCD
-- OLED
-- TFT
-- HDMI
+## 下载功能 [icon=⭐, color=#F9C74F, status=pending]
+- JTAG下载 [text="服务于FPGA下载", progress=0, assignee="硬件组", complexity=medium]
+- SWD下载 [text="服务于STM32下载", progress=0, assignee="硬件组", complexity=low]
 
-## 通信协议类
-- UART
-- I2C
-- SPI
-- CAN
+## 通信功能 [icon=📞, color=#90BE6D, status=pending]
+- UART通信 [text="用于FPGA与STM32之间的通信", progress=0, type="board-internal"]
+- I2C通信 [text="用于FPGA与I2C设备之间的通信", progress=0, type="external", participants=2]
+- SPI通信 [text="用于FPGA与SPI设备之间的通信", progress=0, type="external", participants=2]
+- UART通信 [text="用于STM32与电脑等设备之间的通信", progress=0, type="external", assignee="通信组"]
 
-## 基础部分
-- ADC
-- DAC
-- PWM
-- LED
-- 多功能按键
+## 外设功能 [icon=🔧, color=#F8961E, status=pending]
+- LED灯 [text="用于FPGA与STM32的指示灯", progress=0, assignee="外设组", quantity=8]
+- 按键 [text="两组一个用于stm32一个用于FPGA", progress=0, assignee="外设组", quantity=4]
+- 拨码开关 [text="两组一个用于stm32一个用于FPGA", progress=0, assignee="外设组", quantity=8]
+- 数码管 [text="用于FPGA显示的数码管", progress=0, assignee="显示组", type=7-segment]
+- 蜂鸣器 [text="用于FPGA或stm32指示的蜂鸣器", progress=0, assignee="外设组", frequency=2kHz]
+
+## 电源设计 [icon=🔋, color=#F94144, status=pending]
+- 5V电源 [text="用于FPGA电源", progress=0, assignee="电源组", current=2A]
+- 3.3V电源 [text="用于stm32的电源", progress=0, assignee="电源组", current=1A]
+
+## 接口设计 [icon=🔌, color=#577590, status=pending]
+- 40针接口 [text="用于FPGA的接口", progress=0, assignee="接口组", pinCount=40]
+- I2C通信 [text="用于STM32连接I2C设备的接口", progress=0, assignee="通信组", type=external]
+- SPI通信 [text="用于STM32连接SPI设备的接口", progress=0, assignee="通信组", type=external]
+- UART通信 [text="用于STM32连接UART设备的接口", progress=0, assignee="通信组", type=external]
+- USB接口 [text="用于FPGA与STM32的USB接口", progress=0, assignee="接口组", version=2.0]
+
+## 结构设计 [icon=🏗️, color=#4A4E69, status=pending]
+- 电路板 [text="用于FPGA与stm32的电路板", progress=0, assignee="结构组", layers=4]
+- 外壳 [text="用于FPGA与stm32的外壳", progress=0, assignee="结构组", material="ABS塑料"]
+
+---
+metadata:
+  title: "FPGA与STM32联合开发板功能规划"
+  author: "嵌入式开发团队"
+  version: "2.1"
+  created: "2024-03-15"
+  theme: "tech-blue"
+  layout: "mindmap"
+  backgroundColor: "#F8F9FA"
+  description: "FPGA与STM32联合开发板的功能模块与接口设计思维导图"
+  team: "硬件研发部"
+  lastUpdated: "2024-03-20"
+---
