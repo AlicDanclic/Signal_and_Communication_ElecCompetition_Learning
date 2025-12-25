@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>FPGA 开发板 Datasheet</title>
+    <style>
+        @media print {
+            @page {
+                margin: 8mm;
+                size: A4 portrait;
+            }
+            body {
+                font-size: 9pt;
+                line-height: 1.1;
+                margin: 0;
+                padding: 0;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5mm;
+            color: #333;
+        }
+        
+        .datasheet-container {
+            width: 100%;
+        }
+        
+        .header-section {
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 4px;
+        }
+        
+        .main-title {
+            color: #2c5aa0;
+            font-size: 20pt;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .version-info {
+            text-align: right;
+            font-size: 8pt;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .description {
+            font-size: 9pt;
+            margin: 4px 0;
+            text-align: center;
+        }
+        
+        /* 两栏布局 */
+        .two-column {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .section-box {
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            color: #2c5aa0;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+        
+        /* 表格样式 */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .spec-table th {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .spec-table td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+        }
+        
+        /* 关键参数网格 */
+        .param-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .param-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            padding: 4px;
+            background-color: white;
+        }
+        
+        .param-label {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 2px;
+        }
+        
+        /* 芯片信息样式 */
+        .chip-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 6px;
+            margin-bottom: 8px;
+        }
+        
+        .chip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+        }
+        
+        .chip-name {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 10pt;
+        }
+        
+        .chip-manufacturer {
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .chip-specs {
+            font-size: 8pt;
+            line-height: 1.2;
+        }
+        
+        /* 底部信息 */
+        .footer {
+            text-align: center;
+            font-size: 7pt;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 4px;
+            border-top: 1px solid #eee;
+        }
+        
+        /* 应用场景 */
+        .applications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        
+        .app-tag {
+            background-color: #e8f0fe;
+            border: 1px solid #d0d0d0;
+            border-radius: 2px;
+            padding: 2px 6px;
+            font-size: 7pt;
+            color: #2c5aa0;
+        }
+        
+        /* 注意事项样式 */
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 3px;
+            padding: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .warning-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 3px;
+        }
+        
+        .warning-list {
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        .warning-list li {
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="datasheet-container">
+        <div class="header-section">
+            <div class="title-line">
+                <h1 class="main-title">FPGA 开发板引脚连接技术手册</h1>
+                <div class="version-info">
+                    DataSheet v1.0<br>
+                    生成日期: 2025-12-25
+                </div>
+            </div>
+            <div class="description">
+                基于Xilinx Artix-7 XC7A50T的完整FPGA开发平台，包含SDRAM、SPI Flash、双千兆以太网等核心外设，提供完整的引脚连接与接口定义。
+            </div>
+        </div>
+
+        <div class="two-column">
+            <!-- 左栏 -->
+            <div class="column">
+                <!-- 关键技术规格 -->
+                <div class="section-box no-break">
+                    <div class="section-title">关键技术规格</div>
+                    <div class="param-grid">
+                        <div class="param-item">
+                            <div class="param-label">FPGA 芯片</div>
+                            <div>Xilinx Artix-7<br>XC7A50T-FGG484<br>484 引脚 BGA</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">SDRAM 存储器</div>
+                            <div>8MB 容量<br>512K × 32 位 × 4 Bank<br>M12L64322A 芯片</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">SPI Flash</div>
+                            <div>16MB 容量<br>MX25L128 芯片<br>标准 SPI 接口</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">以太网接口</div>
+                            <div>2× 千兆以太网<br>Broadcom B50612D PHY<br>独立MDIO管理</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">系统时钟</div>
+                            <div>25MHz 有源晶振<br>主系统时钟源<br>FPGA引脚K4</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">调试接口</div>
+                            <div>标准JTAG接口<br>4线调试<br>支持Vivado/Xilinx工具链</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 核心芯片 -->
+                <div class="section-box no-break">
+                    <div class="section-title">核心芯片</div>
+                    
+                    <div class="chip-box">
+                        <div class="chip-header">
+                            <div class="chip-name">XC7A50T-FGG484</div>
+                            <div class="chip-manufacturer">Xilinx</div>
+                        </div>
+                        <div class="chip-specs">
+                            • Artix-7 FPGA系列<br>
+                            • 484引脚Fine-Pitch BGA封装<br>
+                            • 52,160个逻辑单元<br>
+                            • 2,700个Kb块RAM<br>
+                            • 120个DSP切片<br>
+                            • 支持多种I/O标准
+                        </div>
+                    </div>
+                    
+                    <div class="chip-box">
+                        <div class="chip-header">
+                            <div class="chip-name">M12L64322A</div>
+                            <div class="chip-manufacturer">Micron/Samsung</div>
+                        </div>
+                        <div class="chip-specs">
+                            • 8MB SDRAM存储器<br>
+                            • 512K × 32位 × 4 Bank结构<br>
+                            • 同步DRAM接口<br>
+                            • 3.3V工作电压<br>
+                            • 工业级温度范围
+                        </div>
+                    </div>
+                    
+                    <div class="chip-box">
+                        <div class="chip-header">
+                            <div class="chip-name">B50612D</div>
+                            <div class="chip-manufacturer">Broadcom</div>
+                        </div>
+                        <div class="chip-specs">
+                            • 千兆以太网PHY芯片<br>
+                            • 支持10/100/1000 Mbps<br>
+                            • MDIO管理接口<br>
+                            • 低功耗设计<br>
+                            • 工业温度范围
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右栏 -->
+            <div class="column">
+                <!-- 系统主要组件 -->
+                <div class="section-box no-break">
+                    <div class="section-title">系统主要组件</div>
+                    <table class="spec-table">
+                        <tr>
+                            <th>组件名称</th>
+                            <th>规格描述</th>
+                        </tr>
+                        <tr>
+                            <td>FPGA 芯片</td>
+                            <td>Xilinx Artix-7 XC7A50T-FGG484 (484 引脚)</td>
+                        </tr>
+                        <tr>
+                            <td>SDRAM 存储器</td>
+                            <td>M12L64322A, 8MB 容量(512K × 32 位 × 4 Bank)</td>
+                        </tr>
+                        <tr>
+                            <td>SPI Flash 存储器</td>
+                            <td>MX25L128, 16MB 容量</td>
+                        </tr>
+                        <tr>
+                            <td>以太网PHY 芯片</td>
+                            <td>Broadcom B50612D 1Gb 以太网PHY × 2 个</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 引脚配置说明 -->
+                <div class="section-box no-break">
+                    <div class="section-title">引脚配置说明</div>
+                    <div style="font-size: 8pt; line-height: 1.2; margin: 6px 0;">
+                        <strong>JTAG调试接口:</strong><br>
+                        • TCK: J5 - 测试时钟输入<br>
+                        • TMS: J4 - 测试模式选择<br>
+                        • TDI: J3 - 测试数据输入<br>
+                        • TDO: J2 - 测试数据输出<br><br>
+                        
+                        <strong>系统时钟:</strong><br>
+                        • 主时钟: K4 - 25MHz 有源晶振<br><br>
+                        
+                    </div>
+                </div>
+
+                <!-- 重要注意事项 -->
+                <div class="section-box no-break">
+                    <div class="section-title">重要注意事项</div>
+                    <div class="warning-box">
+                        <div class="warning-title">电气连接:</div>
+                        <ul class="warning-list">
+                            <li>JTAG接口需正确连接TCK、TMS、TDI、TDO四线</li>
+                            <li>SDRAM时钟引脚E14必须正确连接，频率匹配</li>
+                            <li>以太网PHY复位信号H2需正确配置</li>
+                            <li>SPI Flash片选信号T19低电平有效</li>
+                        </ul>
+                        
+                        <div class="warning-title">电源与接地:</div>
+                        <ul class="warning-list">
+                            <li>确保所有GND引脚可靠接地</li>
+                            <li>电源引脚按规格提供稳定电压</li>
+                            <li>模拟与数字电源需隔离</li>
+                            <li>去耦电容必须靠近芯片电源引脚</li>
+                        </ul>
+                        
+                        <div class="warning-title">信号完整性:</div>
+                        <ul class="warning-list">
+                            <li>高速信号线(如以太网、SDRAM)需考虑阻抗匹配</li>
+                            <li>时钟信号布线远离其他信号线</li>
+                            <li>差分信号对需保持等长</li>
+                            <li>避免信号线与电源线平行长距离走线</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 典型应用 -->
+                <div class="section-box no-break">
+                    <div class="section-title">典型应用</div>
+                    <div class="applications">
+                        <span class="app-tag">嵌入式系统开发</span>
+                        <span class="app-tag">网络处理</span>
+                        <span class="app-tag">信号处理</span>
+                        <span class="app-tag">工业控制</span>
+                        <span class="app-tag">通信设备</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JTAG调试接口引脚连接 -->
+        <div class="section-box no-break">
+            <div class="section-title">JTAG调试接口引脚连接</div>
+            <table class="spec-table">
+                <tr>
+                    <th>引脚编号</th>
+                    <th>功能</th>
+                    <th>功能描述</th>
+                </tr>
+                <tr>
+                    <td>J5</td>
+                    <td>TCK</td>
+                    <td>测试时钟输入</td>
+                </tr>
+                <tr>
+                    <td>J4</td>
+                    <td>TMS</td>
+                    <td>测试模式选择</td>
+                </tr>
+                <tr>
+                    <td>J3</td>
+                    <td>TDI</td>
+                    <td>测试数据输入</td>
+                </tr>
+                <tr>
+                    <td>J2</td>
+                    <td>TDO</td>
+                    <td>测试数据输出</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
