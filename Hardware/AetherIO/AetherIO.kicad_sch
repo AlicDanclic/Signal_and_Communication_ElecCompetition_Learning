@@ -1,5 +1,253 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "84065182-a796-4fca-93ce-905cc0c911cd")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 14.605 142.875)
+		(size 55.88 28.575)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 0 255 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "837b0d90-b6a6-4859-9ec0-a2a6d0111ce1")
+		(property "Sheetname" "MCU控制器"
+			(at 14.605 142.1634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 14.605 172.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 14.605 111.125)
+		(size 55.88 28.575)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 0 255 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "8d2ab7e6-22a0-4cbc-9e26-aa40135b9531")
+		(property "Sheetname" "连接器"
+			(at 14.605 110.4134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connect.kicad_sch"
+			(at 14.605 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 48.26)
+		(size 55.245 28.575)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 0 255 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "942a0d40-263b-4221-ac54-96dc6607da5e")
+		(property "Sheetname" "用户LED"
+			(at 15.24 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED.kicad_sch"
+			(at 15.24 77.4196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 14.605 79.375)
+		(size 55.88 28.575)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 0 255 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "95410699-ce03-46d8-97a2-392056c5803d")
+		(property "Sheetname" "存储管理"
+			(at 14.605 78.6634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Storage.kicad_sch"
+			(at 14.605 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 84.455 16.51)
+		(size 32.385 154.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 0 255 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "9835d1ad-9576-417d-8c16-db313e08d381")
+		(property "Sheetname" "FPGA"
+			(at 84.455 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FPGA.kicad_sch"
+			(at 84.455 172.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 16.51)
+		(size 55.245 28.575)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 52 0 255 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "bbb5ef16-b1f6-461b-a6d3-5623865a2c2d")
+		(property "Sheetname" "电源管理"
+			(at 15.24 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 15.24 45.6696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

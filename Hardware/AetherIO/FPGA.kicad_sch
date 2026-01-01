@@ -1,0 +1,10085 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "013984ad-aaa9-4b67-8a83-137ec3126c8f")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Coonnect_GoldenFinger_200P_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CN"
+				(at 21.082 -7.366 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "persional_library:CONN-SMD_1717254-1"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/1717254-1/618586.html"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "总PIN数:200P;安装方式:卧贴;"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "1717254-1"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TE Connectivity(泰科电子)"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "C590722"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part Name" "P数:200P"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Coonnect_GoldenFinger_200P_1_0_1"
+				(rectangle
+					(start -6.35 67.31)
+					(end 6.35 -63.5)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Coonnect_GoldenFinger_200P_1_1_0"
+				(pin unspecified line
+					(at 8.89 57.15 180)
+					(length 2.54)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -57.15 180)
+					(length 2.54)
+					(name "100"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "100"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 54.61 0)
+					(length 2.54)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 54.61 180)
+					(length 2.54)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 52.07 0)
+					(length 2.54)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 52.07 180)
+					(length 2.54)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 49.53 0)
+					(length 2.54)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 49.53 180)
+					(length 2.54)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 46.99 0)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 46.99 180)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 44.45 0)
+					(length 2.54)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 44.45 180)
+					(length 2.54)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 41.91 0)
+					(length 2.54)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 41.91 180)
+					(length 2.54)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 39.37 0)
+					(length 2.54)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 39.37 180)
+					(length 2.54)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 36.83 0)
+					(length 2.54)
+					(name "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 36.83 180)
+					(length 2.54)
+					(name "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 34.29 0)
+					(length 2.54)
+					(name "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 34.29 180)
+					(length 2.54)
+					(name "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 31.75 0)
+					(length 2.54)
+					(name "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 64.77 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 31.75 180)
+					(length 2.54)
+					(name "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 29.21 0)
+					(length 2.54)
+					(name "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 29.21 180)
+					(length 2.54)
+					(name "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 26.67 0)
+					(length 2.54)
+					(name "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 26.67 180)
+					(length 2.54)
+					(name "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 24.13 0)
+					(length 2.54)
+					(name "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 24.13 180)
+					(length 2.54)
+					(name "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 21.59 0)
+					(length 2.54)
+					(name "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 21.59 180)
+					(length 2.54)
+					(name "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 19.05 0)
+					(length 2.54)
+					(name "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 64.77 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 19.05 180)
+					(length 2.54)
+					(name "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 16.51 0)
+					(length 2.54)
+					(name "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 16.51 180)
+					(length 2.54)
+					(name "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 13.97 0)
+					(length 2.54)
+					(name "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 13.97 180)
+					(length 2.54)
+					(name "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 11.43 0)
+					(length 2.54)
+					(name "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 11.43 180)
+					(length 2.54)
+					(name "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 8.89 0)
+					(length 2.54)
+					(name "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 8.89 180)
+					(length 2.54)
+					(name "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 6.35 0)
+					(length 2.54)
+					(name "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 62.23 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 6.35 180)
+					(length 2.54)
+					(name "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 3.81 0)
+					(length 2.54)
+					(name "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 1.27 180)
+					(length 2.54)
+					(name "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -1.27 0)
+					(length 2.54)
+					(name "55"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "56"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -3.81 0)
+					(length 2.54)
+					(name "57"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -6.35 0)
+					(length 2.54)
+					(name "59"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 62.23 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -6.35 180)
+					(length 2.54)
+					(name "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -8.89 0)
+					(length 2.54)
+					(name "61"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -8.89 180)
+					(length 2.54)
+					(name "62"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "62"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -11.43 0)
+					(length 2.54)
+					(name "63"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "63"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -11.43 180)
+					(length 2.54)
+					(name "64"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "64"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -13.97 0)
+					(length 2.54)
+					(name "65"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "65"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -13.97 180)
+					(length 2.54)
+					(name "66"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "66"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -16.51 0)
+					(length 2.54)
+					(name "67"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "67"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -16.51 180)
+					(length 2.54)
+					(name "68"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "68"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -19.05 0)
+					(length 2.54)
+					(name "69"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "69"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 59.69 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -19.05 180)
+					(length 2.54)
+					(name "70"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "70"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -21.59 0)
+					(length 2.54)
+					(name "71"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "71"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -21.59 180)
+					(length 2.54)
+					(name "72"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "72"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -24.13 0)
+					(length 2.54)
+					(name "73"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "73"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -24.13 180)
+					(length 2.54)
+					(name "74"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "74"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -26.67 0)
+					(length 2.54)
+					(name "75"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "75"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -26.67 180)
+					(length 2.54)
+					(name "76"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "76"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -29.21 0)
+					(length 2.54)
+					(name "77"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "77"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -29.21 180)
+					(length 2.54)
+					(name "78"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "78"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -31.75 0)
+					(length 2.54)
+					(name "79"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "79"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 59.69 180)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -31.75 180)
+					(length 2.54)
+					(name "80"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "80"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -34.29 0)
+					(length 2.54)
+					(name "81"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "81"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -34.29 180)
+					(length 2.54)
+					(name "82"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "82"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -36.83 0)
+					(length 2.54)
+					(name "83"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "83"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -36.83 180)
+					(length 2.54)
+					(name "84"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "84"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -39.37 0)
+					(length 2.54)
+					(name "85"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "85"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -39.37 180)
+					(length 2.54)
+					(name "86"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "86"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -41.91 0)
+					(length 2.54)
+					(name "87"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "87"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -41.91 180)
+					(length 2.54)
+					(name "88"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "88"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -44.45 0)
+					(length 2.54)
+					(name "89"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "89"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 57.15 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -44.45 180)
+					(length 2.54)
+					(name "90"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "90"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -46.99 0)
+					(length 2.54)
+					(name "91"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "91"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -46.99 180)
+					(length 2.54)
+					(name "92"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "92"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -49.53 0)
+					(length 2.54)
+					(name "93"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "93"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -49.53 180)
+					(length 2.54)
+					(name "94"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "94"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -52.07 0)
+					(length 2.54)
+					(name "95"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "95"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -52.07 180)
+					(length 2.54)
+					(name "96"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "96"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -54.61 0)
+					(length 2.54)
+					(name "97"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "97"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -54.61 180)
+					(length 2.54)
+					(name "98"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "98"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -57.15 0)
+					(length 2.54)
+					(name "99"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "99"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Coonnect_GoldenFinger_200P_1_2_0"
+				(pin unspecified line
+					(at -8.89 63.5 0)
+					(length 2.54)
+					(name "101"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "101"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 63.5 180)
+					(length 2.54)
+					(name "102"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "102"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 60.96 0)
+					(length 2.54)
+					(name "103"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "103"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 60.96 180)
+					(length 2.54)
+					(name "104"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "104"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 58.42 0)
+					(length 2.54)
+					(name "105"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "105"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 58.42 180)
+					(length 2.54)
+					(name "106"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "106"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 55.88 0)
+					(length 2.54)
+					(name "107"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "107"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 55.88 180)
+					(length 2.54)
+					(name "108"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "108"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 53.34 0)
+					(length 2.54)
+					(name "109"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "109"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 53.34 180)
+					(length 2.54)
+					(name "110"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "110"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 50.8 0)
+					(length 2.54)
+					(name "111"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "111"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 50.8 180)
+					(length 2.54)
+					(name "112"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "112"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 48.26 0)
+					(length 2.54)
+					(name "113"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "113"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 48.26 180)
+					(length 2.54)
+					(name "114"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "114"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 45.72 0)
+					(length 2.54)
+					(name "115"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "115"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 45.72 180)
+					(length 2.54)
+					(name "116"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "116"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 43.18 0)
+					(length 2.54)
+					(name "117"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "117"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 43.18 180)
+					(length 2.54)
+					(name "118"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "118"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 40.64 0)
+					(length 2.54)
+					(name "119"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "119"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 40.64 180)
+					(length 2.54)
+					(name "120"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "120"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 38.1 0)
+					(length 2.54)
+					(name "121"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "121"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 38.1 180)
+					(length 2.54)
+					(name "122"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "122"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 35.56 0)
+					(length 2.54)
+					(name "123"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "123"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 35.56 180)
+					(length 2.54)
+					(name "124"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "124"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 33.02 0)
+					(length 2.54)
+					(name "125"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "125"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 33.02 180)
+					(length 2.54)
+					(name "126"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "126"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 30.48 0)
+					(length 2.54)
+					(name "127"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "127"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 30.48 180)
+					(length 2.54)
+					(name "128"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "128"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 27.94 0)
+					(length 2.54)
+					(name "129"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "129"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 27.94 180)
+					(length 2.54)
+					(name "130"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "130"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 25.4 0)
+					(length 2.54)
+					(name "131"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "131"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 25.4 180)
+					(length 2.54)
+					(name "132"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "132"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 22.86 0)
+					(length 2.54)
+					(name "133"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "133"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 22.86 180)
+					(length 2.54)
+					(name "134"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "134"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 20.32 0)
+					(length 2.54)
+					(name "135"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "135"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 20.32 180)
+					(length 2.54)
+					(name "136"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "136"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 17.78 0)
+					(length 2.54)
+					(name "137"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "137"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 17.78 180)
+					(length 2.54)
+					(name "138"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "138"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 15.24 0)
+					(length 2.54)
+					(name "139"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "139"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 15.24 180)
+					(length 2.54)
+					(name "140"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "140"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 12.7 0)
+					(length 2.54)
+					(name "141"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "141"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 12.7 180)
+					(length 2.54)
+					(name "142"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "142"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 10.16 0)
+					(length 2.54)
+					(name "143"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "143"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 10.16 180)
+					(length 2.54)
+					(name "144"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "144"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 7.62 0)
+					(length 2.54)
+					(name "145"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "145"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 7.62 180)
+					(length 2.54)
+					(name "146"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "146"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 5.08 0)
+					(length 2.54)
+					(name "147"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "147"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 5.08 180)
+					(length 2.54)
+					(name "148"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "148"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "149"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "149"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "150"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "150"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "151"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "151"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "152"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "152"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "153"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "153"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "154"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "154"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -5.08 0)
+					(length 2.54)
+					(name "155"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "155"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -5.08 180)
+					(length 2.54)
+					(name "156"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "156"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -7.62 0)
+					(length 2.54)
+					(name "157"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "157"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -7.62 180)
+					(length 2.54)
+					(name "158"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "158"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -10.16 0)
+					(length 2.54)
+					(name "159"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "159"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -10.16 180)
+					(length 2.54)
+					(name "160"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "160"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -12.7 0)
+					(length 2.54)
+					(name "161"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "161"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -12.7 180)
+					(length 2.54)
+					(name "162"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "162"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -15.24 0)
+					(length 2.54)
+					(name "163"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "163"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -15.24 180)
+					(length 2.54)
+					(name "164"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "164"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -17.78 0)
+					(length 2.54)
+					(name "165"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "165"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -17.78 180)
+					(length 2.54)
+					(name "166"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "166"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -20.32 0)
+					(length 2.54)
+					(name "167"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "167"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -20.32 180)
+					(length 2.54)
+					(name "168"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "168"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -22.86 0)
+					(length 2.54)
+					(name "169"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "169"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -22.86 180)
+					(length 2.54)
+					(name "170"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "170"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -25.4 0)
+					(length 2.54)
+					(name "171"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "171"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -25.4 180)
+					(length 2.54)
+					(name "172"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "172"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -27.94 0)
+					(length 2.54)
+					(name "173"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "173"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -27.94 180)
+					(length 2.54)
+					(name "174"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "174"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -30.48 0)
+					(length 2.54)
+					(name "175"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "175"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -30.48 180)
+					(length 2.54)
+					(name "176"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "176"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -33.02 0)
+					(length 2.54)
+					(name "177"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "177"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -33.02 180)
+					(length 2.54)
+					(name "178"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "178"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -35.56 0)
+					(length 2.54)
+					(name "179"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "179"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -35.56 180)
+					(length 2.54)
+					(name "180"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "180"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -38.1 0)
+					(length 2.54)
+					(name "181"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "181"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -38.1 180)
+					(length 2.54)
+					(name "182"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "182"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -40.64 0)
+					(length 2.54)
+					(name "183"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "183"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -40.64 180)
+					(length 2.54)
+					(name "184"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "184"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -43.18 0)
+					(length 2.54)
+					(name "185"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "185"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -43.18 180)
+					(length 2.54)
+					(name "186"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "186"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -45.72 0)
+					(length 2.54)
+					(name "187"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "187"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -45.72 180)
+					(length 2.54)
+					(name "188"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "188"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -48.26 0)
+					(length 2.54)
+					(name "189"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "189"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -48.26 180)
+					(length 2.54)
+					(name "190"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "190"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -50.8 0)
+					(length 2.54)
+					(name "191"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "191"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -50.8 180)
+					(length 2.54)
+					(name "192"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "192"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -53.34 0)
+					(length 2.54)
+					(name "193"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "193"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -53.34 180)
+					(length 2.54)
+					(name "194"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "194"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -55.88 0)
+					(length 2.54)
+					(name "195"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "195"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -55.88 180)
+					(length 2.54)
+					(name "196"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "196"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -58.42 0)
+					(length 2.54)
+					(name "197"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "197"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -58.42 180)
+					(length 2.54)
+					(name "198"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "198"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -60.96 0)
+					(length 2.54)
+					(name "199"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "199"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -60.96 180)
+					(length 2.54)
+					(name "200"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "200"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -66.04 90)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "persional_library:Connect_XH2.54_2x20P"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "persional_library:HDR-TH_40P-P2.54-V-M-R2-C20-S2.54"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/PZ2.54-2*20/5925193.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "插针结构:2x20P;间距:2.54mm;行距:2.54mm;圆针/方针:方针;安装方式:直插;排数:双排;总PIN位数:40P;额定电流:2.5A;配合针长度:6mm;塑高:2.54mm;端接针长度:3mm;触头材质:黄铜;触头镀层:金;工作温度:-40°C~+105°C;"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "PZ2.54-2*20"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "ZHOURI(洲日)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "C5224014"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part Name" "2x20P 间距:2.54mm 方针 直插"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Connect_XH2.54_2x20P_1_0"
+				(rectangle
+					(start -5.08 26.67)
+					(end 5.08 -26.67)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 24.13 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 13.97 180)
+					(length 2.54)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 11.43 0)
+					(length 2.54)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 11.43 180)
+					(length 2.54)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 8.89 0)
+					(length 2.54)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 8.89 180)
+					(length 2.54)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 6.35 0)
+					(length 2.54)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 6.35 180)
+					(length 2.54)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 3.81 0)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 3.81 180)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 1.27 0)
+					(length 2.54)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 24.13 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 1.27 180)
+					(length 2.54)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -1.27 0)
+					(length 2.54)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -1.27 180)
+					(length 2.54)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -3.81 0)
+					(length 2.54)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -6.35 0)
+					(length 2.54)
+					(name "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -6.35 180)
+					(length 2.54)
+					(name "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -8.89 0)
+					(length 2.54)
+					(name "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -8.89 180)
+					(length 2.54)
+					(name "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -11.43 0)
+					(length 2.54)
+					(name "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 21.59 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -11.43 180)
+					(length 2.54)
+					(name "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -13.97 0)
+					(length 2.54)
+					(name "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -13.97 180)
+					(length 2.54)
+					(name "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -16.51 0)
+					(length 2.54)
+					(name "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -16.51 180)
+					(length 2.54)
+					(name "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -19.05 0)
+					(length 2.54)
+					(name "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -19.05 180)
+					(length 2.54)
+					(name "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -21.59 0)
+					(length 2.54)
+					(name "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -21.59 180)
+					(length 2.54)
+					(name "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 -24.13 0)
+					(length 2.54)
+					(name "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 21.59 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -24.13 180)
+					(length 2.54)
+					(name "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 19.05 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 19.05 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 16.51 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 16.51 180)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 13.97 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "persional_library:Coonnect_GoldenFinger_200P"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CN"
+				(at 21.082 -7.366 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "persional_library:CONN-SMD_1717254-1"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/1717254-1/618586.html"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "总PIN数:200P;安装方式:卧贴;"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "1717254-1"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TE Connectivity(泰科电子)"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier Part" "C590722"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part Name" "P数:200P"
+				(at 2.54 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Coonnect_GoldenFinger_200P_0_1"
+				(rectangle
+					(start -6.35 67.31)
+					(end 6.35 -59.69)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Coonnect_GoldenFinger_200P_1_0"
+				(pin unspecified line
+					(at 8.89 57.15 180)
+					(length 2.54)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -57.15 180)
+					(length 2.54)
+					(name "100"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "100"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 54.61 0)
+					(length 2.54)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 54.61 180)
+					(length 2.54)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 52.07 0)
+					(length 2.54)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 52.07 180)
+					(length 2.54)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 49.53 0)
+					(length 2.54)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 49.53 180)
+					(length 2.54)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 46.99 0)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 46.99 180)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 44.45 0)
+					(length 2.54)
+					(name "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 44.45 180)
+					(length 2.54)
+					(name "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 41.91 0)
+					(length 2.54)
+					(name "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 41.91 180)
+					(length 2.54)
+					(name "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 39.37 0)
+					(length 2.54)
+					(name "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 39.37 180)
+					(length 2.54)
+					(name "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 36.83 0)
+					(length 2.54)
+					(name "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 36.83 180)
+					(length 2.54)
+					(name "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 34.29 0)
+					(length 2.54)
+					(name "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 34.29 180)
+					(length 2.54)
+					(name "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 31.75 0)
+					(length 2.54)
+					(name "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 64.77 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 31.75 180)
+					(length 2.54)
+					(name "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 29.21 0)
+					(length 2.54)
+					(name "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 29.21 180)
+					(length 2.54)
+					(name "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 26.67 0)
+					(length 2.54)
+					(name "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 26.67 180)
+					(length 2.54)
+					(name "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 24.13 0)
+					(length 2.54)
+					(name "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 24.13 180)
+					(length 2.54)
+					(name "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 21.59 0)
+					(length 2.54)
+					(name "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 21.59 180)
+					(length 2.54)
+					(name "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 19.05 0)
+					(length 2.54)
+					(name "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 64.77 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 19.05 180)
+					(length 2.54)
+					(name "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 16.51 0)
+					(length 2.54)
+					(name "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 16.51 180)
+					(length 2.54)
+					(name "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 13.97 0)
+					(length 2.54)
+					(name "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 13.97 180)
+					(length 2.54)
+					(name "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 11.43 0)
+					(length 2.54)
+					(name "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 11.43 180)
+					(length 2.54)
+					(name "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 8.89 0)
+					(length 2.54)
+					(name "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 8.89 180)
+					(length 2.54)
+					(name "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 6.35 0)
+					(length 2.54)
+					(name "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 62.23 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 6.35 180)
+					(length 2.54)
+					(name "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 3.81 0)
+					(length 2.54)
+					(name "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 1.27 180)
+					(length 2.54)
+					(name "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -1.27 0)
+					(length 2.54)
+					(name "55"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "56"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -3.81 0)
+					(length 2.54)
+					(name "57"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -6.35 0)
+					(length 2.54)
+					(name "59"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 62.23 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -6.35 180)
+					(length 2.54)
+					(name "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -8.89 0)
+					(length 2.54)
+					(name "61"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -8.89 180)
+					(length 2.54)
+					(name "62"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "62"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -11.43 0)
+					(length 2.54)
+					(name "63"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "63"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -11.43 180)
+					(length 2.54)
+					(name "64"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "64"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -13.97 0)
+					(length 2.54)
+					(name "65"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "65"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -13.97 180)
+					(length 2.54)
+					(name "66"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "66"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -16.51 0)
+					(length 2.54)
+					(name "67"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "67"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -16.51 180)
+					(length 2.54)
+					(name "68"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "68"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -19.05 0)
+					(length 2.54)
+					(name "69"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "69"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 59.69 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -19.05 180)
+					(length 2.54)
+					(name "70"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "70"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -21.59 0)
+					(length 2.54)
+					(name "71"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "71"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -21.59 180)
+					(length 2.54)
+					(name "72"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "72"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -24.13 0)
+					(length 2.54)
+					(name "73"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "73"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -24.13 180)
+					(length 2.54)
+					(name "74"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "74"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -26.67 0)
+					(length 2.54)
+					(name "75"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "75"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -26.67 180)
+					(length 2.54)
+					(name "76"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "76"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -29.21 0)
+					(length 2.54)
+					(name "77"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "77"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -29.21 180)
+					(length 2.54)
+					(name "78"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "78"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -31.75 0)
+					(length 2.54)
+					(name "79"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "79"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 59.69 180)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -31.75 180)
+					(length 2.54)
+					(name "80"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "80"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -34.29 0)
+					(length 2.54)
+					(name "81"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "81"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -34.29 180)
+					(length 2.54)
+					(name "82"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "82"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -36.83 0)
+					(length 2.54)
+					(name "83"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "83"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -36.83 180)
+					(length 2.54)
+					(name "84"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "84"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -39.37 0)
+					(length 2.54)
+					(name "85"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "85"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -39.37 180)
+					(length 2.54)
+					(name "86"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "86"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -41.91 0)
+					(length 2.54)
+					(name "87"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "87"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -41.91 180)
+					(length 2.54)
+					(name "88"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "88"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -44.45 0)
+					(length 2.54)
+					(name "89"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "89"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 57.15 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -44.45 180)
+					(length 2.54)
+					(name "90"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "90"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -46.99 0)
+					(length 2.54)
+					(name "91"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "91"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -46.99 180)
+					(length 2.54)
+					(name "92"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "92"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -49.53 0)
+					(length 2.54)
+					(name "93"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "93"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -49.53 180)
+					(length 2.54)
+					(name "94"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "94"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -52.07 0)
+					(length 2.54)
+					(name "95"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "95"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -52.07 180)
+					(length 2.54)
+					(name "96"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "96"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -54.61 0)
+					(length 2.54)
+					(name "97"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "97"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -54.61 180)
+					(length 2.54)
+					(name "98"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "98"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -57.15 0)
+					(length 2.54)
+					(name "99"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "99"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Coonnect_GoldenFinger_200P_2_0"
+				(pin unspecified line
+					(at -8.89 63.5 0)
+					(length 2.54)
+					(name "101"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "101"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 63.5 180)
+					(length 2.54)
+					(name "102"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "102"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 60.96 0)
+					(length 2.54)
+					(name "103"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "103"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 60.96 180)
+					(length 2.54)
+					(name "104"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "104"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 58.42 0)
+					(length 2.54)
+					(name "105"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "105"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 58.42 180)
+					(length 2.54)
+					(name "106"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "106"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 55.88 0)
+					(length 2.54)
+					(name "107"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "107"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 55.88 180)
+					(length 2.54)
+					(name "108"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "108"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 53.34 0)
+					(length 2.54)
+					(name "109"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "109"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 53.34 180)
+					(length 2.54)
+					(name "110"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "110"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 50.8 0)
+					(length 2.54)
+					(name "111"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "111"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 50.8 180)
+					(length 2.54)
+					(name "112"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "112"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 48.26 0)
+					(length 2.54)
+					(name "113"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "113"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 48.26 180)
+					(length 2.54)
+					(name "114"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "114"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 45.72 0)
+					(length 2.54)
+					(name "115"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "115"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 45.72 180)
+					(length 2.54)
+					(name "116"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "116"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 43.18 0)
+					(length 2.54)
+					(name "117"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "117"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 43.18 180)
+					(length 2.54)
+					(name "118"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "118"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 40.64 0)
+					(length 2.54)
+					(name "119"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "119"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 40.64 180)
+					(length 2.54)
+					(name "120"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "120"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 38.1 0)
+					(length 2.54)
+					(name "121"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "121"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 38.1 180)
+					(length 2.54)
+					(name "122"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "122"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 35.56 0)
+					(length 2.54)
+					(name "123"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "123"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 35.56 180)
+					(length 2.54)
+					(name "124"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "124"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 33.02 0)
+					(length 2.54)
+					(name "125"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "125"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 33.02 180)
+					(length 2.54)
+					(name "126"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "126"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 30.48 0)
+					(length 2.54)
+					(name "127"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "127"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 30.48 180)
+					(length 2.54)
+					(name "128"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "128"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 27.94 0)
+					(length 2.54)
+					(name "129"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "129"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 27.94 180)
+					(length 2.54)
+					(name "130"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "130"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 25.4 0)
+					(length 2.54)
+					(name "131"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "131"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 25.4 180)
+					(length 2.54)
+					(name "132"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "132"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 22.86 0)
+					(length 2.54)
+					(name "133"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "133"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 22.86 180)
+					(length 2.54)
+					(name "134"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "134"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 20.32 0)
+					(length 2.54)
+					(name "135"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "135"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 20.32 180)
+					(length 2.54)
+					(name "136"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "136"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 17.78 0)
+					(length 2.54)
+					(name "137"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "137"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 17.78 180)
+					(length 2.54)
+					(name "138"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "138"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 15.24 0)
+					(length 2.54)
+					(name "139"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "139"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 15.24 180)
+					(length 2.54)
+					(name "140"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "140"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 12.7 0)
+					(length 2.54)
+					(name "141"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "141"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 12.7 180)
+					(length 2.54)
+					(name "142"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "142"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 10.16 0)
+					(length 2.54)
+					(name "143"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "143"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 10.16 180)
+					(length 2.54)
+					(name "144"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "144"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 7.62 0)
+					(length 2.54)
+					(name "145"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "145"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 7.62 180)
+					(length 2.54)
+					(name "146"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "146"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 5.08 0)
+					(length 2.54)
+					(name "147"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "147"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 5.08 180)
+					(length 2.54)
+					(name "148"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "148"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "149"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "149"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "150"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "150"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "151"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "151"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "152"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "152"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "153"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "153"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "154"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "154"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -5.08 0)
+					(length 2.54)
+					(name "155"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "155"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -5.08 180)
+					(length 2.54)
+					(name "156"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "156"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -7.62 0)
+					(length 2.54)
+					(name "157"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "157"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -7.62 180)
+					(length 2.54)
+					(name "158"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "158"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -10.16 0)
+					(length 2.54)
+					(name "159"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "159"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -10.16 180)
+					(length 2.54)
+					(name "160"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "160"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -12.7 0)
+					(length 2.54)
+					(name "161"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "161"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -12.7 180)
+					(length 2.54)
+					(name "162"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "162"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -15.24 0)
+					(length 2.54)
+					(name "163"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "163"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -15.24 180)
+					(length 2.54)
+					(name "164"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "164"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -17.78 0)
+					(length 2.54)
+					(name "165"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "165"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -17.78 180)
+					(length 2.54)
+					(name "166"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "166"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -20.32 0)
+					(length 2.54)
+					(name "167"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "167"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -20.32 180)
+					(length 2.54)
+					(name "168"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "168"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -22.86 0)
+					(length 2.54)
+					(name "169"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "169"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -22.86 180)
+					(length 2.54)
+					(name "170"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "170"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -25.4 0)
+					(length 2.54)
+					(name "171"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "171"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -25.4 180)
+					(length 2.54)
+					(name "172"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "172"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -27.94 0)
+					(length 2.54)
+					(name "173"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "173"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -27.94 180)
+					(length 2.54)
+					(name "174"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "174"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -30.48 0)
+					(length 2.54)
+					(name "175"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "175"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -30.48 180)
+					(length 2.54)
+					(name "176"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "176"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -33.02 0)
+					(length 2.54)
+					(name "177"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "177"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -33.02 180)
+					(length 2.54)
+					(name "178"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "178"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -35.56 0)
+					(length 2.54)
+					(name "179"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "179"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -35.56 180)
+					(length 2.54)
+					(name "180"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "180"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -38.1 0)
+					(length 2.54)
+					(name "181"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "181"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -38.1 180)
+					(length 2.54)
+					(name "182"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "182"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -40.64 0)
+					(length 2.54)
+					(name "183"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "183"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -40.64 180)
+					(length 2.54)
+					(name "184"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "184"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -43.18 0)
+					(length 2.54)
+					(name "185"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "185"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -43.18 180)
+					(length 2.54)
+					(name "186"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "186"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -45.72 0)
+					(length 2.54)
+					(name "187"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "187"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -45.72 180)
+					(length 2.54)
+					(name "188"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "188"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -48.26 0)
+					(length 2.54)
+					(name "189"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "189"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -48.26 180)
+					(length 2.54)
+					(name "190"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "190"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -50.8 0)
+					(length 2.54)
+					(name "191"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "191"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -50.8 180)
+					(length 2.54)
+					(name "192"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "192"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -53.34 0)
+					(length 2.54)
+					(name "193"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "193"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -53.34 180)
+					(length 2.54)
+					(name "194"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "194"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -55.88 0)
+					(length 2.54)
+					(name "195"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "195"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -55.88 180)
+					(length 2.54)
+					(name "196"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "196"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -58.42 0)
+					(length 2.54)
+					(name "197"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "197"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -58.42 180)
+					(length 2.54)
+					(name "198"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "198"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -60.96 0)
+					(length 2.54)
+					(name "199"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "199"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -60.96 180)
+					(length 2.54)
+					(name "200"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "200"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -66.04 90)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:Connect_XH2.54_2x20P")
+		(at 153.67 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "046035e5-34f6-4efc-8feb-1bf07c23d37e")
+		(property "Reference" "U1"
+			(at 153.67 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "persional_library:HDR-TH_40P-P2.54-V-M-R2-C20-S2.54"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/PZ2.54-2*20/5925193.html"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "插针结构:2x20P;间距:2.54mm;行距:2.54mm;圆针/方针:方针;安装方式:直插;排数:双排;总PIN位数:40P;额定电流:2.5A;配合针长度:6mm;塑高:2.54mm;端接针长度:3mm;触头材质:黄铜;触头镀层:金;工作温度:-40°C~+105°C;"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "PZ2.54-2*20"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ZHOURI(洲日)"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C5224014"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "2x20P 间距:2.54mm 方针 直插"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "40"
+			(uuid "49b1273e-293c-41b4-b381-fedcef550ed6")
+		)
+		(pin "32"
+			(uuid "47fe0b9c-3c66-4235-b1c4-77d78c8eaf16")
+		)
+		(pin "17"
+			(uuid "b676d9b3-5790-4339-a91d-63d11970b3ef")
+		)
+		(pin "38"
+			(uuid "61e27e93-6305-44ad-9750-11b05729ff25")
+		)
+		(pin "5"
+			(uuid "bdc379c9-a483-4508-a11b-e7818dd6aa15")
+		)
+		(pin "22"
+			(uuid "1e49fce3-b808-495d-8e30-47327bff1fff")
+		)
+		(pin "24"
+			(uuid "4dcfb70c-c539-4d26-b463-d6f6f46ed886")
+		)
+		(pin "35"
+			(uuid "358a008f-f325-4ef0-a97d-c8571a45cc11")
+		)
+		(pin "12"
+			(uuid "957f5229-7348-4bc7-b1fa-f78656c9f457")
+		)
+		(pin "39"
+			(uuid "be40d0f1-80b1-42f7-ad18-14bd8b0ed7ee")
+		)
+		(pin "8"
+			(uuid "7f745edb-7dc0-4d7a-8a00-073ec70ab58a")
+		)
+		(pin "30"
+			(uuid "a385c2be-3441-4710-b6c2-cff4b3ed9791")
+		)
+		(pin "36"
+			(uuid "67013ebb-a5a4-4b31-876f-dc8eabd858ad")
+		)
+		(pin "18"
+			(uuid "99da1996-d4ce-4b4e-9f80-8245cad87021")
+		)
+		(pin "10"
+			(uuid "36d70a2d-4480-4466-bbf9-2d5b7e1128ec")
+		)
+		(pin "1"
+			(uuid "8396c80b-3b79-4769-8a77-d07b6af40b3d")
+		)
+		(pin "26"
+			(uuid "130c3f72-49b3-414c-8a12-3fbe92b88596")
+		)
+		(pin "23"
+			(uuid "48d0ded1-a827-4c0e-a4f3-b6ea1187eabd")
+		)
+		(pin "33"
+			(uuid "9ac7e684-e708-4e69-b173-ab92c1fc5b13")
+		)
+		(pin "13"
+			(uuid "e3390427-4769-402c-b7a4-e6cc7187e31d")
+		)
+		(pin "34"
+			(uuid "60808281-01b5-4464-89db-67f4c5aa6584")
+		)
+		(pin "11"
+			(uuid "6d866201-f155-4848-8963-c5452db909c4")
+		)
+		(pin "28"
+			(uuid "7f32d570-18f9-412b-af77-a965d7c14790")
+		)
+		(pin "6"
+			(uuid "3030b06d-fe11-4d0f-9033-d8483c83ab44")
+		)
+		(pin "27"
+			(uuid "8ec4d74a-debb-4f41-96c2-ca97dfb2b255")
+		)
+		(pin "29"
+			(uuid "86b19d52-f1c5-4d5b-8b93-4aef3ebb6a44")
+		)
+		(pin "31"
+			(uuid "f3232f92-843b-44fb-b5a2-bddd9463455a")
+		)
+		(pin "2"
+			(uuid "be3c48d7-7017-4f21-be9c-fb34485ebca8")
+		)
+		(pin "20"
+			(uuid "7ca41419-8ea5-4734-b62a-b6768b2c949c")
+		)
+		(pin "9"
+			(uuid "59f11c2c-23f5-44c6-b98c-122587ac0b50")
+		)
+		(pin "19"
+			(uuid "176648c3-9486-43ca-b47d-c2b5ba586859")
+		)
+		(pin "15"
+			(uuid "d7d99319-e39e-4623-aa7f-d789aeca68e9")
+		)
+		(pin "3"
+			(uuid "3d5d2a4b-ed97-47d5-8724-bd8a02b1b6c9")
+		)
+		(pin "14"
+			(uuid "138d5171-d5fd-4658-b039-d9ddcad6db8f")
+		)
+		(pin "16"
+			(uuid "cffb568b-04cc-46c5-bc0f-ae14538612ef")
+		)
+		(pin "21"
+			(uuid "42d0949e-45f3-4abc-b50b-a3aa522899be")
+		)
+		(pin "25"
+			(uuid "f1a269fb-32fd-42c1-8e14-6ec2ce68d3ed")
+		)
+		(pin "37"
+			(uuid "f29dcec1-10ef-4ec7-bb03-b27c46db1c95")
+		)
+		(pin "4"
+			(uuid "00570513-4f27-45c3-9757-e3187e118f34")
+		)
+		(pin "7"
+			(uuid "fc37598b-59a7-4f97-93fd-087ad58d0fe3")
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd/9835d1ad-9576-417d-8c16-db313e08d381"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:Connect_XH2.54_2x20P")
+		(at 194.31 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b12db64d-1adc-480c-afe9-471e681e29df")
+		(property "Reference" "U2"
+			(at 194.31 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "persional_library:HDR-TH_40P-P2.54-V-M-R2-C20-S2.54"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/PZ2.54-2*20/5925193.html"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "插针结构:2x20P;间距:2.54mm;行距:2.54mm;圆针/方针:方针;安装方式:直插;排数:双排;总PIN位数:40P;额定电流:2.5A;配合针长度:6mm;塑高:2.54mm;端接针长度:3mm;触头材质:黄铜;触头镀层:金;工作温度:-40°C~+105°C;"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "PZ2.54-2*20"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ZHOURI(洲日)"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C5224014"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "2x20P 间距:2.54mm 方针 直插"
+			(at 194.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "40"
+			(uuid "ed17afce-9c32-4487-b54a-a6f021393711")
+		)
+		(pin "32"
+			(uuid "97cd40fa-dafc-4c1d-8f10-ff7aad016b70")
+		)
+		(pin "17"
+			(uuid "20d03170-074c-4eea-96fc-b7386cedd179")
+		)
+		(pin "38"
+			(uuid "23c73caf-aa73-47a0-85db-a71e297990cd")
+		)
+		(pin "5"
+			(uuid "9820ca84-0779-4aff-a54d-fb1caba30cfb")
+		)
+		(pin "22"
+			(uuid "67b93bb8-f18e-4aa6-8185-56014a0b2e72")
+		)
+		(pin "24"
+			(uuid "35930f08-83b7-4eda-88b5-b9dcd7d61e6b")
+		)
+		(pin "35"
+			(uuid "3bed29e3-44a9-4f82-8d6e-2fad3d625c90")
+		)
+		(pin "12"
+			(uuid "009ae74c-fe1c-4d87-a584-fdec0c55baa9")
+		)
+		(pin "39"
+			(uuid "8b79a563-125a-4e1d-9398-f1d13c402f39")
+		)
+		(pin "8"
+			(uuid "6780929f-85d8-4290-8da5-bedaea66b5b2")
+		)
+		(pin "30"
+			(uuid "232f73fb-a7d8-485a-a695-71bff4bf03f6")
+		)
+		(pin "36"
+			(uuid "58aabae4-ff16-4e3a-baf7-d5165a3af722")
+		)
+		(pin "18"
+			(uuid "bb0bbd17-9e62-4fe0-98c2-5ba7f8c5daa2")
+		)
+		(pin "10"
+			(uuid "9bba7842-f137-43ce-952b-2c3091f9fdf5")
+		)
+		(pin "1"
+			(uuid "fdfcd1b5-2f27-424b-8ead-b129dcebd680")
+		)
+		(pin "26"
+			(uuid "f90af11b-1f1b-405e-83c2-0a8ba459b0ef")
+		)
+		(pin "23"
+			(uuid "f79f6a33-66ea-4f87-9de3-6a089258ea61")
+		)
+		(pin "33"
+			(uuid "ea019e09-189f-40f2-913c-6f7c9d62333e")
+		)
+		(pin "13"
+			(uuid "6f46ead9-d051-4440-a6be-2c8c3ac1b169")
+		)
+		(pin "34"
+			(uuid "b02ce274-ec37-4140-a165-77530c91ff72")
+		)
+		(pin "11"
+			(uuid "2ba1a289-3916-43c5-bb24-9c9c439359cc")
+		)
+		(pin "28"
+			(uuid "83b333da-4df5-4470-8766-43c263e4cf3b")
+		)
+		(pin "6"
+			(uuid "fb1f755d-374c-494d-b549-fb8dc348942a")
+		)
+		(pin "27"
+			(uuid "5f9de34a-350e-4f85-8ea4-76c8ecc2da75")
+		)
+		(pin "29"
+			(uuid "552377df-8639-4bac-9f6f-429f240d3e9c")
+		)
+		(pin "31"
+			(uuid "4a52ffd7-ef06-4d00-927c-da404f94d06b")
+		)
+		(pin "2"
+			(uuid "88db38c6-46fd-4867-8c7a-6e32132a1f92")
+		)
+		(pin "20"
+			(uuid "8fa32bd4-82e4-4274-aa5d-7c01784ea1bb")
+		)
+		(pin "9"
+			(uuid "2e6f6bee-1949-4ac7-91a8-8b47b0de65cc")
+		)
+		(pin "19"
+			(uuid "a493a5c7-51f9-424d-8884-8a3ad18e1de7")
+		)
+		(pin "15"
+			(uuid "d2d33fa8-3d79-49fc-bb89-062d20b07689")
+		)
+		(pin "3"
+			(uuid "75948aee-f55a-4b33-9505-89947332de70")
+		)
+		(pin "14"
+			(uuid "f58f8df3-0814-4a2a-bbd5-1ebe19d603a7")
+		)
+		(pin "16"
+			(uuid "dc3923a4-7300-4cae-8844-ebf1ab74bb0c")
+		)
+		(pin "21"
+			(uuid "5097759b-77bf-48e6-b4ae-041d36ec8fdb")
+		)
+		(pin "25"
+			(uuid "849ad4fa-cfbb-4486-bf07-17a8f246e602")
+		)
+		(pin "37"
+			(uuid "43c27f09-c21e-4888-9cbc-29afb981b27a")
+		)
+		(pin "4"
+			(uuid "c59bee18-1ba3-4a73-bedc-b82a7f05e322")
+		)
+		(pin "7"
+			(uuid "74e14bf9-91b4-48f7-b0bd-21e4d5cd9054")
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd/9835d1ad-9576-417d-8c16-db313e08d381"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Coonnect_GoldenFinger_200P_1")
+		(lib_id "persional_library:Coonnect_GoldenFinger_200P")
+		(at 85.09 92.71 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d37503ec-0718-4e8a-97f2-92d4be8f655d")
+		(property "Reference" "CN1"
+			(at 85.09 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:CONN-SMD_1717254-1"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/1717254-1/618586.html"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "总PIN数:200P;安装方式:卧贴;"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "1717254-1"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity(泰科电子)"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C590722"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "P数:200P"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "41"
+			(uuid "10b20fe4-ed7f-457c-b61b-62f30b90f245")
+		)
+		(pin "46"
+			(uuid "d99ef88f-12c8-40b9-a8e2-fafd9dcada6a")
+		)
+		(pin "31"
+			(uuid "6f8740a3-41c1-4f5c-8a50-aa9c8a5664b6")
+		)
+		(pin "34"
+			(uuid "e6292a8a-effd-48ba-8f42-dd1318eaa6c2")
+		)
+		(pin "50"
+			(uuid "86b1b9d8-d8f6-4684-ac27-2c3710851b2a")
+		)
+		(pin "36"
+			(uuid "8939cdbe-af4d-49f2-a861-770e7f01d6e7")
+		)
+		(pin "18"
+			(uuid "ae283f43-cf76-421e-981b-70cbe3a0834b")
+		)
+		(pin "21"
+			(uuid "4e1deb60-5d1f-4e2f-8c3e-1c35d9170062")
+		)
+		(pin "55"
+			(uuid "01216f36-b635-43c3-a457-98eda2cb3d12")
+		)
+		(pin "13"
+			(uuid "8d7c03c4-f1cc-4ccc-a620-ba91de5d00d8")
+		)
+		(pin "17"
+			(uuid "570e62ce-a4e1-4327-8995-c7314612d6df")
+		)
+		(pin "56"
+			(uuid "85dc56db-79bc-4603-9cd0-3d3c77b88c75")
+		)
+		(pin "22"
+			(uuid "04410c19-c3d9-40cc-9f08-23e445b77b94")
+		)
+		(pin "62"
+			(uuid "07ec6ec1-50ae-4855-86ed-3cd636b2aeae")
+		)
+		(pin "64"
+			(uuid "67c0d521-6a03-4a6c-9238-aa921b3dbd97")
+		)
+		(pin "19"
+			(uuid "b8a525fa-ff42-440c-a236-a8f9f7b55752")
+		)
+		(pin "39"
+			(uuid "bbe5c666-d888-4966-bf28-dbc610a96add")
+		)
+		(pin "67"
+			(uuid "454879f8-274f-453e-a210-ec0b081a7134")
+		)
+		(pin "61"
+			(uuid "a0f76f76-ffd7-4443-8a46-6c6093fa9bf9")
+		)
+		(pin "32"
+			(uuid "6afbcdc3-dc62-4201-bc7b-3257874e4386")
+		)
+		(pin "68"
+			(uuid "f48ca69c-aec8-4c01-b073-9c0ded61f252")
+		)
+		(pin "14"
+			(uuid "eebd9f3d-7445-4f4f-97ca-b59e86b71a4f")
+		)
+		(pin "15"
+			(uuid "ded4572b-e6c9-4f26-9571-6d7737f211ff")
+		)
+		(pin "27"
+			(uuid "73ad501e-64c8-4c5b-92ca-d498d86312f6")
+		)
+		(pin "29"
+			(uuid "d5c2c48f-3387-4b93-bb55-4db903a7ad09")
+		)
+		(pin "30"
+			(uuid "248f5971-0b6c-4d32-8b39-60b059e853e1")
+		)
+		(pin "25"
+			(uuid "6c2f29f9-9faa-4dda-82cf-49ac10fbc3ac")
+		)
+		(pin "11"
+			(uuid "689a7e3c-4bba-4398-99cc-a4c40e6cfef3")
+		)
+		(pin "35"
+			(uuid "2319fb23-cbee-4a3e-a095-497f7e108440")
+		)
+		(pin "24"
+			(uuid "c47a761f-7a94-47e3-aa85-cefacc3c8c57")
+		)
+		(pin "100"
+			(uuid "a4688af8-36f0-4cf1-be04-e6bf41020314")
+		)
+		(pin "23"
+			(uuid "1bb38b8b-013e-4437-8c85-1a4bfca1c8c9")
+		)
+		(pin "12"
+			(uuid "5a1e9f33-c632-4bce-9178-bc6dd8af358e")
+		)
+		(pin "5"
+			(uuid "62242b35-ffdc-43e8-ad37-331b0337a84a")
+		)
+		(pin "4"
+			(uuid "6d39578d-1685-45ae-95aa-8fd50f9e097a")
+		)
+		(pin "26"
+			(uuid "5667d7bf-4c48-4011-821d-cf38514448da")
+		)
+		(pin "28"
+			(uuid "fc54da80-074c-49e7-9b87-e4318a9db2ad")
+		)
+		(pin "37"
+			(uuid "02afd01e-b644-4bd8-b92f-eb24bb702df3")
+		)
+		(pin "10"
+			(uuid "cef5fc73-4f2b-4509-8dd8-aec5e03cf21e")
+		)
+		(pin "16"
+			(uuid "350aa671-06c8-4786-a4bb-292d36b0badc")
+		)
+		(pin "3"
+			(uuid "55071de3-d6bb-4999-81b5-20942482430c")
+		)
+		(pin "40"
+			(uuid "d255abf6-0624-4836-b430-ff343a7dfb5e")
+		)
+		(pin "42"
+			(uuid "0e37b11b-5b6b-453a-8950-cd5e25cd1ce3")
+		)
+		(pin "43"
+			(uuid "9d208807-289a-4195-ac8f-b817774a7c44")
+		)
+		(pin "20"
+			(uuid "a1ecef3d-36d9-4780-9447-70b1a2db92c3")
+		)
+		(pin "44"
+			(uuid "a12f9eab-1b8c-40d2-af35-3001aa0d0f3d")
+		)
+		(pin "33"
+			(uuid "de678a90-2d15-48b5-a873-e387c93e81c9")
+		)
+		(pin "38"
+			(uuid "b8d5565c-02e0-4699-9247-a2beef4af4b9")
+		)
+		(pin "45"
+			(uuid "80d211ae-5023-4c7c-a57a-6b8445b9b851")
+		)
+		(pin "47"
+			(uuid "89ffb386-e3fb-40fc-aba3-42449a439152")
+		)
+		(pin "48"
+			(uuid "a4d8eac8-f304-4a29-8e02-a9f9cb8c0708")
+		)
+		(pin "49"
+			(uuid "5c0930e8-2bbe-4a9e-a6d6-f7ee5a285041")
+		)
+		(pin "52"
+			(uuid "190ca28e-c0a2-495c-9e44-4a43cb219e4d")
+		)
+		(pin "53"
+			(uuid "2dd41518-a7fd-431d-a67a-2207f3dd0548")
+		)
+		(pin "51"
+			(uuid "bf27cce8-eaa9-4075-a5ec-a46997dab8ee")
+		)
+		(pin "54"
+			(uuid "cdefb987-8ce1-4d4b-9e59-0736b71ddfdb")
+		)
+		(pin "57"
+			(uuid "73d6b97b-1bad-45b8-8dd3-caba6005dd67")
+		)
+		(pin "58"
+			(uuid "5176b732-c598-4333-a9d8-121eca67cd28")
+		)
+		(pin "59"
+			(uuid "88603744-4f55-4d92-a624-97166d3ece3e")
+		)
+		(pin "6"
+			(uuid "c525dee9-06df-4ccc-949f-4cb1af1dce0b")
+		)
+		(pin "60"
+			(uuid "92c2bbba-59b5-4da6-8dcb-e5ec4908bc8c")
+		)
+		(pin "63"
+			(uuid "82d18c75-ea56-45a7-a9cc-a9a0000670cf")
+		)
+		(pin "65"
+			(uuid "1e6cd9a1-3620-43f7-9530-480bdac14043")
+		)
+		(pin "66"
+			(uuid "584ba507-e416-4627-8529-eee6a99bc6f3")
+		)
+		(pin "113"
+			(uuid "4b257544-f36a-42a7-9b07-f67ad049d781")
+		)
+		(pin "85"
+			(uuid "cf6f62f9-b422-46e1-b527-2e0241492d95")
+		)
+		(pin "95"
+			(uuid "8f1d262a-8b81-4360-9e8d-023dd6b2b90b")
+		)
+		(pin "117"
+			(uuid "21f33eeb-419d-46f8-9d97-1184ef890b0d")
+		)
+		(pin "88"
+			(uuid "bc29fdd5-0c9d-4b93-a9bc-bd3933c47828")
+		)
+		(pin "9"
+			(uuid "ebbe4470-b2e0-40d0-aed1-aa6490b3bf9d")
+		)
+		(pin "96"
+			(uuid "f56d2c0d-2014-414f-afde-d6783d56f8bb")
+		)
+		(pin "73"
+			(uuid "02c40d06-79fa-499e-848e-ce3a1d126329")
+		)
+		(pin "90"
+			(uuid "44b33399-d572-419d-9814-9a69ed83475a")
+		)
+		(pin "92"
+			(uuid "d321985c-8f3a-4408-9633-bde199dd1bf3")
+		)
+		(pin "83"
+			(uuid "583caffa-7486-42ef-8a99-e871c0a32a84")
+		)
+		(pin "93"
+			(uuid "2a2f4438-f669-45f6-b780-26b56b7662be")
+		)
+		(pin "69"
+			(uuid "b9216337-c04a-4832-ad42-6b5dc540e8ab")
+		)
+		(pin "94"
+			(uuid "59a3a7cd-3152-4fe3-8e97-a7844e45630c")
+		)
+		(pin "104"
+			(uuid "f0a44cb4-27c6-4aa5-ab66-e0765fc49794")
+		)
+		(pin "106"
+			(uuid "b943ddbf-7d23-4ce8-9ba0-c0e40406094a")
+		)
+		(pin "105"
+			(uuid "d35282fb-4deb-42c8-aa68-5c570cff81ba")
+		)
+		(pin "77"
+			(uuid "31aa6abe-790a-4b17-b0b3-75bc0269efa2")
+		)
+		(pin "107"
+			(uuid "868d4b7d-cb8e-4bff-bf4f-b4487eaab6b9")
+		)
+		(pin "108"
+			(uuid "9c68c8bc-341e-42e7-98c4-2374d4593ab1")
+		)
+		(pin "109"
+			(uuid "94c5018a-84ae-49d4-b128-5e7b697c07d5")
+		)
+		(pin "8"
+			(uuid "fc74644c-0054-4587-a6e3-03797ff29c53")
+		)
+		(pin "71"
+			(uuid "c6dda2d4-7733-46aa-a506-19cbd17a7f52")
+		)
+		(pin "78"
+			(uuid "eb094108-c7d4-46f1-9c6b-db2cb7cd9fe0")
+		)
+		(pin "79"
+			(uuid "00a34ce5-f3c7-46c1-a7a2-57ded228c598")
+		)
+		(pin "80"
+			(uuid "ce05593f-a372-4e7e-9416-653fec00ebb3")
+		)
+		(pin "7"
+			(uuid "5959a2f5-5511-4774-aa5e-54f9386c683b")
+		)
+		(pin "75"
+			(uuid "0c75a11a-b863-4349-9fd7-6b8e7c8b2fe6")
+		)
+		(pin "74"
+			(uuid "817cbd87-28c0-4912-9749-c753a243c062")
+		)
+		(pin "86"
+			(uuid "59cf3602-0761-4d68-9a92-c28acf09dfa7")
+		)
+		(pin "87"
+			(uuid "09a9fd7a-9f15-46f9-8674-5025fd365b11")
+		)
+		(pin "97"
+			(uuid "46d6c2ed-e846-4b27-a03c-db4ec2726e51")
+		)
+		(pin "99"
+			(uuid "c9a17cc8-d198-4800-8f00-29ff4a5ea772")
+		)
+		(pin "91"
+			(uuid "c2d6da4e-0ed7-48b0-9e92-4409b133c12d")
+		)
+		(pin "70"
+			(uuid "2cee2c99-8983-4d6b-aa17-bc2734ba1b1f")
+		)
+		(pin "101"
+			(uuid "d4b8f09f-3087-4c3f-aea7-ec84b9a91b45")
+		)
+		(pin "76"
+			(uuid "3f6d5841-c593-4dbd-ba57-6d7c27698cd4")
+		)
+		(pin "110"
+			(uuid "60bd74f5-1670-4d1d-90c2-97ced929e121")
+		)
+		(pin "84"
+			(uuid "883aa004-9d7f-4891-bc61-28840cf93900")
+		)
+		(pin "82"
+			(uuid "40fba974-21e5-4a7a-b9e7-858b9985310b")
+		)
+		(pin "102"
+			(uuid "5fafe91d-1b63-4a40-a777-7195f432fdac")
+		)
+		(pin "81"
+			(uuid "50fb1b95-bb01-4e94-9fa1-cffd876cef76")
+		)
+		(pin "72"
+			(uuid "b319f46e-0325-4e52-9fa7-a337e167553b")
+		)
+		(pin "98"
+			(uuid "7d4f787f-2c40-4123-bda4-13300cbe78b3")
+		)
+		(pin "103"
+			(uuid "1f7424fd-e1ff-4f4e-b3cd-ab355088db14")
+		)
+		(pin "111"
+			(uuid "ebaa73cb-a0ef-477f-aeca-55184fe9aa65")
+		)
+		(pin "89"
+			(uuid "6b71b995-3a1e-40cc-80c9-300c42bf2ac3")
+		)
+		(pin "112"
+			(uuid "0a0d8925-04b6-4972-a498-4e0d54d963f4")
+		)
+		(pin "114"
+			(uuid "fa5fbabd-1baa-42f9-8ef4-faff460fe9c0")
+		)
+		(pin "115"
+			(uuid "28275dbb-fd95-4db7-8b74-57027153e3c8")
+		)
+		(pin "116"
+			(uuid "dec5656c-60c1-4dd4-bc56-7a08f627dd20")
+		)
+		(pin "118"
+			(uuid "9210e573-cd05-4f18-aeb5-268dfba9bc86")
+		)
+		(pin "119"
+			(uuid "f80ffffd-b48a-49f7-951a-74b629fd5d9c")
+		)
+		(pin "120"
+			(uuid "9fedc2f1-1ca2-437c-85b4-7bf886c2d12f")
+		)
+		(pin "121"
+			(uuid "f64cba26-ec57-41f1-a2d9-9a98c92e0bf7")
+		)
+		(pin "122"
+			(uuid "340e9111-d47b-4ff0-896e-ea52c6411a40")
+		)
+		(pin "123"
+			(uuid "fa9941a9-1e2a-412e-b2ac-713cbadf068f")
+		)
+		(pin "124"
+			(uuid "10444c2e-8e68-4689-8ff5-1a5c991053ff")
+		)
+		(pin "125"
+			(uuid "678addb5-e734-4719-bac0-a9f7ead530c2")
+		)
+		(pin "126"
+			(uuid "d4329870-9a66-468d-8518-2e7b226709f4")
+		)
+		(pin "127"
+			(uuid "0b881ce8-21f0-4d55-96bf-37e2024fff42")
+		)
+		(pin "128"
+			(uuid "9312f0c6-d167-43bd-9ba8-16a82c4d55d4")
+		)
+		(pin "129"
+			(uuid "0235bd40-e0c8-4f8d-80d1-d787c7285b28")
+		)
+		(pin "130"
+			(uuid "6a9ca227-b946-4dfd-bcf1-2cf83d40c943")
+		)
+		(pin "131"
+			(uuid "8917825c-973e-4570-a806-e0556636b71e")
+		)
+		(pin "147"
+			(uuid "a8fb9c23-7257-427b-830d-91b646a5231f")
+		)
+		(pin "141"
+			(uuid "234e2e18-1249-4ced-a046-986b40951cd2")
+		)
+		(pin "173"
+			(uuid "bb49ee19-b2a4-4d6d-b21b-fc4840281ca0")
+		)
+		(pin "179"
+			(uuid "715fc99c-ecaa-47e0-9a84-f0f39498bcd4")
+		)
+		(pin "181"
+			(uuid "5ec58ff0-8629-40dd-8067-63c8282f209e")
+		)
+		(pin "183"
+			(uuid "f712ae25-8ef5-40fc-9aca-1c041672ccb2")
+		)
+		(pin "158"
+			(uuid "bdb7840b-8eea-4191-a82e-0fdb7f1f124b")
+		)
+		(pin "153"
+			(uuid "74edd15d-3f59-4277-8820-b14582a452c6")
+		)
+		(pin "162"
+			(uuid "6f4b120e-c2fd-4ef6-a501-3a5ae1d4e702")
+		)
+		(pin "188"
+			(uuid "a4f134c9-428d-45ef-95ce-dc87a6e868f4")
+		)
+		(pin "140"
+			(uuid "514ae673-651c-477e-a17c-ae4287759b6e")
+		)
+		(pin "152"
+			(uuid "9d5e9850-6a27-472e-a8ef-435046b97b48")
+		)
+		(pin "164"
+			(uuid "566d0911-56fb-4b49-89fd-4851dc019921")
+		)
+		(pin "170"
+			(uuid "086afdfe-4f60-40bd-aa8b-492c88abe86a")
+		)
+		(pin "178"
+			(uuid "7ba35a0f-0ada-42d1-befa-1c262bbc9a13")
+		)
+		(pin "169"
+			(uuid "2998818e-abd8-4e63-8236-70396c9cada9")
+		)
+		(pin "171"
+			(uuid "2ac2b437-d420-43a2-a96c-368824770d45")
+		)
+		(pin "143"
+			(uuid "2cd5866b-774f-4d74-91f9-814952f2b172")
+		)
+		(pin "139"
+			(uuid "1ba8d150-d39c-4e4e-855e-740ca3dd83a3")
+		)
+		(pin "145"
+			(uuid "87076369-c2cf-4f98-a246-843bb2b23b4b")
+		)
+		(pin "150"
+			(uuid "efefe903-6b2f-4614-aae1-734ee23a2f93")
+		)
+		(pin "138"
+			(uuid "5ff5d2a6-d9e1-4913-9d57-a9f887fea399")
+		)
+		(pin "148"
+			(uuid "35a8c0f8-3cc1-496f-8ed9-de5fdb73db66")
+		)
+		(pin "163"
+			(uuid "59646b07-8617-4d5b-9c8b-1de3ebc56397")
+		)
+		(pin "154"
+			(uuid "9183db3d-8e6a-41a6-84d5-8ce97a84d10a")
+		)
+		(pin "157"
+			(uuid "cf5ecd4a-e421-4aa7-9edf-fd9f88a2e3ec")
+		)
+		(pin "159"
+			(uuid "154e6bd4-ec60-4303-818e-35d3e1419c33")
+		)
+		(pin "161"
+			(uuid "5078b1d9-a5ea-41cc-84ea-4f71e4eb19e8")
+		)
+		(pin "136"
+			(uuid "29702b86-6a12-4c21-90bf-87068818d559")
+		)
+		(pin "137"
+			(uuid "2fe6d3ed-8d47-464c-a9f7-01b40e19fc1a")
+		)
+		(pin "135"
+			(uuid "d71ca330-cfa6-4ff4-bad1-665a3855518e")
+		)
+		(pin "142"
+			(uuid "da0c6cf0-830b-48a7-b36a-674b362bb872")
+		)
+		(pin "146"
+			(uuid "2fc92ed9-9bbc-46ff-8166-2660513c070b")
+		)
+		(pin "132"
+			(uuid "5b38852d-92c1-42a0-bf14-09b9281b1d30")
+		)
+		(pin "166"
+			(uuid "32517392-a334-4982-88c5-af0dc8e88431")
+		)
+		(pin "172"
+			(uuid "54369c87-4471-4238-b1ed-bc611f51d4df")
+		)
+		(pin "144"
+			(uuid "f24eb513-6517-4649-8adf-18c53af04713")
+		)
+		(pin "174"
+			(uuid "cc258fd0-8227-442e-a872-084b460fd7c3")
+		)
+		(pin "133"
+			(uuid "54de5b0c-a8a9-4221-b3f3-0f74ab5098fc")
+		)
+		(pin "134"
+			(uuid "2858bba2-57f6-4cbc-a1ba-3431821fabd6")
+		)
+		(pin "151"
+			(uuid "9da5f9bf-3784-4975-b865-29ab0c11e001")
+		)
+		(pin "160"
+			(uuid "60819f73-5de7-4fd3-81e5-9d2846f8d0b2")
+		)
+		(pin "149"
+			(uuid "323848e7-deec-4cdd-bf5e-17bfa5731e96")
+		)
+		(pin "165"
+			(uuid "30376a29-0648-46dc-bbe9-da68fcd81891")
+		)
+		(pin "167"
+			(uuid "72f04ad1-a804-44f0-a0b6-56f00adaacc9")
+		)
+		(pin "175"
+			(uuid "c617b935-e348-4270-9a96-bae11b97ae97")
+		)
+		(pin "156"
+			(uuid "e1a9f835-4d56-4c24-bb34-c585a8d64fe5")
+		)
+		(pin "176"
+			(uuid "2ace3d24-417a-4cb0-81c9-4bdca559fa77")
+		)
+		(pin "155"
+			(uuid "38a9fa5a-5bae-4c41-808e-5e52c6ccc3c4")
+		)
+		(pin "168"
+			(uuid "74bf8a58-691e-4a51-91f2-94374475eff1")
+		)
+		(pin "177"
+			(uuid "9a052d0f-0235-485f-8791-7f6c80c246b2")
+		)
+		(pin "180"
+			(uuid "7b2cfe8a-ebe1-480b-90a5-33f10006083d")
+		)
+		(pin "182"
+			(uuid "9bb7c8d9-b5c8-429b-a043-881bb7256d4e")
+		)
+		(pin "184"
+			(uuid "79a188b4-f766-4f11-bb7d-7d536858dbc6")
+		)
+		(pin "185"
+			(uuid "8d09508f-1284-4a6b-8278-e4283eea9ad5")
+		)
+		(pin "186"
+			(uuid "28697b15-1d7c-4573-b1f2-7f876c7bd5b9")
+		)
+		(pin "187"
+			(uuid "51f05cea-d35d-436a-965d-20b2bdabcddf")
+		)
+		(pin "189"
+			(uuid "3d22652c-1474-45b7-949d-3ec82d6f6a5f")
+		)
+		(pin "190"
+			(uuid "ac9f5d2a-1814-4ead-9190-aa15b33cb25f")
+		)
+		(pin "191"
+			(uuid "8137545c-3ae3-4c04-9cb2-398e4317c1e9")
+		)
+		(pin "192"
+			(uuid "014766ff-a4d1-4bf9-a9e3-a3117ef5e2b8")
+		)
+		(pin "193"
+			(uuid "5a9ebbad-996e-49d5-bc65-18b92e1685b9")
+		)
+		(pin "194"
+			(uuid "3347e71a-934e-40f1-9758-9d4f1f542a19")
+		)
+		(pin "195"
+			(uuid "fe78dd14-4353-4862-bf01-713ee651b68c")
+		)
+		(pin "196"
+			(uuid "f3540b59-ff02-4c6d-96a9-306a4ec5963b")
+		)
+		(pin "S1"
+			(uuid "0336bb86-68d4-4654-8d91-d94aa79a6eab")
+		)
+		(pin "199"
+			(uuid "522fe215-4ca9-4f21-990f-ae1f48d4be97")
+		)
+		(pin "197"
+			(uuid "84f31f09-a8fb-49c8-9505-0d2d7ab93f06")
+		)
+		(pin "200"
+			(uuid "30e57aff-2471-42a0-aab2-d07940c52086")
+		)
+		(pin "198"
+			(uuid "3372b196-2a64-425b-a219-f71c44692206")
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd/9835d1ad-9576-417d-8c16-db313e08d381"
+					(reference "CN1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "persional_library:Coonnect_GoldenFinger_200P")
+		(at 36.83 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1804bc8-999a-4371-9d86-f75bf63fc087")
+		(property "Reference" "CN1"
+			(at 36.83 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 36.83 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "persional_library:CONN-SMD_1717254-1"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/1717254-1/618586.html"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "总PIN数:200P;安装方式:卧贴;"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "1717254-1"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity(泰科电子)"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C590722"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "P数:200P"
+			(at 39.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "41"
+			(uuid "5b6ace03-4b21-4e53-ba97-4e4a998b5226")
+		)
+		(pin "46"
+			(uuid "74f4acba-8064-4252-9f20-c32a107209f7")
+		)
+		(pin "31"
+			(uuid "03d74ddb-57e3-404b-9071-cfd60db2e2c1")
+		)
+		(pin "34"
+			(uuid "f24a8d63-39fa-4e39-b722-41e0ec63ea59")
+		)
+		(pin "50"
+			(uuid "8fc7a2c5-6c49-406e-a45e-a0b387e32cd9")
+		)
+		(pin "36"
+			(uuid "e2429e9d-9865-4abd-9e7f-f8267189f337")
+		)
+		(pin "18"
+			(uuid "d8e0eace-cbb4-44f2-87bf-e2ed74651b90")
+		)
+		(pin "21"
+			(uuid "8cfb82a7-a410-45a4-af0d-83c7c407cd81")
+		)
+		(pin "55"
+			(uuid "8b250d5a-a5e7-45ba-87f5-3d2d2f775b8e")
+		)
+		(pin "13"
+			(uuid "48b4199d-504a-40a8-9efb-7b79ed3f506b")
+		)
+		(pin "17"
+			(uuid "dd6bd4cb-9b0c-4cdd-9835-cfe7e3f5719e")
+		)
+		(pin "56"
+			(uuid "26dde12e-4e4f-4cbf-9996-d306409d3dc5")
+		)
+		(pin "22"
+			(uuid "0a358843-76f8-450b-ab16-19f63ede9f32")
+		)
+		(pin "62"
+			(uuid "52d26d77-2c93-4505-b66f-24ba98b1ce70")
+		)
+		(pin "64"
+			(uuid "85d07517-4db9-4535-ae16-0da895731957")
+		)
+		(pin "19"
+			(uuid "a22f6e89-da38-4eb0-813e-4a4eb791aeec")
+		)
+		(pin "39"
+			(uuid "6b29f44d-9678-408a-9bcc-a2c083fd7729")
+		)
+		(pin "67"
+			(uuid "c4b8ba76-a3a5-4afa-b0af-db4964cc4e28")
+		)
+		(pin "61"
+			(uuid "22198d1e-8c98-4999-b690-9604140dd704")
+		)
+		(pin "32"
+			(uuid "406ca0ba-10b9-44f5-b0a4-83e2a0b2d862")
+		)
+		(pin "68"
+			(uuid "e5d9e281-04a2-4a5a-8acf-cbae1e5307f6")
+		)
+		(pin "14"
+			(uuid "6a01a694-bc24-49c6-90be-9317d0af488b")
+		)
+		(pin "15"
+			(uuid "56db07ee-00a0-4ce3-bee2-340f0c0ae296")
+		)
+		(pin "27"
+			(uuid "c7b793a6-9e13-4fdc-9593-008b6fa0d810")
+		)
+		(pin "29"
+			(uuid "eade48a2-7584-42a5-9714-affd4d03b4e4")
+		)
+		(pin "30"
+			(uuid "06052847-812f-4e34-a0d7-27e6fad8537e")
+		)
+		(pin "25"
+			(uuid "dce26f02-a207-424a-9d59-e0ac766d394a")
+		)
+		(pin "11"
+			(uuid "58321739-d8d5-4c3d-9fb6-e8dbddd6c7e8")
+		)
+		(pin "35"
+			(uuid "7992fced-7d3e-4a7b-aacf-76f9271e3b1e")
+		)
+		(pin "24"
+			(uuid "a5c10aaf-e410-4acb-9ac8-02731c5c205f")
+		)
+		(pin "100"
+			(uuid "fb653ea9-b1b0-448f-85aa-62d217f71acd")
+		)
+		(pin "23"
+			(uuid "9b1eea15-55a4-4310-aec2-2b4f955efe3c")
+		)
+		(pin "12"
+			(uuid "6c19f197-3f1a-47ca-b3ac-7ab0c5d2be65")
+		)
+		(pin "5"
+			(uuid "763c2619-e38d-4927-99a4-4c89b9cd0473")
+		)
+		(pin "4"
+			(uuid "c5b3a509-be91-4c95-8be9-cd1fdd42dbc3")
+		)
+		(pin "26"
+			(uuid "db87a3f8-9908-44f8-be8d-9eac535ed74a")
+		)
+		(pin "28"
+			(uuid "eae27474-b19c-4524-be9b-69ff7b7c3e87")
+		)
+		(pin "37"
+			(uuid "9a30f492-137e-44cf-b10d-bcfa77bb7601")
+		)
+		(pin "10"
+			(uuid "7e5fb563-b791-4c5c-97c5-ecc7c7b5daa9")
+		)
+		(pin "16"
+			(uuid "967201a0-8959-445c-b0bd-a6132638fcf0")
+		)
+		(pin "3"
+			(uuid "567759c7-7b09-44b4-9c27-8343b814fa67")
+		)
+		(pin "40"
+			(uuid "1082a35e-d201-4744-948e-1eea2958d7a6")
+		)
+		(pin "42"
+			(uuid "e786ac81-ad42-4f37-a5a4-5c71e3427948")
+		)
+		(pin "43"
+			(uuid "51a03139-d950-4ff7-a9fe-2882f237b761")
+		)
+		(pin "20"
+			(uuid "ead14b49-b44c-4f29-a006-492248570866")
+		)
+		(pin "44"
+			(uuid "18c0f389-e8a3-40f3-8c9d-ab7a6be73f02")
+		)
+		(pin "33"
+			(uuid "3dbf912e-888b-42b5-b386-91c8ab8dc1c2")
+		)
+		(pin "38"
+			(uuid "b0a48620-a11f-4d64-80e5-57dca71b8fca")
+		)
+		(pin "45"
+			(uuid "f0679f4c-3b6b-4a8c-b3c6-ccb77208d83d")
+		)
+		(pin "47"
+			(uuid "c74d48ba-bf72-4326-90f4-72713a94d8cc")
+		)
+		(pin "48"
+			(uuid "4a14ff85-3444-42d7-a942-b93069082529")
+		)
+		(pin "49"
+			(uuid "76692908-ae36-4e91-a500-2aaa09a74e4d")
+		)
+		(pin "52"
+			(uuid "48bdb0da-b4c3-41d1-8408-3ae09097f281")
+		)
+		(pin "53"
+			(uuid "5792ab6b-69c5-45fd-b851-63e7f118b1f8")
+		)
+		(pin "51"
+			(uuid "cc104409-2b61-4093-a7de-9e6dcf25c3c0")
+		)
+		(pin "54"
+			(uuid "0dbb6463-450c-4d1b-b6c7-e4eaf5b0617a")
+		)
+		(pin "57"
+			(uuid "e791b56b-97ea-41d8-8f58-497a2274b9d1")
+		)
+		(pin "58"
+			(uuid "d0ad5677-6331-4a1a-96f4-cd00e2e353d0")
+		)
+		(pin "59"
+			(uuid "2b34cb43-2832-4db6-8280-81382d40e216")
+		)
+		(pin "6"
+			(uuid "01f85777-fe69-4731-add3-fb3379af3a97")
+		)
+		(pin "60"
+			(uuid "a0403ef4-7bc0-4de0-b310-b67794860e60")
+		)
+		(pin "63"
+			(uuid "2c57de14-cca8-4e29-9b5d-4aeb03c6039a")
+		)
+		(pin "65"
+			(uuid "6d7de80f-f81b-4a57-830a-ac6665e2043f")
+		)
+		(pin "66"
+			(uuid "ad93b43b-6758-49be-ae17-485c249835da")
+		)
+		(pin "113"
+			(uuid "ffb2b815-f548-4935-8c16-8590a0e9fe84")
+		)
+		(pin "85"
+			(uuid "68695375-b44b-439e-8d9d-c16290ea8b72")
+		)
+		(pin "95"
+			(uuid "75f35f53-0ade-4b8a-a653-d9009de19bcb")
+		)
+		(pin "117"
+			(uuid "e313aca2-0e03-47eb-81e9-816ea5d1bc9e")
+		)
+		(pin "88"
+			(uuid "552b9926-39f8-4c0d-8611-3b67a9dfd1e1")
+		)
+		(pin "9"
+			(uuid "d9afb5ea-f384-42e4-b6c7-2e3d040c8e57")
+		)
+		(pin "96"
+			(uuid "9be973a6-9ae3-4e5e-a17c-f4bf92acd3ce")
+		)
+		(pin "73"
+			(uuid "68aceaf1-a4b1-45dd-9bda-9631bde5095b")
+		)
+		(pin "90"
+			(uuid "0beb086a-a6b0-4977-b543-1d8891a51a4d")
+		)
+		(pin "92"
+			(uuid "245e112c-83cd-4002-b1bd-a59650b86c27")
+		)
+		(pin "83"
+			(uuid "f6e61539-535c-477d-941e-b1fa0a610e63")
+		)
+		(pin "93"
+			(uuid "2b13fbf1-8d6d-47d9-b11f-1dc3249ed6d3")
+		)
+		(pin "69"
+			(uuid "a1b9aec5-f6e6-45aa-b473-185989467a23")
+		)
+		(pin "94"
+			(uuid "430b6043-32af-4fbf-8324-33683054cd8d")
+		)
+		(pin "104"
+			(uuid "202e31bf-c2e5-46b7-9a34-40f3286ae178")
+		)
+		(pin "106"
+			(uuid "89b5ba87-1215-4b68-bd70-df48008d4549")
+		)
+		(pin "105"
+			(uuid "5ccef646-2e8b-4cba-8c48-d51a4cafcc7f")
+		)
+		(pin "77"
+			(uuid "b123b7da-299b-4439-8e64-89034604b393")
+		)
+		(pin "107"
+			(uuid "eae0259a-d38f-47d4-b8ee-750747d90d43")
+		)
+		(pin "108"
+			(uuid "a12b760e-e5cf-4801-8879-25aca5104bcf")
+		)
+		(pin "109"
+			(uuid "15722b12-d84a-41a7-9ebc-964ac8a77aad")
+		)
+		(pin "8"
+			(uuid "2de7d92b-293f-46e4-8b97-4e28d71df9a2")
+		)
+		(pin "71"
+			(uuid "dc088f9e-d75f-435f-a00d-07ee183441c3")
+		)
+		(pin "78"
+			(uuid "e43f1e07-4f33-40e6-a8f0-9e28db79bbb6")
+		)
+		(pin "79"
+			(uuid "4e1d7036-2cb5-4c21-adf8-45ad4b6ce262")
+		)
+		(pin "80"
+			(uuid "559f4fb8-557c-4240-9dec-1805220fce83")
+		)
+		(pin "7"
+			(uuid "21f0fa9a-741e-4f5e-991b-77ff13286470")
+		)
+		(pin "75"
+			(uuid "02308e4b-3bd9-4877-9425-643be5842a37")
+		)
+		(pin "74"
+			(uuid "a1325298-2730-4372-aa8c-ea6188cdb705")
+		)
+		(pin "86"
+			(uuid "318116fe-51be-4855-9cea-cdbced437782")
+		)
+		(pin "87"
+			(uuid "3b5ccac2-59cc-4527-b582-30c44a922b03")
+		)
+		(pin "97"
+			(uuid "44845ed6-db13-4ffe-9a9a-7d802ce25606")
+		)
+		(pin "99"
+			(uuid "945f8e03-b0f0-4247-89da-0d5eaac8b695")
+		)
+		(pin "91"
+			(uuid "2b39eb42-d63b-417b-9a74-8ce10f259e83")
+		)
+		(pin "70"
+			(uuid "53ed31d0-f723-4a00-8aff-368ff1b2a851")
+		)
+		(pin "101"
+			(uuid "881a05cf-cb49-4f96-aa8d-6e01f31dd4f1")
+		)
+		(pin "76"
+			(uuid "59105be3-0fb9-4754-a36e-ec86ff29efa8")
+		)
+		(pin "110"
+			(uuid "2fc68b6f-f0dc-4cdd-9835-d9c689bbb458")
+		)
+		(pin "84"
+			(uuid "a9fe8433-5b93-4ae5-b6db-373aca94a424")
+		)
+		(pin "82"
+			(uuid "d44b6281-e14f-443f-a3b2-3f67b9f023b7")
+		)
+		(pin "102"
+			(uuid "5c223ed9-b89f-4f07-8395-39d22286380c")
+		)
+		(pin "81"
+			(uuid "9898364c-1ada-4ffa-a5b0-49e02aa1ead6")
+		)
+		(pin "72"
+			(uuid "82a68545-5e96-4ad7-85dd-9d4e55fcd4ef")
+		)
+		(pin "98"
+			(uuid "a34b2aa6-ce60-4166-a7bf-6d59a3a76c97")
+		)
+		(pin "103"
+			(uuid "af940c2e-07d6-44e9-85a0-5a240adef9e6")
+		)
+		(pin "111"
+			(uuid "86e6d2b4-19b7-478e-8746-3402d0d7c9fc")
+		)
+		(pin "89"
+			(uuid "53839538-2d25-41d4-8878-90cdc3bb67eb")
+		)
+		(pin "112"
+			(uuid "f2647b9b-bc83-4c34-817c-54417ad9344e")
+		)
+		(pin "114"
+			(uuid "5791d535-836b-4f57-a2e6-7c5dd95bc2d5")
+		)
+		(pin "115"
+			(uuid "5a4b3202-eac6-4602-a83b-624e7aec7e68")
+		)
+		(pin "116"
+			(uuid "dc56c3cc-7525-4418-b083-4b424f02f59c")
+		)
+		(pin "118"
+			(uuid "84308ba9-0c21-4f1c-8a07-cd99195a462b")
+		)
+		(pin "119"
+			(uuid "82a61164-d4eb-45d6-b659-6a1079a6b87c")
+		)
+		(pin "120"
+			(uuid "16179697-01f6-4ace-b180-5fc129ff3b59")
+		)
+		(pin "121"
+			(uuid "3a22d842-24db-4fe0-9ec4-8df7a4a1b929")
+		)
+		(pin "122"
+			(uuid "abd541d0-791e-4dfd-a805-d90389a7cea7")
+		)
+		(pin "123"
+			(uuid "2483957c-2e95-4348-9d2b-c9695eec7f3f")
+		)
+		(pin "124"
+			(uuid "d561805f-6d1f-45b1-a143-8201d8367f40")
+		)
+		(pin "125"
+			(uuid "a372649f-9fb2-4dfc-ad92-b855084a944b")
+		)
+		(pin "126"
+			(uuid "41fa9888-63e1-4b77-9640-a24d8a0ff716")
+		)
+		(pin "127"
+			(uuid "2db61b31-c52f-48ed-b306-9166b808d22c")
+		)
+		(pin "128"
+			(uuid "d74dd2e9-8e5c-45c2-ac05-fefd3234e6a6")
+		)
+		(pin "129"
+			(uuid "811a4d89-6946-4775-9504-1c547eb0fd11")
+		)
+		(pin "130"
+			(uuid "eb2b3b0a-a68b-40a1-a472-fdbab2be2eba")
+		)
+		(pin "131"
+			(uuid "cb6447ac-c2bb-45c3-81c0-954d5f02fa67")
+		)
+		(pin "147"
+			(uuid "1fe99638-8468-49a1-bfc4-0a6b674a244e")
+		)
+		(pin "141"
+			(uuid "2c1c2f93-9767-40b9-91ba-dad3ebb805e6")
+		)
+		(pin "173"
+			(uuid "f9936433-834c-4ef4-af82-528be55e8240")
+		)
+		(pin "179"
+			(uuid "f48b9092-7bbc-4aee-bd05-63a0575a0f36")
+		)
+		(pin "181"
+			(uuid "ed9a58a9-6640-47ba-9937-09b79d3ca1f0")
+		)
+		(pin "183"
+			(uuid "b342400a-90cb-4b10-9c61-a41dd2a7919b")
+		)
+		(pin "158"
+			(uuid "f5bd13e1-2697-481e-8904-8cfc5be20df6")
+		)
+		(pin "153"
+			(uuid "c9f5216e-dec6-4303-a4c4-76b0cfbda909")
+		)
+		(pin "162"
+			(uuid "604c5569-a769-45f7-8390-b7769a0756a6")
+		)
+		(pin "188"
+			(uuid "ddfb4af7-1648-440b-a47f-60d4760ba160")
+		)
+		(pin "140"
+			(uuid "6da12b14-af4f-4c84-989a-39fe47cf2435")
+		)
+		(pin "152"
+			(uuid "80117ca3-b6a5-4443-8c99-37c307cd70bd")
+		)
+		(pin "164"
+			(uuid "7e35c638-9c3a-4223-b1be-a51c0e51b15a")
+		)
+		(pin "170"
+			(uuid "3e000cb9-e72e-4349-8b9a-d4e021ef6375")
+		)
+		(pin "178"
+			(uuid "da8b2d1c-9b6b-4e35-881b-1474a41cae95")
+		)
+		(pin "169"
+			(uuid "ec72868d-dce5-493e-bfcc-c7b443224879")
+		)
+		(pin "171"
+			(uuid "57c04f06-3e6b-43b4-a294-4d0e62749273")
+		)
+		(pin "143"
+			(uuid "401122d1-cf40-40c5-8ad1-2db1ec429e77")
+		)
+		(pin "139"
+			(uuid "ddc46602-1961-48b6-82cf-e8935015f307")
+		)
+		(pin "145"
+			(uuid "6b80b7d6-4e24-43e4-9d76-32c797404aa6")
+		)
+		(pin "150"
+			(uuid "8b458a04-2ff2-4c90-b8d6-124e85d0c630")
+		)
+		(pin "138"
+			(uuid "4eafe3e2-f833-4b31-b0c9-d5b0a755dc64")
+		)
+		(pin "148"
+			(uuid "096cd069-a7f4-491c-af01-66983391ca71")
+		)
+		(pin "163"
+			(uuid "8197d43e-5592-4f8d-bb2e-69d149412376")
+		)
+		(pin "154"
+			(uuid "53247d15-9961-4c58-ae80-49aab65ad202")
+		)
+		(pin "157"
+			(uuid "402c7a2c-5bcf-42c9-bd5e-4479eb2b9009")
+		)
+		(pin "159"
+			(uuid "a1a62893-ee49-4134-99b5-f0d87f9efc5a")
+		)
+		(pin "161"
+			(uuid "1934d215-af3e-41b1-8b37-d8aea18e4848")
+		)
+		(pin "136"
+			(uuid "bc0de31b-735b-47e1-9324-09e249e26c97")
+		)
+		(pin "137"
+			(uuid "c1f1b1c6-b94b-4cf2-b135-575eb7a6a154")
+		)
+		(pin "135"
+			(uuid "2346d020-50f8-4adf-896b-6b992b9c7214")
+		)
+		(pin "142"
+			(uuid "28c0bd10-1912-4f3a-a62f-e32be75c8369")
+		)
+		(pin "146"
+			(uuid "41a515fe-d638-4754-8d5f-b6c9e1561eb3")
+		)
+		(pin "132"
+			(uuid "6d767a7e-53e0-44ed-a675-49a35b1e9b5b")
+		)
+		(pin "166"
+			(uuid "7cf1fbe9-01f5-4d59-8a13-4b24ec322e18")
+		)
+		(pin "172"
+			(uuid "6b47cf03-758f-4585-970e-4d4b6bb82157")
+		)
+		(pin "144"
+			(uuid "811fef87-147d-48cd-bead-962bd7b808f2")
+		)
+		(pin "174"
+			(uuid "2453e09e-8aed-41ad-a453-59c7840aa4ff")
+		)
+		(pin "133"
+			(uuid "ce81cf3b-f57a-40ac-b2ac-c1d08ed02357")
+		)
+		(pin "134"
+			(uuid "4ade9bc1-777e-47a9-a510-fd9cb9c0d59f")
+		)
+		(pin "151"
+			(uuid "5c98e2a9-eb59-4f05-8f81-85ce76aea615")
+		)
+		(pin "160"
+			(uuid "fcf45daa-6e3d-499f-ba48-9730cfc0ef14")
+		)
+		(pin "149"
+			(uuid "124207e0-8f61-42ce-a277-a13b25611a16")
+		)
+		(pin "165"
+			(uuid "16517ded-ffda-4ade-ab19-1958b11769a0")
+		)
+		(pin "167"
+			(uuid "1e4c7b5a-a08e-472d-9299-1aeb1129d85e")
+		)
+		(pin "175"
+			(uuid "a1c4fc98-9b90-476f-852c-63ea88a620d7")
+		)
+		(pin "156"
+			(uuid "e0c497fe-e9e5-425d-b893-c0fe9c210258")
+		)
+		(pin "176"
+			(uuid "e9606de7-ed18-42c2-9eca-332bb37adaff")
+		)
+		(pin "155"
+			(uuid "86c9cac5-4764-42a9-b787-5a9b6e715e78")
+		)
+		(pin "168"
+			(uuid "d817ec83-bdca-4fb9-ba62-36d30a2d0fd4")
+		)
+		(pin "177"
+			(uuid "baf68446-9036-46ed-ad92-9d970b22dc5b")
+		)
+		(pin "180"
+			(uuid "1b4313cc-ada9-4e3e-81bd-09f5c8d94c90")
+		)
+		(pin "182"
+			(uuid "89bb03e9-0151-4dc2-bccd-da1873ab0f78")
+		)
+		(pin "184"
+			(uuid "664eebd0-6cf1-4e77-b80b-a88d0a148f6f")
+		)
+		(pin "185"
+			(uuid "9f4bafdc-7aeb-4776-b877-218a3d33fc4b")
+		)
+		(pin "186"
+			(uuid "28a88018-6f4e-40b8-b45b-aead64ecedb1")
+		)
+		(pin "187"
+			(uuid "60b9afd6-7501-43b9-ad6f-6f241926a57b")
+		)
+		(pin "189"
+			(uuid "39d1136f-1a63-4572-8f5b-2291828766b0")
+		)
+		(pin "190"
+			(uuid "b5ce4def-ad83-4f5b-83a0-b824bf2506fb")
+		)
+		(pin "191"
+			(uuid "02bfe27c-72cf-490f-848e-afb20b9018db")
+		)
+		(pin "192"
+			(uuid "73777658-41cb-4299-9e17-7b69b82e7d7d")
+		)
+		(pin "193"
+			(uuid "ff99e7a2-647d-46c3-9ae6-a48164fc5944")
+		)
+		(pin "194"
+			(uuid "9e092ff1-ba63-4816-8a5a-529d71b396f1")
+		)
+		(pin "195"
+			(uuid "6b4875cd-7cde-4b34-864b-928d737681d3")
+		)
+		(pin "196"
+			(uuid "0090ad58-ecaa-4412-bbe4-bed1a08b1241")
+		)
+		(pin "S1"
+			(uuid "51b719cc-379c-4b70-8b61-a81ee4d81404")
+		)
+		(pin "199"
+			(uuid "e0eed970-6c9a-4d45-841f-5810da59d31c")
+		)
+		(pin "197"
+			(uuid "ec11ac17-fac7-41eb-90a4-37f822582071")
+		)
+		(pin "200"
+			(uuid "b9e11aa0-cc95-455e-9c8e-31b68b01f140")
+		)
+		(pin "198"
+			(uuid "8628c223-0ca9-40ab-a2bc-e0b18b8e0264")
+		)
+		(instances
+			(project "AetherIO"
+				(path "/84065182-a796-4fca-93ce-905cc0c911cd/9835d1ad-9576-417d-8c16-db313e08d381"
+					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
