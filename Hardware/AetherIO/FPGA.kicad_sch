@@ -4618,8 +4618,8 @@
 			)
 			(symbol "Coonnect_GoldenFinger_200P_0_1"
 				(rectangle
-					(start -6.35 67.31)
-					(end 6.35 -59.69)
+					(start -6.35 69.85)
+					(end 6.35 -63.5)
 					(stroke
 						(width 0)
 						(type default)
@@ -4630,6 +4630,24 @@
 				)
 			)
 			(symbol "Coonnect_GoldenFinger_200P_1_0"
+				(pin unspecified line
+					(at -8.89 67.31 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin unspecified line
 					(at 8.89 57.15 180)
 					(length 2.54)
@@ -4821,6 +4839,24 @@
 						)
 					)
 					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 67.31 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9386,10 +9422,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f1804bc8-999a-4371-9d86-f75bf63fc087")
 		(property "Reference" "CN1"
-			(at 36.83 19.05 0)
+			(at 36.83 17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10072,6 +10107,12 @@
 		)
 		(pin "198"
 			(uuid "8628c223-0ca9-40ab-a2bc-e0b18b8e0264")
+		)
+		(pin "2"
+			(uuid "05460ad9-9e55-4af4-9adb-78352a177dc6")
+		)
+		(pin "1"
+			(uuid "7e6a57a0-c411-4077-8573-9cfc63666a6a")
 		)
 		(instances
 			(project "AetherIO"
