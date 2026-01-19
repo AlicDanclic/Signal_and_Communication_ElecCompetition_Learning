@@ -2159,3 +2159,11 @@ $L_\infty$ 范数缩放：$s_i = 1 / \max_{\omega} |G_i(e^{j\omega})|$。
 
 
 ## 2.FilterPro
+
+
+
+## 3.RFFilter
+
+<img src="./FilterDesign/Bitmap/RFFilter.png" alt="RFFilter" style="zoom:50%;" />
+
+首先我们先了解蓝框部分是干什么的!!!

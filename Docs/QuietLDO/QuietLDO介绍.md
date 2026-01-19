@@ -55,7 +55,7 @@ $$
     </div>
     <div style="flex: 1; min-width: 200px;">
       <div style="color: #666; margin-bottom: 5px;">安装孔数量</div>
-      <div style="font-size: 18px; font-weight: bold; color: #333;">4个</div>
+      <div style="font-size: 18px; font-weight: bold; color: #333;">无</div>
     </div>
     <div style="flex: 1; min-width: 200px;">
       <div style="color: #666; margin-bottom: 5px;">板厚</div>

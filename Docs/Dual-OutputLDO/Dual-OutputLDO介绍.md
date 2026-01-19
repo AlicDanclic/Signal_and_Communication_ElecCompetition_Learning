@@ -45,7 +45,8 @@ LM27762则是一个集成了电荷泵和低压差线性稳压器（LDO）的独�
       <div style="color: #666; margin-bottom: 5px;">安装孔位置</div>
       <div style="font-size: 18px; font-weight: bold; color: #333;">四角对称</div>
     </div>
-  </div>
+</div>
+
 
 ### 使用注意
 

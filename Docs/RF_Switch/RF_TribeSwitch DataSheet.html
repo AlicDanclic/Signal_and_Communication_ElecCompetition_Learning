@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>RF_TribeSwitch DataSheet</title>
+    <style>
+        @media print {
+            @page {
+                margin: 8mm;
+                size: A4 portrait;
+            }
+            body {
+                font-size: 9pt;
+                line-height: 1.1;
+                margin: 0;
+                padding: 0;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5mm;
+            color: #333;
+        }
+        
+        .datasheet-container {
+            width: 100%;
+        }
+        
+        .header-section {
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 4px;
+        }
+        
+        .main-title {
+            color: #2c5aa0;
+            font-size: 20pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .version-info {
+            text-align: right;
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .description {
+            font-size: 9pt;
+            margin: 4px 0;
+        }
+        
+        /* 两栏布局 */
+        .two-column {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .section-box {
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            color: #2c5aa0;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+        
+        /* 表格样式 */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .spec-table th {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .spec-table td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+        }
+        
+        .current-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .current-table th, .current-table td {
+            border: 1px solid #ddd;
+            padding: 3px;
+            text-align: center;
+        }
+        
+        .current-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        
+        /* 注意事项样式 */
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 3px;
+            padding: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .warning-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 3px;
+        }
+        
+        .warning-list {
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        .warning-list li {
+            margin-bottom: 2px;
+        }
+        
+        /* 关键参数网格 */
+        .param-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .param-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            padding: 4px;
+            background-color: white;
+        }
+        
+        .param-label {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 2px;
+        }
+        
+        /* 芯片信息样式 */
+        .chip-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 6px;
+            margin-bottom: 8px;
+        }
+        
+        .chip-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+        }
+        
+        .chip-name {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 10pt;
+        }
+        
+        .chip-manufacturer {
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .chip-specs {
+            font-size: 8pt;
+            line-height: 1.2;
+        }
+        
+        /* 底部信息 */
+        .footer {
+            text-align: center;
+            font-size: 7pt;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 4px;
+            border-top: 1px solid #eee;
+        }
+        
+        /* 应用场景 */
+        .applications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        
+        .app-tag {
+            background-color: #e8f0fe;
+            border: 1px solid #d0d0d0;
+            border-radius: 2px;
+            padding: 2px 6px;
+            font-size: 7pt;
+            color: #2c5aa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="datasheet-container">
+        <div class="header-section">
+            <div class="title-line">
+                <h1 class="main-title">RF_TribeSwitch 射频开关模块</h1>
+                <div class="version-info">
+                    DataSheet v1.0<br>
+                    发布日期: 2025-12
+                </div>
+            </div>
+            <div class="description">
+                SKY13317-373LF是一款20 MHz至6.0 GHz基于pHEMT工艺的GaAs SP3T天线开关，适用于高频宽带的无线通信系统。采用正电压控制逻辑，具有低插入损耗、高隔离度和高线性度。
+            </div>
+        </div>
+
+        <div class="two-column">
+            <!-- 左栏 -->
+            <div class="column">
+                <!-- 关键特性 -->
+                <div class="section-box no-break">
+                    <div class="section-title">关键特性</div>
+                    <div class="param-grid">
+                        <div class="param-item">
+                            <div class="param-label">频率范围</div>
+                            <div>20 MHz - 6.0 GHz</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">插入损耗</div>
+                            <div>0.5 dB @ 2.5 GHz<br>0.9 dB @ 6 GHz</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">隔离度</div>
+                            <div>25 dB @ 6 GHz</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">线性度</div>
+                            <div>P1dB = +29 dBm</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">控制电压</div>
+                            <div>正低压: 0/1.8-5.0 V</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">最大输入功率</div>
+                            <div>+30 dBm (1 W)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 核心芯片 -->
+                <div class="section-box no-break">
+                    <div class="section-title">核心芯片</div>
+                    
+                    <div class="chip-box">
+                        <div class="chip-header">
+                            <div class="chip-name">SKY13317-373LF</div>
+                            <div class="chip-manufacturer">Skyworks Solutions</div>
+                        </div>
+                        <div class="chip-specs">
+                            • GaAs pHEMT单刀三掷(SP3T)天线开关<br>
+                            • 频率范围: 20 MHz - 6.0 GHz<br>
+                            • 封装: 8引脚MLP (1.5×1.5 mm)<br>
+                            • 湿度敏感等级: MSL1 (260°C)<br>
+                            • 三路独立控制电压
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 匹配电容表 -->
+                <div class="section-box no-break">
+                    <div class="section-title">射频端口匹配电容</div>
+                    <table class="current-table">
+                        <tr>
+                            <th>射频端口</th>
+                            <th>频率范围</th>
+                            <th>推荐电容值 (C_BL)</th>
+                            <th>设计说明</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">所有RF端口<br>(RF1, RF2, RF3, RFC)</td>
+                            <td>&gt; 500 MHz</td>
+                            <td><strong>47 pF</strong></td>
+                            <td>首选值，选用NPO/C0G材质MLCC</td>
+                        </tr>
+                        <tr>
+                            <td>50 MHz - 500 MHz</td>
+                            <td>220 pF</td>
+                            <td>用于中频段应用</td>
+                        </tr>
+                        <tr>
+                            <td>&lt; 50 MHz</td>
+                            <td>≥ 10 nF</td>
+                            <td>建议使用更大容值</td>
+                        </tr>
+                    </table>
+                    <div style="font-size: 7pt; text-align: center; margin-top: 4px;">
+                        注意：所有射频端口必须串联DC隔离电容，电容应尽量靠近芯片引脚
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右栏 -->
+            <div class="column">
+                <!-- 典型应用 -->
+                <div class="section-box no-break">
+                    <div class="section-title">典型应用</div>
+                    <div class="applications">
+                        <span class="app-tag">802.11 a/b/g/n WLAN网络</span>
+                        <span class="app-tag">蓝牙(Bluetooth®)系统</span>
+                        <span class="app-tag">2.4-2.5 GHz频段切换</span>
+                        <span class="app-tag">4.9-5.9 GHz频段切换</span>
+                        <span class="app-tag">无线通信设备</span>
+                        <span class="app-tag">天线切换系统</span>
+                        <span class="app-tag">多频段射频前端</span>
+                        <span class="app-tag">测试测量设备</span>
+                    </div>
+                </div>
+
+                <!-- 使用注意事项 -->
+                <div class="section-box no-break">
+                    <div class="section-title">重要注意事项</div>
+                    <div class="warning-box">
+                        <div class="warning-title">控制逻辑与电压:</div>
+                        <ul class="warning-list">
+                            <li>控制引脚V1、V2、V3必须严格遵循真值表逻辑</li>
+                            <li>高电平：+1.8V至+5.0V，低电平：0V至+0.25V（建议0V）</li>
+                            <li>任何未定义的逻辑组合都会使开关进入不可预测的状态</li>
+                        </ul>
+                        
+                        <div class="warning-title">射频端口DC隔离电容:</div>
+                        <ul class="warning-list">
+                            <li>所有射频端口必须串联隔直电容</li>
+                            <li>电容值根据工作频率选择：＞500MHz时建议47pF，50MHz‑500MHz建议220pF，＜50MHz建议≥10nF</li>
+                            <li>应选用NPO/C0G材质，且尽量靠近引脚布局</li>
+                        </ul>
+                        
+                        <div class="warning-title">散热与功率:</div>
+                        <ul class="warning-list">
+                            <li>射频输入功率绝对不得超过+30dBm（1W）</li>
+                            <li>芯片底部裸露焊盘必须通过多个过孔大面积连接到PCB接地层</li>
+                            <li>确保良好散热设计，避免在高温环境满载运行</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 电气特性表格 -->
+        <div class="section-box no-break">
+            <div class="section-title">电气特性 (SKY13317-373LF)</div>
+            <table class="spec-table">
+                <tr>
+                    <th>参数</th>
+                    <th>条件</th>
+                    <th>最小值</th>
+                    <th>典型值</th>
+                    <th>最大值</th>
+                    <th>单位</th>
+                </tr>
+                <tr>
+                    <td>频率范围</td>
+                    <td>-</td>
+                    <td>0.02</td>
+                    <td>-</td>
+                    <td>6.0</td>
+                    <td>GHz</td>
+                </tr>
+                <tr>
+                    <td>插入损耗</td>
+                    <td>RFC至RF1/RF2/RF3 @ 2.4-2.5 GHz</td>
+                    <td>-</td>
+                    <td>0.55</td>
+                    <td>0.65</td>
+                    <td>dB</td>
+                </tr>
+                <tr>
+                    <td>插入损耗</td>
+                    <td>RFC至RF1/RF2/RF3 @ 3.0-6.0 GHz</td>
+                    <td>-</td>
+                    <td>0.80</td>
+                    <td>1.20</td>
+                    <td>dB</td>
+                </tr>
+                <tr>
+                    <td>隔离度</td>
+                    <td>RFC至RF1/RF2/RF3 @ 4.9-5.9 GHz</td>
+                    <td>-</td>
+                    <td>25</td>
+                    <td>-</td>
+                    <td>dB</td>
+                </tr>
+                <tr>
+                    <td>1dB压缩点</td>
+                    <td>900-2450 MHz, Vlow=0V, Vmax=3.3V</td>
+                    <td>-</td>
+                    <td>+29.0</td>
+                    <td>-</td>
+                    <td>dBm</td>
+                </tr>
+                <tr>
+                    <td>控制电压</td>
+                    <td>高电平(Vmax)</td>
+                    <td>1.8</td>
+                    <td>3.3</td>
+                    <td>5.0</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>控制电压</td>
+                    <td>低电平(Vlow)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0.25</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>工作温度</td>
+                    <td>-</td>
+                    <td>-40</td>
+                    <td>25</td>
+                    <td>+100</td>
+                    <td>°C</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- 控制逻辑真值表 -->
+        <div class="section-box no-break">
+            <div class="section-title">控制逻辑真值表</div>
+            <table class="current-table">
+                <tr>
+                    <th>低插入损耗路径</th>
+                    <th>V1 (Pin 3)</th>
+                    <th>V2 (Pin 6)</th>
+                    <th>V3 (Pin 7)</th>
+                </tr>
+                <tr>
+                    <td>RFC → RF1</td>
+                    <td>High</td>
+                    <td>Low</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>RFC → RF2</td>
+                    <td>Low</td>
+                    <td>High</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>RFC → RF3</td>
+                    <td>Low</td>
+                    <td>Low</td>
+                    <td>High</td>
+                </tr>
+            </table>
+            <div style="font-size: 8pt; margin-top: 4px;">
+                <strong>注意：</strong>"High" = 1.8 to 5.0 V, "Low" = 0 to 0.25 V. 任何未在此表中描述的状态都会使开关进入未定义状态。未定义状态不会损坏设备，但可能导致功能异常。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
