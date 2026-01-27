@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>衰减器计算器</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --primary-light: #34495e;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 30px;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .input-panel {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .output-panel {
+            flex: 2;
+            min-width: 300px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+        
+        .panel-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .panel-title i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+        
+        .input-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .input-row input {
+            flex: 1;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        input:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        
+        .unit {
+            font-weight: 600;
+            color: var(--primary);
+            min-width: 40px;
+        }
+        
+        .type-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .type-btn {
+            padding: 12px 10px;
+            background-color: white;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .type-btn:hover {
+            background-color: #f0f7ff;
+            border-color: var(--secondary);
+        }
+        
+        .type-btn.active {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .type-btn i {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .btn-calculate {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        .btn-calculate:hover {
+            background-color: #2980b9;
+        }
+        
+        .results-container {
+            margin-top: 20px;
+        }
+        
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .result-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .result-label {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+        
+        .result-value {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+        
+        .resistance-results {
+            margin-top: 25px;
+        }
+        
+        .resistance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .resistance-card {
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 18px;
+            border: 1px solid #e9ecef;
+            transition: var(--transition);
+        }
+        
+        .resistance-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .resistance-name {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .resistance-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+        
+        .resistance-formula {
+            font-size: 0.8rem;
+            color: #666;
+            font-family: monospace;
+            background-color: #f1f3f4;
+            padding: 6px 8px;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        
+        .condition-note {
+            background-color: #fff8e1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 8px;
+            border-left: 3px solid #f39c12;
+            font-size: 0.85rem;
+        }
+        
+        .circuit-panel {
+            margin-top: 30px;
+        }
+        
+        .circuit-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .circuit-title i {
+            margin-right: 8px;
+            color: var(--secondary);
+        }
+        
+        .circuit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .circuit-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 18px;
+            border: 1px solid #e9ecef;
+            transition: var(--transition);
+        }
+        
+        .circuit-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .circuit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .circuit-type {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        
+        .circuit-status {
+            font-size: 0.8rem;
+            background-color: var(--secondary);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        .circuit-image-container {
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border: 1px dashed #ccc;
+            margin-bottom: 15px;
+        }
+        
+        .circuit-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .circuit-placeholder {
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .circuit-placeholder i {
+            font-size: 2.2rem;
+            color: #bdc3c7;
+            margin-bottom: 8px;
+        }
+        
+        .circuit-info {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .impedance-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .impedance-info .value {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        
+        .formula-panel {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .formula-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .formula-title i {
+            margin-right: 8px;
+            color: var(--secondary);
+        }
+        
+        .formula {
+            font-family: 'Cambria', 'Times New Roman', serif;
+            font-size: 1rem;
+            color: var(--dark);
+            padding: 15px;
+            background-color: white;
+            border-radius: 6px;
+            overflow-x: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.85rem;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            font-size: 0.9rem;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #f0f7ff;
+        }
+        
+        .current-type {
+            background-color: #e8f4ff !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calculator"></i> 衰减器计算器</h1>
+            <p class="subtitle">PI型、T型、反射式、桥T型衰减器设计计算</p>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="input-panel">
+                <div class="panel-title">
+                    <i class="fas fa-sliders-h"></i> 参数设置
+                </div>
+                
+                <div class="form-group">
+                    <label for="z0">特性阻抗 Z₀</label>
+                    <div class="input-row">
+                        <input type="number" id="z0" min="1" step="any" value="50">
+                        <span class="unit">Ω</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="attenuation">衰减量 A_dB</label>
+                    <div class="input-row">
+                        <input type="number" id="attenuation" min="0.1" step="any" value="10">
+                        <span class="unit">dB</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>衰减器类型</label>
+                    <div class="type-selector">
+                        <div class="type-btn active" data-type="pi">
+                            <i class="fas fa-pi"></i>
+                            <span>PI型</span>
+                        </div>
+                        <div class="type-btn" data-type="t">
+                            <i class="fas fa-t"></i>
+                            <span>T型</span>
+                        </div>
+                        <div class="type-btn" data-type="reflective">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>反射式</span>
+                        </div>
+                        <div class="type-btn" data-type="bridge-t">
+                            <i class="fas fa-bridge"></i>
+                            <span>桥T型</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn-calculate" id="calculateBtn">
+                    <i class="fas fa-calculator"></i> 计算电阻值
+                </button>
+                
+                <div class="formula-panel">
+                    <div class="formula-title">
+                        <i class="fas fa-square-root-alt"></i> 计算公式
+                    </div>
+                    <div class="formula" id="currentFormula">
+                        \[R_1 = Z_0 \left( \frac{10^{\frac{A_{dB}}{20}} + 1}{10^{\frac{A_{dB}}{20}} - 1} \right)\]
+                        \[R_2 = \frac{Z_0}{2} \left( 10^{\frac{A_{dB}}{20}} - \frac{1}{10^{\frac{A_{dB}}{20}}} \right)\]
+                    </div>
+                </div>
+            </div>
+            
+            <div class="output-panel">
+                <div class="panel-title">
+                    <i class="fas fa-chart-line"></i> 计算结果
+                </div>
+                
+                <div class="results-container">
+                    <div class="result-row">
+                        <div class="result-label">
+                            <i class="fas fa-bolt"></i> 特性阻抗 Z₀
+                        </div>
+                        <div class="result-value" id="resultZ0">50 Ω</div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">
+                            <i class="fas fa-wave-square"></i> 衰减量 A_dB
+                        </div>
+                        <div class="result-value" id="resultAttenuation">10 dB</div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">
+                            <i class="fas fa-project-diagram"></i> 衰减器类型
+                        </div>
+                        <div class="result-value" id="resultType">PI型</div>
+                    </div>
+                </div>
+                
+                <div class="resistance-results">
+                    <div class="panel-title">
+                        <i class="fas fa-resistor"></i> 电阻计算结果
+                    </div>
+                    
+                    <div id="resistorResults">
+                        <!-- 电阻值将通过JavaScript动态填充 -->
+                    </div>
+                </div>
+                
+                <div class="circuit-panel">
+                    <div class="circuit-title">
+                        <i class="fas fa-microchip"></i> 电路示意图
+                    </div>
+                    
+                    <div class="circuit-grid">
+                        <!-- PI型衰减器 -->
+                        <div class="circuit-card">
+                            <div class="circuit-header">
+                                <div class="circuit-type">PI型衰减器</div>
+                                <div class="circuit-status" id="pi-status">当前选择</div>
+                            </div>
+                            <div class="circuit-image-container">
+                                <div class="circuit-placeholder" id="pi-circuit-placeholder">
+                                    <i class="fas fa-pi"></i>
+                                    <p>PI型电路图</p>
+                                </div>
+                                <img id="pi-circuit-image" src="pi_attenuator.png" alt="PI型衰减器电路图" class="circuit-image" style="display: none;" onload="this.style.display='block'; document.getElementById('pi-circuit-placeholder').style.display='none';">
+                            </div>
+                            <div class="circuit-info">
+                                <p>两个并联电阻R₁，一个串联电阻R₂</p>
+                                <div class="impedance-info">
+                                    <span>输入阻抗: <span class="value">Z₀</span></span>
+                                    <span>输出阻抗: <span class="value">Z₀</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- T型衰减器 -->
+                        <div class="circuit-card">
+                            <div class="circuit-header">
+                                <div class="circuit-type">T型衰减器</div>
+                                <div class="circuit-status" id="t-status" style="display: none;"></div>
+                            </div>
+                            <div class="circuit-image-container">
+                                <div class="circuit-placeholder" id="t-circuit-placeholder">
+                                    <i class="fas fa-t"></i>
+                                    <p>T型电路图</p>
+                                </div>
+                                <img id="t-circuit-image" src="t_attenuator.png" alt="T型衰减器电路图" class="circuit-image" style="display: none;" onload="this.style.display='block'; document.getElementById('t-circuit-placeholder').style.display='none';">
+                            </div>
+                            <div class="circuit-info">
+                                <p>两个串联电阻R₁，一个并联电阻R₂</p>
+                                <div class="impedance-info">
+                                    <span>输入阻抗: <span class="value">Z₀</span></span>
+                                    <span>输出阻抗: <span class="value">Z₀</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 反射式衰减器 -->
+                        <div class="circuit-card">
+                            <div class="circuit-header">
+                                <div class="circuit-type">反射式衰减器</div>
+                                <div class="circuit-status" id="reflective-status" style="display: none;"></div>
+                            </div>
+                            <div class="circuit-image-container">
+                                <div class="circuit-placeholder" id="reflective-circuit-placeholder">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <p>反射式电路图</p>
+                                </div>
+                                <img id="reflective-circuit-image" src="reflective_attenuator.png" alt="反射式衰减器电路图" class="circuit-image" style="display: none;" onload="this.style.display='block'; document.getElementById('reflective-circuit-placeholder').style.display='none';">
+                            </div>
+                            <div class="circuit-info">
+                                <p>根据R₁与Z₀关系选择公式</p>
+                                <div class="impedance-info">
+                                    <span>条件: <span class="value">R₁ > Z₀ 或 R₁ < Z₀</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 桥T型衰减器 -->
+                        <div class="circuit-card">
+                            <div class="circuit-header">
+                                <div class="circuit-type">桥T型衰减器</div>
+                                <div class="circuit-status" id="bridge-t-status" style="display: none;"></div>
+                            </div>
+                            <div class="circuit-image-container">
+                                <div class="circuit-placeholder" id="bridge-t-circuit-placeholder">
+                                    <i class="fas fa-bridge"></i>
+                                    <p>桥T型电路图</p>
+                                </div>
+                                <img id="bridge-t-circuit-image" src="bridge_t_attenuator.png" alt="桥T型衰减器电路图" class="circuit-image" style="display: none;" onload="this.style.display='block'; document.getElementById('bridge-t-circuit-placeholder').style.display='none';">
+                            </div>
+                            <div class="circuit-info">
+                                <p>特殊桥接结构，R₁为桥接电阻</p>
+                                <div class="impedance-info">
+                                    <span>输入阻抗: <span class="value">Z₀</span></span>
+                                    <span>输出阻抗: <span class="value">Z₀</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="formula-panel" style="margin-top: 30px;">
+                    <div class="formula-title">
+                        <i class="fas fa-exchange-alt"></i> 公式对比
+                    </div>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>衰减器类型</th>
+                                <th>R₁ 公式</th>
+                                <th>R₂ 公式</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="pi-formula-row">
+                                <td><strong>PI型</strong></td>
+                                <td>\(Z_0 \left( \frac{10^{\frac{A_{dB}}{20}} + 1}{10^{\frac{A_{dB}}{20}} - 1} \right)\)</td>
+                                <td>\(\frac{Z_0}{2} \left( 10^{\frac{A_{dB}}{20}} - \frac{1}{10^{\frac{A_{dB}}{20}}} \right)\)</td>
+                            </tr>
+                            <tr id="t-formula-row">
+                                <td><strong>T型</strong></td>
+                                <td>\(Z_0 \left( \frac{10^{\frac{A_{dB}}{20}} - 1}{10^{\frac{A_{dB}}{20}} + 1} \right)\)</td>
+                                <td>\(2Z_0 \left( \frac{10^{\frac{A_{dB}}{20}}}{10^{\frac{A_{dB}}{10}} - 1} \right)\)</td>
+                            </tr>
+                            <tr id="reflective-formula-row">
+                                <td><strong>反射式</strong></td>
+                                <td>
+                                    如果 \(R_1 > Z_0\): \(Z_0 \left( \frac{10^{\frac{A_{dB}}{20}} + 1}{10^{\frac{A_{dB}}{20}} - 1} \right)\)<br>
+                                    如果 \(R_1 < Z_0\): \(Z_0 \left( \frac{10^{\frac{A_{dB}}{20}} - 1}{10^{\frac{A_{dB}}{20}} + 1} \right)\)
+                                </td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="bridge-t-formula-row">
+                                <td><strong>桥T型</strong></td>
+                                <td>\(Z_0 \left( 10^{\frac{A_{dB}}{20}} - 1 \right)\)</td>
+                                <td>\(Z_0 \left( \frac{1}{10^{\frac{A_{dB}}{20}} - 1} \right)\)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // 全局变量
+        let currentType = "pi";
+        
+        // 计算公式 - 完全按照用户提供的公式
+        const formulas = {
+            pi: {
+                name: "PI型衰减器",
+                formula: `\\[R_1 = Z_0 \\left( \\frac{10^{\\frac{A_{dB}}{20}} + 1}{10^{\\frac{A_{dB}}{20}} - 1} \\right)\\]<br>
+                          \\[R_2 = \\frac{Z_0}{2} \\left( 10^{\\frac{A_{dB}}{20}} - \\frac{1}{10^{\\frac{A_{dB}}{20}}} \\right)\\]`,
+                calculate: function(z0, attenuation) {
+                    const k = Math.pow(10, attenuation / 20);
+                    const r1 = z0 * (k + 1) / (k - 1);
+                    const r2 = (z0 / 2) * (k - 1/k);
+                    return [
+                        { name: "R₁", value: r1, formula: `Z₀ × (10^(A_dB/20) + 1) / (10^(A_dB/20) - 1)` },
+                        { name: "R₂", value: r2, formula: `(Z₀/2) × (10^(A_dB/20) - 1/10^(A_dB/20))` }
+                    ];
+                }
+            },
+            t: {
+                name: "T型衰减器",
+                formula: `\\[R_1 = Z_0 \\left( \\frac{10^{\\frac{A_{dB}}{20}} - 1}{10^{\\frac{A_{dB}}{20}} + 1} \\right)\\]<br>
+                          \\[R_2 = 2Z_0 \\left( \\frac{10^{\\frac{A_{dB}}{20}}}{10^{\\frac{A_{dB}}{10}} - 1} \\right)\\]`,
+                calculate: function(z0, attenuation) {
+                    const k = Math.pow(10, attenuation / 20);
+                    const k2 = Math.pow(10, attenuation / 10);
+                    const r1 = z0 * (k - 1) / (k + 1);
+                    const r2 = 2 * z0 * k / (k2 - 1);
+                    return [
+                        { name: "R₁", value: r1, formula: `Z₀ × (10^(A_dB/20) - 1) / (10^(A_dB/20) + 1)` },
+                        { name: "R₂", value: r2, formula: `2Z₀ × 10^(A_dB/20) / (10^(A_dB/10) - 1)` }
+                    ];
+                }
+            },
+            reflective: {
+                name: "反射式衰减器",
+                formula: `\\[R_1 = Z_0 \\left( \\frac{10^{\\frac{A_{dB}}{20}} + 1}{10^{\\frac{A_{dB}}{20}} - 1} \\right) \\, \\text{if } R_1 > Z_0\\]<br>
+                          \\[R_1 = Z_0 \\left( \\frac{10^{\\frac{A_{dB}}{20}} - 1}{10^{\\frac{A_{dB}}{20}} + 1} \\right) \\, \\text{if } R_1 < Z_0\\]`,
+                calculate: function(z0, attenuation) {
+                    const k = Math.pow(10, attenuation / 20);
+                    const r1_large = z0 * (k + 1) / (k - 1);
+                    const r1_small = z0 * (k - 1) / (k + 1);
+                    
+                    // 根据条件选择R1
+                    const useLargeFormula = r1_large > z0;
+                    const r1 = useLargeFormula ? r1_large : r1_small;
+                    
+                    return [
+                        { 
+                            name: "R₁", 
+                            value: r1, 
+                            formula: useLargeFormula 
+                                ? `Z₀ × (10^(A_dB/20) + 1) / (10^(A_dB/20) - 1)` 
+                                : `Z₀ × (10^(A_dB/20) - 1) / (10^(A_dB/20) + 1)`,
+                            condition: useLargeFormula ? "R₁ > Z₀" : "R₁ < Z₀"
+                        }
+                    ];
+                }
+            },
+            "bridge-t": {
+                name: "桥T型衰减器",
+                formula: `\\[R_1 = Z_0 \\left( 10^{\\frac{A_{dB}}{20}} - 1 \\right)\\]<br>
+                          \\[R_2 = Z_0 \\left( \\frac{1}{10^{\\frac{A_{dB}}{20}} - 1} \\right)\\]`,
+                calculate: function(z0, attenuation) {
+                    const k = Math.pow(10, attenuation / 20);
+                    const r1 = z0 * (k - 1);
+                    const r2 = z0 / (k - 1);
+                    return [
+                        { name: "R₁", value: r1, formula: `Z₀ × (10^(A_dB/20) - 1)` },
+                        { name: "R₂", value: r2, formula: `Z₀ / (10^(A_dB/20) - 1)` }
+                    ];
+                }
+            }
+        };
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 设置衰减器类型按钮事件
+            document.querySelectorAll('.type-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentType = this.getAttribute('data-type');
+                    
+                    // 更新电路图状态
+                    updateCircuitStatus();
+                    updateFormula();
+                    calculate();
+                });
+            });
+            
+            // 设置计算按钮事件
+            document.getElementById('calculateBtn').addEventListener('click', calculate);
+            
+            // 设置输入框实时计算
+            document.getElementById('z0').addEventListener('input', calculate);
+            document.getElementById('attenuation').addEventListener('input', calculate);
+            
+            // 初始计算
+            calculate();
+            
+            // 尝试加载电路图
+            const circuitImages = [
+                { id: 'pi-circuit-image', src: 'pi_attenuator.png' },
+                { id: 't-circuit-image', src: 't_attenuator.png' },
+                { id: 'reflective-circuit-image', src: 'reflective_attenuator.png' },
+                { id: 'bridge-t-circuit-image', src: 'bridge_t_attenuator.png' }
+            ];
+            
+            circuitImages.forEach(img => {
+                const imageElement = document.getElementById(img.id);
+                imageElement.src = img.src + '?' + new Date().getTime();
+            });
+        });
+        
+        // 更新电路图状态
+        function updateCircuitStatus() {
+            // 隐藏所有状态标签
+            document.querySelectorAll('.circuit-status').forEach(status => {
+                status.style.display = 'none';
+                status.textContent = '';
+            });
+            
+            // 显示当前选择的状态
+            document.getElementById(currentType + '-status').style.display = 'block';
+            document.getElementById(currentType + '-status').textContent = '当前选择';
+            
+            // 更新公式表格高亮
+            document.querySelectorAll('.comparison-table tr').forEach(row => {
+                row.classList.remove('current-type');
+            });
+            
+            document.getElementById(currentType + '-formula-row').classList.add('current-type');
+        }
+        
+        // 更新公式显示
+        function updateFormula() {
+            document.getElementById('currentFormula').innerHTML = formulas[currentType].formula;
+            document.getElementById('resultType').textContent = formulas[currentType].name;
+            
+            // 重新渲染数学公式
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        }
+        
+        // 执行计算
+        function calculate() {
+            // 获取输入值
+            const z0 = parseFloat(document.getElementById('z0').value) || 50;
+            const attenuation = parseFloat(document.getElementById('attenuation').value) || 10;
+            
+            // 更新显示值
+            document.getElementById('resultZ0').textContent = formatResistance(z0);
+            document.getElementById('resultAttenuation').textContent = attenuation.toFixed(2) + ' dB';
+            
+            // 计算电阻值
+            const resistors = formulas[currentType].calculate(z0, attenuation);
+            
+            // 更新电阻结果显示
+            const resultsContainer = document.getElementById('resistorResults');
+            resultsContainer.innerHTML = '';
+            
+            // 创建电阻网格
+            const resistanceGrid = document.createElement('div');
+            resistanceGrid.className = 'resistance-grid';
+            
+            resistors.forEach(resistor => {
+                const card = document.createElement('div');
+                card.className = 'resistance-card';
+                
+                const name = document.createElement('div');
+                name.className = 'resistance-name';
+                name.textContent = resistor.name;
+                
+                const value = document.createElement('div');
+                value.className = 'resistance-value';
+                value.textContent = formatResistance(resistor.value);
+                
+                card.appendChild(name);
+                card.appendChild(value);
+                
+                if (resistor.formula) {
+                    const formula = document.createElement('div');
+                    formula.className = 'resistance-formula';
+                    formula.textContent = resistor.formula;
+                    card.appendChild(formula);
+                }
+                
+                if (resistor.condition) {
+                    const condition = document.createElement('div');
+                    condition.className = 'condition-note';
+                    condition.textContent = `条件: ${resistor.condition}`;
+                    card.appendChild(condition);
+                }
+                
+                resistanceGrid.appendChild(card);
+            });
+            
+            resultsContainer.appendChild(resistanceGrid);
+        }
+        
+        // 格式化电阻值显示
+        function formatResistance(ohms) {
+            if (ohms >= 1e6) {
+                return (ohms / 1e6).toFixed(4) + ' MΩ';
+            } else if (ohms >= 1e3) {
+                return (ohms / 1e3).toFixed(4) + ' kΩ';
+            } else if (ohms >= 1) {
+                return ohms.toFixed(4) + ' Ω';
+            } else if (ohms >= 0.001) {
+                return (ohms * 1000).toFixed(4) + ' mΩ';
+            } else {
+                return ohms.toFixed(6) + ' Ω';
+            }
+        }
+    </script>
+    
+    <!-- MathJax for rendering LaTeX formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Attenuator DataSheet</title>
+    <style>
+        @media print {
+            @page {
+                margin: 8mm;
+                size: A4 portrait;
+            }
+            body {
+                font-size: 9pt;
+                line-height: 1.1;
+                margin: 0;
+                padding: 0;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5mm;
+            color: #333;
+        }
+        
+        .datasheet-container {
+            width: 100%;
+        }
+        
+        .header-section {
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 4px;
+        }
+        
+        .main-title {
+            color: #2c5aa0;
+            font-size: 20pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .version-info {
+            text-align: right;
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .description {
+            font-size: 9pt;
+            margin: 4px 0;
+        }
+        
+        /* 两栏布局 */
+        .two-column {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .section-box {
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 11pt;
+            color: #2c5aa0;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+        
+        /* 表格样式 */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .spec-table th {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .spec-table td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+        }
+        
+        .attenuator-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 4px 0;
+        }
+        
+        .attenuator-table th, .attenuator-table td {
+            border: 1px solid #ddd;
+            padding: 3px;
+            text-align: center;
+        }
+        
+        .attenuator-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        
+        /* 注意事项样式 */
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 3px;
+            padding: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .warning-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 3px;
+        }
+        
+        .warning-list {
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        .warning-list li {
+            margin-bottom: 2px;
+        }
+        
+        /* 关键参数网格 */
+        .param-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+        }
+        
+        .param-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 2px;
+            padding: 4px;
+            background-color: white;
+        }
+        
+        .param-label {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 2px;
+        }
+        
+        /* LaTeX公式样式 */
+        .latex-formula {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 8px 0;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .latex-inline {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+        }
+        
+        /* 应用场景 */
+        .applications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        
+        .app-tag {
+            background-color: #e8f0fe;
+            border: 1px solid #d0d0d0;
+            border-radius: 2px;
+            padding: 2px 6px;
+            font-size: 7pt;
+            color: #2c5aa0;
+        }
+        
+        /* 电路符号样式 */
+        .circuit-symbol {
+            font-family: "Courier New", monospace;
+            background-color: #fff;
+            border: 1px dashed #ccc;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-size: 9pt;
+        }
+    </style>
+    <!-- 引入MathJax支持LaTeX渲染 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="datasheet-container">
+        <div class="header-section">
+            <div class="title-line">
+                <h1 class="main-title">Attenuator 衰减器模块</h1>
+                <div class="version-info">
+                    DataSheet v1.0<br>
+                    发布日期: 2025-12
+                </div>
+            </div>
+            <div class="description">
+                衰减器是一种用于降低信号幅度而不引入明显失真的无源网络，广泛应用于射频、音频和测量系统中。本模块提供PI型、T型和桥式T型三种衰减器拓扑结构，采用标准50Ω特性阻抗设计，支持用户通过外部电阻灵活配置衰减值。
+            </div>
+        </div>
+
+        <div class="two-column">
+            <!-- 左栏 -->
+            <div class="column">
+                <!-- 关键特性 -->
+                <div class="section-box no-break">
+                    <div class="section-title">关键特性</div>
+                    <div class="param-grid">
+                        <div class="param-item">
+                            <div class="param-label">特性阻抗</div>
+                            <div>50Ω (标准)</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">衰减范围</div>
+                            <div>0-40 dB</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">频率响应</div>
+                            <div>DC-3 GHz</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">插入损耗</div>
+                            <div>< 0.5 dB @ 1 GHz</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">VSWR</div>
+                            <div>< 1.5:1</div>
+                        </div>
+                        <div class="param-item">
+                            <div class="param-label">功率处理</div>
+                            <div>1-2 W (取决于类型)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PI型衰减器公式 -->
+                <div class="section-box no-break">
+                    <div class="section-title">PI型衰减器设计公式</div>
+                    <div class="latex-formula">
+                        $$R_1 = Z_0 \cdot \frac{10^{A_{\text{dB}}/20} + 1}{10^{A_{\text{dB}}/20} - 1}$$
+                        $$R_2 = \frac{Z_0}{2} \cdot \left(10^{A_{\text{dB}}/20} - \frac{1}{10^{A_{\text{dB}}/20}}\right)$$
+                    </div>
+                </div>
+
+                <!-- T型衰减器公式 -->
+                <div class="section-box no-break">
+                    <div class="section-title">T型衰减器设计公式</div>
+                    <div class="latex-formula">
+                        $$R_1 = Z_0 \cdot \frac{10^{A_{\text{dB}}/20} - 1}{10^{A_{\text{dB}}/20} + 1}$$
+                        $$R_2 = 2Z_0 \cdot \frac{10^{A_{\text{dB}}/20}}{10^{A_{\text{dB}}/10} - 1}$$
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右栏 -->
+            <div class="column">
+                <!-- 典型应用 -->
+                <div class="section-box no-break">
+                    <div class="section-title">典型应用场景</div>
+                    <div class="applications">
+                        <span class="app-tag">射频信号链</span>
+                        <span class="app-tag">音频信号处理</span>
+                        <span class="app-tag">测试与测量</span>
+                        <span class="app-tag">阻抗匹配网络</span>
+                        <span class="app-tag">功率电平控制</span>
+                        <span class="app-tag">通信系统</span>
+                        <span class="app-tag">实验室仪器</span>
+                        <span class="app-tag">信号调理电路</span>
+                    </div>
+                </div>
+
+                <!-- 桥式T型衰减器公式 -->
+                <div class="section-box no-break">
+                    <div class="section-title">桥式T型衰减器设计公式</div>
+                    <div class="latex-formula">
+                        $$R_1 = Z_0 \cdot \left(10^{A_{\text{dB}}/20} - 1\right)$$
+                        $$R_2 = \frac{Z_0}{10^{A_{\text{dB}}/20} - 1}$$
+                    </div>
+                </div>
+
+                <!-- 使用注意事项 -->
+                <div class="section-box no-break">
+                    <div class="section-title">重要设计注意事项</div>
+                    <div class="warning-box">
+                        <div class="warning-title">电阻选择与布局:</div>
+                        <ul class="warning-list">
+                            <li>选择电阻时需注意功率承受能力与频率特性</li>
+                            <li>建议使用薄膜电阻(±1%)或高频专用电阻</li>
+                            <li>焊接时注意对称布局，避免引入寄生参数</li>
+                            <li>高频应用建议使用SMD封装，缩短引线长度</li>
+                        </ul>
+                        
+                        <div class="warning-title">散热与功率处理:</div>
+                        <ul class="warning-list">
+                            <li>高频或大功率应用时注意散热设计</li>
+                            <li>PI/T型最大功率: 1W，桥式T型: 2W</li>
+                            <li>使用热阻低的电阻以提高功率处理能力</li>
+                        </ul>
+                        
+                        <div class="warning-title">频率响应优化:</div>
+                        <ul class="warning-list">
+                            <li>PI型适合宽频带应用(0-2GHz)</li>
+                            <li>桥式T型适合高频精密衰减(>500MHz)</li>
+                            <li>T型适合中等衰减范围应用</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 衰减器类型技术规格 -->
+        <div class="section-box no-break">
+            <div class="section-title">衰减器类型技术规格对比</div>
+            <table class="attenuator-table">
+                <tr>
+                    <th>参数</th>
+                    <th>PI型衰减器</th>
+                    <th>T型衰减器</th>
+                    <th>桥式T型衰减器</th>
+                </tr>
+                <tr>
+                    <td>拓扑结构</td>
+                    <td>π形 (两个并联 + 一个串联)</td>
+                    <td>T形 (两个串联 + 一个并联)</td>
+                    <td>改进T形结构</td>
+                </tr>
+                <tr>
+                    <td>频率响应范围</td>
+                    <td>DC - 2 GHz</td>
+                    <td>DC - 1.5 GHz</td>
+                    <td>DC - 3 GHz</td>
+                </tr>
+                <tr>
+                    <td>插入损耗 (1 GHz)</td>
+                    <td>< 0.3 dB</td>
+                    <td>< 0.4 dB</td>
+                    <td>< 0.2 dB</td>
+                </tr>
+                <tr>
+                    <td>最大功率处理</td>
+                    <td>1 W</td>
+                    <td>1 W</td>
+                    <td>2 W</td>
+                </tr>
+                <tr>
+                    <td>适用衰减范围</td>
+                    <td>3-30 dB</td>
+                    <td>3-20 dB</td>
+                    <td>3-40 dB</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 匹配电阻计算表 -->
+        <div class="section-box no-break">
+            <div class="section-title">标准衰减值电阻计算 ($Z_0 = 50\Omega$)</div>
+            <table class="attenuator-table">
+                <tr>
+                    <th>衰减量 $A_{\text{dB}}$</th>
+                    <th>PI型衰减器</th>
+                    <th>T型衰减器</th>
+                    <th>桥式T型衰减器</th>
+                    <th>电压比 $V_{\text{out}}/V_{\text{in}}$</th>
+                </tr>
+                <tr>
+                    <td><strong>3 dB</strong></td>
+                    <td>$R_1=292\Omega$, $R_2=17.6\Omega$</td>
+                    <td>$R_1=8.55\Omega$, $R_2=292\Omega$</td>
+                    <td>$R_1=20.5\Omega$, $R_2=121\Omega$</td>
+                    <td>$1/\sqrt{2} \approx 0.707$</td>
+                </tr>
+                <tr>
+                    <td><strong>6 dB</strong></td>
+                    <td>$R_1=150\Omega$, $R_2=37.4\Omega$</td>
+                    <td>$R_1=16.6\Omega$, $R_2=150\Omega$</td>
+                    <td>$R_1=50\Omega$, $R_2=50\Omega$</td>
+                    <td>$1/2 = 0.500$</td>
+                </tr>
+                <tr>
+                    <td><strong>10 dB</strong></td>
+                    <td>$R_1=96.2\Omega$, $R_2=71.2\Omega$</td>
+                    <td>$R_1=25.9\Omega$, $R_2=96.2\Omega$</td>
+                    <td>$R_1=107\Omega$, $R_2=23.5\Omega$</td>
+                    <td>$1/\sqrt{10} \approx 0.316$</td>
+                </tr>
+                <tr>
+                    <td><strong>20 dB</strong></td>
+                    <td>$R_1=61.1\Omega$, $R_2=247\Omega$</td>
+                    <td>$R_1=40.9\Omega$, $R_2=61.1\Omega$</td>
+                    <td>$R_1=450\Omega$, $R_2=5.56\Omega$</td>
+                    <td>$1/10 = 0.100$</td>
+                </tr>
+            </table>
+            <div style="font-size: 8pt; margin-top: 4px;">
+                <strong>注：</strong>减量计算公式：$A_{\text{dB}} = 20\log_{10}(V_{\text{in}}/V_{\text{out}})$。
+                高频应用时建议选择±1%精度、NPO/C0G材质的薄膜电阻。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
